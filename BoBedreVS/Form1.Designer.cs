@@ -44,11 +44,11 @@ namespace BoBedreVS
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(116, 50);
+            this.button2.Location = new System.Drawing.Point(124, 47);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(623, 368);
             this.button2.TabIndex = 1;
-            this.button2.Text = "gmaerknappen 8-)";
+            this.button2.Text = "GAMERKNAPPEN 8-)";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
