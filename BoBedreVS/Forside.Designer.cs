@@ -1,7 +1,7 @@
 ﻿
 namespace BoBedreVS
 {
-    partial class Form1
+    partial class Forside
     {
         /// <summary>
         ///  Required designer variable.

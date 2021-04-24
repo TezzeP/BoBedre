@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace BoBedreVS
 {
-    public partial class Form1 : Form
+    public partial class Delete : Form
     {
-        public Form1()
+        public Delete()
         {
             InitializeComponent();
         }
-
     }
 }
