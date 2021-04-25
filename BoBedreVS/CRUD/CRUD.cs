@@ -16,5 +16,37 @@ namespace BoBedreVS
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide(); // minimere forsiden
+            Create goTo = new Create();
+            goTo.ShowDialog(); // viser forms af kundeoplsyninger
+            Close(); // lukker forsiden
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide(); // minimere forsiden
+            Delete goTo = new Delete();
+            goTo.ShowDialog(); // viser forms af kundeoplsyninger
+            Close(); // lukker forsiden
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Hide(); // minimere forsiden
+            CRUD goTo = new CRUD();
+            goTo.ShowDialog(); // viser forms af kundeoplsyninger
+            Close(); // lukker forsiden
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Hide(); // minimere forsiden
+            Read goTo = new Read();
+            goTo.ShowDialog(); // viser forms af kundeoplsyninger
+            Close(); // lukker forsiden
+        }
     }
 }

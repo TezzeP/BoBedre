@@ -19,5 +19,8 @@ namespace BoBedreVS
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Forside());
         }
+
+      
+       
     }
 }
