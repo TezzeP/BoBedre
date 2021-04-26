@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BoBedreVS
 {
-    public partial class Delete : Form
+    public partial class OpretBolig : Form
     {
-        public Delete()
+        public OpretBolig()
         {
             InitializeComponent();
         }

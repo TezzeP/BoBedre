@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BoBedreVS
 {
-    public partial class Create : Form
+    public partial class OpretMægler : Form
     {
-        public Create()
+        public OpretMægler()
         {
             InitializeComponent();
         }

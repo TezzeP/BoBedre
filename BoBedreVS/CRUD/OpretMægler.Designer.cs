@@ -1,7 +1,7 @@
 ﻿
 namespace BoBedreVS
 {
-    partial class Delete
+    partial class OpretMægler
     {
         /// <summary>
         /// Required designer variable.
@@ -42,16 +42,14 @@ namespace BoBedreVS
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Delete
+            // OpretMægler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Delete";
-            this.Text = "Delete";
+            this.Name = "OpretMægler";
+            this.Text = "OpretMægler";
             this.ResumeLayout(false);
 
         }

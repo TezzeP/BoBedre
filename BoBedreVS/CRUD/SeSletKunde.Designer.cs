@@ -1,7 +1,7 @@
 ﻿
 namespace BoBedreVS
 {
-    partial class Create
+    partial class SeSletKunde
     {
         /// <summary>
         /// Required designer variable.
@@ -34,24 +34,23 @@ namespace BoBedreVS
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 13);
+            this.button1.Location = new System.Drawing.Point(22, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Back";
+            this.button1.Text = "back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Create
+            // SeSletKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Create";
-            this.Text = "Create";
+            this.Name = "SeSletKunde";
+            this.Text = "SeSletKunde";
+            this.Load += new System.EventHandler(this.SeSletKunde_Load);
             this.ResumeLayout(false);
 
         }

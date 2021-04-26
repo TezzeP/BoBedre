@@ -1,7 +1,7 @@
 ﻿
 namespace BoBedreVS
 {
-    partial class Update
+    partial class OpretBolig
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,7 @@ namespace BoBedreVS
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Update
+            // Delete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -50,8 +50,8 @@ namespace BoBedreVS
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Update";
-            this.Text = "Update";
+            this.Name = "Delete";
+            this.Text = "Delete";
             this.ResumeLayout(false);
 
         }

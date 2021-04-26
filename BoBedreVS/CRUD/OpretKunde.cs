@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BoBedreVS
 {
-    public partial class Read : Form
+    public partial class OpretKunde : Form
     {
-        public Read()
+        public OpretKunde()
         {
             InitializeComponent();
         }

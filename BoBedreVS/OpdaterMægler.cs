@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BoBedreVS
 {
-    public partial class Update : Form
+    public partial class OpdaterMægler : Form
     {
-        public Update()
+        public OpdaterMægler()
         {
             InitializeComponent();
         }
