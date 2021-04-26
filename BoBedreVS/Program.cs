@@ -8,6 +8,8 @@ namespace BoBedreVS
 {
     static class Program
     {
+
+        // public static string strconn = "Server=den1.mssql8.gear.host; Database=bobedre1; User ID=bobedre1; Password=Js63Ot-_y8SE";
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

@@ -95,7 +95,7 @@ namespace BoBedreVS
             this.AabentHus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AabentHus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AabentHus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.AabentHus.Location = new System.Drawing.Point(0, 261);
+            this.AabentHus.Location = new System.Drawing.Point(0, 255);
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
             this.AabentHus.TabIndex = 3;
@@ -187,7 +187,7 @@ namespace BoBedreVS
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Forside";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Forside";
+            this.Text = "Panel";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
