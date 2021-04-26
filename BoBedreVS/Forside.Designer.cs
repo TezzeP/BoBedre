@@ -65,7 +65,7 @@ namespace BoBedreVS
             this.MedarbejderPortal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MedarbejderPortal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MedarbejderPortal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.MedarbejderPortal.Location = new System.Drawing.Point(0, 231);
+            this.MedarbejderPortal.Location = new System.Drawing.Point(0, 225);
             this.MedarbejderPortal.Name = "MedarbejderPortal";
             this.MedarbejderPortal.Size = new System.Drawing.Size(186, 30);
             this.MedarbejderPortal.TabIndex = 3;
