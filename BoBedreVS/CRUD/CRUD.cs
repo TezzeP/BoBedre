@@ -40,8 +40,8 @@ namespace BoBedreVS
             goTo.ShowDialog(); // viser forms af kundeoplsyninger
             Close(); // lukker forsiden
         }
-
-        private void button11_Click(object sender, EventArgs e)
+       
+        private void SeSletMæglerKnap_Click(object sender, EventArgs e)
         {
             Hide(); // minimere forsiden
             SeSletMægler goTo = new SeSletMægler();
@@ -49,12 +49,7 @@ namespace BoBedreVS
             Close(); // lukker forsiden
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
+        private void OpdaterMæglerKnap_Click(object sender, EventArgs e)
         {
             Hide(); // minimere forsiden
             OpdaterMægler goTo = new OpdaterMægler();
@@ -62,25 +57,15 @@ namespace BoBedreVS
             Close(); // lukker forsiden
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void OpretMæglerKnap_Click(object sender, EventArgs e)
         {
             Hide(); // minimere forsiden
-            SeSletBolig goTo = new SeSletBolig();
+            OpretMægler goTo = new OpretMægler();
             goTo.ShowDialog(); // viser forms af kundeoplsyninger
             Close(); // lukker forsiden
-
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            Hide(); // minimere forsiden
-            OpretBolig goTo = new OpretBolig();
-            goTo.ShowDialog(); // viser forms af kundeoplsyninger
-            Close(); // lukker forsiden
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
+        private void OpdaterBoligKnap_Click(object sender, EventArgs e)
         {
             Hide(); // minimere forsiden
             OpdaterBolig goTo = new OpdaterBolig();
@@ -88,10 +73,18 @@ namespace BoBedreVS
             Close(); // lukker forsiden
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void SeSletBoligKnap_Click(object sender, EventArgs e)
         {
             Hide(); // minimere forsiden
-            OpretMægler goTo = new OpretMægler();
+            SeSletBolig goTo = new SeSletBolig();
+            goTo.ShowDialog(); // viser forms af kundeoplsyninger
+            Close(); // lukker forsiden
+        }
+
+        private void OpretBoligKnap_Click(object sender, EventArgs e)
+        {
+            Hide(); // minimere forsiden
+            OpretBolig goTo = new OpretBolig();
             goTo.ShowDialog(); // viser forms af kundeoplsyninger
             Close(); // lukker forsiden
         }
