@@ -95,7 +95,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 389);
+            this.panel1.Size = new System.Drawing.Size(186, 533);
             this.panel1.TabIndex = 6;
             // 
             // MedarbejderPortal
@@ -146,7 +146,7 @@ namespace BoBedreVS
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.button1.Location = new System.Drawing.Point(0, 144);
+            this.button1.Location = new System.Drawing.Point(0, 143);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 30);
             this.button1.TabIndex = 3;
@@ -192,6 +192,7 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources.cool_csgo_profile_pictures_2c3d8442_7fef_446e_9315_e9f8a46ece47;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);

@@ -24,16 +24,23 @@ namespace BoBedreVS
             string s = Globals.strconn;
 
             string cmd = "select * from Bolig where SalgsDato IS NULL AND GrundM2 >= 145";
-
+            
             var da = new SqlDataAdapter(cmd, Globals.strconn);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
-            IEnumerable<DataRow> BoligTilSalg = dt.AsEnumerable();
-            
-            Close();
+            List<DataTable> BoligTilSalg = new List<DataTable>();
+            BoligTilSalg = BoligTilSalg.OrderBy(x => x.TableName).ToList();
+            BoligTilSalg = BoligTilSalg.Where(x=>x.)
+
         }
 
-        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide(); // minimere forsiden
+            Forside goTo = new Forside();
+            goTo.ShowDialog(); // viser forms af kundeoplsyninger
+            Close(); // lukker forsiden
+        }
     }
 }
