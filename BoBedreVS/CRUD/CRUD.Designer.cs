@@ -48,6 +48,12 @@ namespace BoBedreVS
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.OpretBoligKnap = new System.Windows.Forms.Button();
+            this.SeSletBoligKnap = new System.Windows.Forms.Button();
+            this.OpdaterBoligKnap = new System.Windows.Forms.Button();
+            this.OpretMæglerKnap = new System.Windows.Forms.Button();
+            this.SeSletMæglerKnap = new System.Windows.Forms.Button();
+            this.OpdaterMæglerKnap = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,7 +101,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 389);
+            this.panel1.Size = new System.Drawing.Size(186, 533);
             this.panel1.TabIndex = 6;
             // 
             // MedarbejderPortal
@@ -218,7 +224,7 @@ namespace BoBedreVS
             this.button6.TabIndex = 7;
             this.button6.Text = "Opret mægler";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            
             // 
             // button7
             // 
@@ -228,7 +234,7 @@ namespace BoBedreVS
             this.button7.TabIndex = 10;
             this.button7.Text = "Se/slet bolig(er)";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            
             // 
             // button8
             // 
@@ -238,7 +244,7 @@ namespace BoBedreVS
             this.button8.TabIndex = 9;
             this.button8.Text = "Opdater bolig";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            
             // 
             // button10
             // 
@@ -248,7 +254,7 @@ namespace BoBedreVS
             this.button10.TabIndex = 11;
             this.button10.Text = "Opret bolig";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            
             // 
             // button11
             // 
@@ -258,7 +264,7 @@ namespace BoBedreVS
             this.button11.TabIndex = 14;
             this.button11.Text = "Se/slet Mæglere";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+           
             // 
             // button12
             // 
@@ -268,7 +274,67 @@ namespace BoBedreVS
             this.button12.TabIndex = 13;
             this.button12.Text = "Opdater mægler";
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            
+            // 
+            // OpretBoligKnap
+            // 
+            this.OpretBoligKnap.Location = new System.Drawing.Point(353, 22);
+            this.OpretBoligKnap.Name = "OpretBoligKnap";
+            this.OpretBoligKnap.Size = new System.Drawing.Size(104, 23);
+            this.OpretBoligKnap.TabIndex = 7;
+            this.OpretBoligKnap.Text = "Opret bolig";
+            this.OpretBoligKnap.UseVisualStyleBackColor = true;
+            this.OpretBoligKnap.Click += new System.EventHandler(this.OpretBoligKnap_Click);
+            // 
+            // SeSletBoligKnap
+            // 
+            this.SeSletBoligKnap.Location = new System.Drawing.Point(353, 68);
+            this.SeSletBoligKnap.Name = "SeSletBoligKnap";
+            this.SeSletBoligKnap.Size = new System.Drawing.Size(104, 23);
+            this.SeSletBoligKnap.TabIndex = 9;
+            this.SeSletBoligKnap.Text = "Se/slet bolig(er)";
+            this.SeSletBoligKnap.UseVisualStyleBackColor = true;
+            this.SeSletBoligKnap.Click += new System.EventHandler(this.SeSletBoligKnap_Click);
+            // 
+            // OpdaterBoligKnap
+            // 
+            this.OpdaterBoligKnap.Location = new System.Drawing.Point(353, 115);
+            this.OpdaterBoligKnap.Name = "OpdaterBoligKnap";
+            this.OpdaterBoligKnap.Size = new System.Drawing.Size(104, 23);
+            this.OpdaterBoligKnap.TabIndex = 8;
+            this.OpdaterBoligKnap.Text = "Opdater bolig";
+            this.OpdaterBoligKnap.UseVisualStyleBackColor = true;
+            this.OpdaterBoligKnap.Click += new System.EventHandler(this.OpdaterBoligKnap_Click);
+            // 
+            // OpretMæglerKnap
+            // 
+            this.OpretMæglerKnap.Location = new System.Drawing.Point(492, 22);
+            this.OpretMæglerKnap.Name = "OpretMæglerKnap";
+            this.OpretMæglerKnap.Size = new System.Drawing.Size(111, 23);
+            this.OpretMæglerKnap.TabIndex = 10;
+            this.OpretMæglerKnap.Text = "Opret mægler";
+            this.OpretMæglerKnap.UseVisualStyleBackColor = true;
+            this.OpretMæglerKnap.Click += new System.EventHandler(this.OpretMæglerKnap_Click);
+            // 
+            // SeSletMæglerKnap
+            // 
+            this.SeSletMæglerKnap.Location = new System.Drawing.Point(492, 68);
+            this.SeSletMæglerKnap.Name = "SeSletMæglerKnap";
+            this.SeSletMæglerKnap.Size = new System.Drawing.Size(111, 23);
+            this.SeSletMæglerKnap.TabIndex = 12;
+            this.SeSletMæglerKnap.Text = "Se/slet mægler(e)";
+            this.SeSletMæglerKnap.UseVisualStyleBackColor = true;
+            this.SeSletMæglerKnap.Click += new System.EventHandler(this.SeSletMæglerKnap_Click);
+            // 
+            // OpdaterMæglerKnap
+            // 
+            this.OpdaterMæglerKnap.Location = new System.Drawing.Point(492, 115);
+            this.OpdaterMæglerKnap.Name = "OpdaterMæglerKnap";
+            this.OpdaterMæglerKnap.Size = new System.Drawing.Size(111, 23);
+            this.OpdaterMæglerKnap.TabIndex = 11;
+            this.OpdaterMæglerKnap.Text = "Opdater mægler";
+            this.OpdaterMæglerKnap.UseVisualStyleBackColor = true;
+            this.OpdaterMæglerKnap.Click += new System.EventHandler(this.OpdaterMæglerKnap_Click);
             // 
             // CRUD
             // 
@@ -276,6 +342,12 @@ namespace BoBedreVS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(639, 533);
+            this.Controls.Add(this.OpretMæglerKnap);
+            this.Controls.Add(this.SeSletMæglerKnap);
+            this.Controls.Add(this.OpdaterMæglerKnap);
+            this.Controls.Add(this.OpretBoligKnap);
+            this.Controls.Add(this.SeSletBoligKnap);
+            this.Controls.Add(this.OpdaterBoligKnap);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
@@ -311,5 +383,11 @@ namespace BoBedreVS
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button OpretBoligKnap;
+        private System.Windows.Forms.Button SeSletBoligKnap;
+        private System.Windows.Forms.Button OpdaterBoligKnap;
+        private System.Windows.Forms.Button OpretMæglerKnap;
+        private System.Windows.Forms.Button SeSletMæglerKnap;
+        private System.Windows.Forms.Button OpdaterMæglerKnap;
     }
 }
