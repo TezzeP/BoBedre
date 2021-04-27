@@ -31,7 +31,7 @@ namespace BoBedreVS
             dataGridView1.DataSource = dt;
             List<DataTable> BoligTilSalg = new List<DataTable>();
             BoligTilSalg = BoligTilSalg.OrderBy(x => x.TableName).ToList();
-            BoligTilSalg = BoligTilSalg.Where(x=>x.)
+            BoligTilSalg = BoligTilSalg.Where(x => x.)
 
         }
 
