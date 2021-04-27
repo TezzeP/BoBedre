@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BusinessLogic;
+using PersistensLag;
 
 
 namespace BoBedreVS
@@ -21,17 +23,10 @@ namespace BoBedreVS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string s = Globals.strconn;
-
-            string cmd = "select * from Bolig where SalgsDato IS NULL AND GrundM2 >= 145";
+            Sorting sortering = new Sorting();
             
-            var da = new SqlDataAdapter(cmd, Globals.strconn);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            List<DataTable> BoligTilSalg = new List<DataTable>();
-            BoligTilSalg = BoligTilSalg.OrderBy(x => x.TableName).ToList();
-            BoligTilSalg = BoligTilSalg.Where(x=>x.)
+            dataGridView1.DataSource = sortering
+                .SortByAdresseFirstLetterAndM2Over145();
 
         }
 
