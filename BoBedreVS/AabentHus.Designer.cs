@@ -118,6 +118,7 @@ namespace BoBedreVS
             this.CRUD.Text = "CRUD";
             this.CRUD.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.CRUD.UseVisualStyleBackColor = true;
+            this.CRUD.Click += new System.EventHandler(this.CRUD_Click);
             // 
             // Statistik
             // 
@@ -178,7 +179,7 @@ namespace BoBedreVS
             // 
             // udSKRIV
             // 
-            this.udSKRIV.Location = new System.Drawing.Point(203, 52);
+            this.udSKRIV.Location = new System.Drawing.Point(192, 12);
             this.udSKRIV.Name = "udSKRIV";
             this.udSKRIV.Size = new System.Drawing.Size(75, 23);
             this.udSKRIV.TabIndex = 7;
@@ -215,7 +216,7 @@ namespace BoBedreVS
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.udSKRIV);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AabentHus";
             this.Text = "AabentHus";
             this.panel1.ResumeLayout(false);

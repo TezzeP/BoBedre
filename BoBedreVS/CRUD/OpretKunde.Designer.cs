@@ -192,7 +192,7 @@ namespace BoBedreVS
             this.Controls.Add(this.KundeMailTextBox);
             this.Controls.Add(this.KundeNavnTextBox);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "OpretKunde";
             this.Text = "Create";
             this.ResumeLayout(false);

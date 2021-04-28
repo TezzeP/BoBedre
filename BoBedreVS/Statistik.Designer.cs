@@ -195,7 +195,7 @@ namespace BoBedreVS
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Statistik";
             this.Text = "Statistik";
             this.panel1.ResumeLayout(false);
