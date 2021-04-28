@@ -31,7 +31,25 @@ namespace BoBedreVS
         {
             SqlConnection conn = new SqlConnection(strconn);
             conn.Open();
-            string sSQL = $"INSERT INTO Kunde VALUES ({KundeNavnTextBox.Text}, {KundeTelefonNrTextBox.Text}, {KundeMailTextBox.Text}, {KundeAdresseTextBox.Text}, '{KøberCheckBox.Checked}', {SælgerCheckBox.Checked});";
+            int sælgerbit = 1;
+            int køberbit = 1;
+            if (KøberCheckBox.Checked == true)
+            {
+                køberbit = 1;
+            }
+            else if (KøberCheckBox.Checked == false)
+            {
+                køberbit = 0;
+            }
+            if (SælgerCheckBox.Checked == true)
+            {
+                sælgerbit = 1;
+            }
+            else if (SælgerCheckBox.Checked == false)
+            {
+                sælgerbit = 0;
+            }
+            string sSQL = $"INSERT INTO Kunde VALUES ('{KundeNavnTextBox.Text}', {KundeTelefonNrTextBox.Text}, '{KundeMailTextBox.Text}', '{KundeAdresseTextBox.Text}', {køberbit}, {sælgerbit});";
             SqlCommand command = new SqlCommand(sSQL, conn);
             bool tekstUdfyldt = KundeAdresseTextBox.Text != "" && KundeMailTextBox.Text != "" && KundeNavnTextBox.Text != "" && KundeTelefonNrTextBox.Text != ""
                 && KøberCheckBox.Checked == true;
