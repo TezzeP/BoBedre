@@ -346,7 +346,6 @@ namespace BoBedreVS
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "CRUD";
             this.Text = "CRUD";
             this.panel1.ResumeLayout(false);

@@ -187,6 +187,7 @@ namespace BoBedreVS
             this.udSKRIV.TabIndex = 7;
             this.udSKRIV.Text = "Sortere og udskriv bolig  ";
             this.udSKRIV.UseVisualStyleBackColor = true;
+            this.udSKRIV.Click += new System.EventHandler(this.udSKRIV_Click_1);
             // 
             // dataGridView1
             // 
