@@ -49,10 +49,12 @@ namespace BoBedreVS
             Close(); // lukker forsiden
         }
 
-        private void CRUD_Click(object sender, EventArgs e)
+        
+        private void button2_Click_1(object sender, EventArgs e)
         {
-            
+            Sorting SearchByLetter = new Sorting();
 
+            dataGridView1.DataSource = SearchByLetter.SerchByLetterInverval2(Convert.ToChar(FirstLetterBox.Text), Convert.ToChar(SecondLetterBox.Text));
 
         }
     }

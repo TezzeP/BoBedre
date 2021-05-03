@@ -177,7 +177,7 @@ namespace BoBedreVS
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 465);
             this.Controls.Add(this.KundeTelefonNrTextBox);
             this.Controls.Add(this.OpretKundeKnab);
             this.Controls.Add(this.SælgerCheckBox);
