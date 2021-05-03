@@ -19,8 +19,31 @@ namespace BusinessLogic
                 .ToList();
         }
 
-        
-        
+        public List<Bolig> SerchByLetterInverval(string firstLetter, string secondLetter)
+        {
+            List<Bolig> indput = Read.ReadAllBolig();
+            List<Bolig> output = new List<Bolig>();
+            char startTal = Convert.ToChar(firstLetter.ToLower());
+            char slutTal = Convert.ToChar(secondLetter.ToLower());
 
+            foreach (Bolig b in indput)
+            {
+                char firstLetterInAdresse = Convert.ToChar(b.Adresse.
+                    Substring(0,1).ToLower());
+                if (firstLetterInAdresse >= startTal && firstLetterInAdresse <= slutTal ) 
+                {
+                    output.Add(b);
+                    
+                }
+            }
+
+            return output;
+        }
+
+
+        public List<Bolig> SerchByLetterInverval2(char firstLetter, char secondLetter)
+        {
+           return Read.ReadAllBolig().Where(x=>Char.ToLower(x.Adresse[0])>=Char.ToLower(firstLetter) && Char.ToLower(x.Adresse[0])<=Char.ToLower(secondLetter)).ToList();
+        }
      }
 }
