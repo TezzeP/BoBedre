@@ -32,14 +32,7 @@ namespace BoBedreVS
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Sorting sortering = new Sorting();
-            
-            dataGridView1.DataSource = sortering
-                .SortByAdresseFirstLetterAndM2Over145();
-
-        }
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -54,7 +47,10 @@ namespace BoBedreVS
         {
             Sorting SearchByLetter = new Sorting();
 
-            dataGridView1.DataSource = SearchByLetter.SerchByLetterInverval2(Convert.ToChar(FirstLetterBox.Text), Convert.ToChar(SecondLetterBox.Text));
+            dataGridView1.DataSource = 
+                SearchByLetter.SerchByLetterInverval2(
+                Convert.ToChar(FirstLetterBox.Text),
+                Convert.ToChar(SecondLetterBox.Text));
 
         }
     }

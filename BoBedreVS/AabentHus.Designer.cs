@@ -63,7 +63,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 487);
+            this.panel1.Size = new System.Drawing.Size(186, 486);
             this.panel1.TabIndex = 6;
             // 
             // MedarbejderPortal
@@ -121,7 +121,6 @@ namespace BoBedreVS
             this.CRUD.Text = "CRUD";
             this.CRUD.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.CRUD.UseVisualStyleBackColor = true;
-            
             // 
             // Statistik
             // 
@@ -182,13 +181,12 @@ namespace BoBedreVS
             // 
             // udSKRIV
             // 
-            this.udSKRIV.Location = new System.Drawing.Point(192, 12);
+            this.udSKRIV.Location = new System.Drawing.Point(192, 142);
             this.udSKRIV.Name = "udSKRIV";
-            this.udSKRIV.Size = new System.Drawing.Size(75, 23);
+            this.udSKRIV.Size = new System.Drawing.Size(150, 23);
             this.udSKRIV.TabIndex = 7;
-            this.udSKRIV.Text = "test knap ";
+            this.udSKRIV.Text = "Sortere og udskriv bolig  ";
             this.udSKRIV.UseVisualStyleBackColor = true;
-            this.udSKRIV.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -201,7 +199,7 @@ namespace BoBedreVS
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(192, 41);
+            this.button3.Location = new System.Drawing.Point(192, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 9;
@@ -211,7 +209,7 @@ namespace BoBedreVS
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(193, 71);
+            this.button2.Location = new System.Drawing.Point(616, 111);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 10;
@@ -221,7 +219,7 @@ namespace BoBedreVS
             // 
             // FirstLetterBox
             // 
-            this.FirstLetterBox.Location = new System.Drawing.Point(325, 121);
+            this.FirstLetterBox.Location = new System.Drawing.Point(616, 140);
             this.FirstLetterBox.Mask = "C";
             this.FirstLetterBox.Name = "FirstLetterBox";
             this.FirstLetterBox.Size = new System.Drawing.Size(18, 23);
@@ -229,7 +227,7 @@ namespace BoBedreVS
             // 
             // SecondLetterBox
             // 
-            this.SecondLetterBox.Location = new System.Drawing.Point(381, 121);
+            this.SecondLetterBox.Location = new System.Drawing.Point(673, 140);
             this.SecondLetterBox.Mask = "C";
             this.SecondLetterBox.Name = "SecondLetterBox";
             this.SecondLetterBox.Size = new System.Drawing.Size(18, 23);
@@ -240,7 +238,7 @@ namespace BoBedreVS
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(934, 487);
+            this.ClientSize = new System.Drawing.Size(935, 486);
             this.Controls.Add(this.SecondLetterBox);
             this.Controls.Add(this.FirstLetterBox);
             this.Controls.Add(this.button2);

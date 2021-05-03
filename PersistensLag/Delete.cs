@@ -8,5 +8,6 @@ namespace PersistensLag
 {
     class Delete
     {
+
     }
 }
