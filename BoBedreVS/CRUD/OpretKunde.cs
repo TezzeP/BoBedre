@@ -13,7 +13,7 @@ namespace BoBedreVS
 {
     public partial class OpretKunde : Form
     {
-        public static string strconn = "Server=den1.mssql8.gear.host; Database=bobedre1; User ID=bobedre1; Password=Js63Ot-_y8SE";
+        
         public OpretKunde()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace BoBedreVS
 
         private void OpretKundeKnab_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(strconn);
+            SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
             conn.Open();
             int sælgerbit = 1;
             int køberbit = 1;

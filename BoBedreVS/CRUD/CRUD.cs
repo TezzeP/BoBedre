@@ -68,7 +68,7 @@ namespace BoBedreVS
         private void OpdaterBoligKnap_Click(object sender, EventArgs e)
         {
             Hide(); // minimere forsiden
-            OpdaterBolig goTo = new OpdaterBolig();
+            OpretBolig goTo = new OpretBolig();
             goTo.ShowDialog(); // viser forms af kundeoplsyninger
             Close(); // lukker forsiden
         }
@@ -84,7 +84,7 @@ namespace BoBedreVS
         private void OpretBoligKnap_Click(object sender, EventArgs e)
         {
             Hide(); // minimere forsiden
-            OpretBolig goTo = new OpretBolig();
+            OpdaterBolig goTo = new OpdaterBolig();
             goTo.ShowDialog(); // viser forms af kundeoplsyninger
             Close(); // lukker forsiden
         }

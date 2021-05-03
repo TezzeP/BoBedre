@@ -198,7 +198,6 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources.cool_csgo_profile_pictures_2c3d8442_7fef_446e_9315_e9f8a46ece47;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
@@ -273,11 +272,11 @@ namespace BoBedreVS
             // 
             // OpretBoligKnap
             // 
-            this.OpretBoligKnap.Location = new System.Drawing.Point(353, 22);
+            this.OpretBoligKnap.Location = new System.Drawing.Point(353, 115);
             this.OpretBoligKnap.Name = "OpretBoligKnap";
             this.OpretBoligKnap.Size = new System.Drawing.Size(104, 23);
             this.OpretBoligKnap.TabIndex = 7;
-            this.OpretBoligKnap.Text = "Opret bolig";
+            this.OpretBoligKnap.Text = "Opdater bolig";
             this.OpretBoligKnap.UseVisualStyleBackColor = true;
             this.OpretBoligKnap.Click += new System.EventHandler(this.OpretBoligKnap_Click);
             // 
@@ -293,11 +292,11 @@ namespace BoBedreVS
             // 
             // OpdaterBoligKnap
             // 
-            this.OpdaterBoligKnap.Location = new System.Drawing.Point(353, 115);
+            this.OpdaterBoligKnap.Location = new System.Drawing.Point(353, 22);
             this.OpdaterBoligKnap.Name = "OpdaterBoligKnap";
             this.OpdaterBoligKnap.Size = new System.Drawing.Size(104, 23);
             this.OpdaterBoligKnap.TabIndex = 8;
-            this.OpdaterBoligKnap.Text = "Opdater bolig";
+            this.OpdaterBoligKnap.Text = "Opret bolig";
             this.OpdaterBoligKnap.UseVisualStyleBackColor = true;
             this.OpdaterBoligKnap.Click += new System.EventHandler(this.OpdaterBoligKnap_Click);
             // 

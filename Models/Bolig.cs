@@ -17,5 +17,7 @@ namespace Models
         public string  SalgsDato { get; set; }
         public string OprettelsesDato { get; set; }
         public int StandSkala { get; set; }
+        public int KundeID { get; set; }
+        
     }
 }
