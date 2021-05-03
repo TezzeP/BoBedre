@@ -160,7 +160,6 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources.cool_csgo_profile_pictures_2c3d8442_7fef_446e_9315_e9f8a46ece47;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
@@ -187,6 +186,7 @@ namespace BoBedreVS
             this.udSKRIV.TabIndex = 7;
             this.udSKRIV.Text = "Sortere og udskriv bolig  ";
             this.udSKRIV.UseVisualStyleBackColor = true;
+            this.udSKRIV.Click += new System.EventHandler(this.udSKRIV_Click);
             // 
             // dataGridView1
             // 

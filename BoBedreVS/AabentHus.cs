@@ -53,5 +53,10 @@ namespace BoBedreVS
                 Convert.ToChar(SecondLetterBox.Text));
 
         }
+
+        private void udSKRIV_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
