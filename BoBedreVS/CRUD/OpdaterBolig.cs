@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Models;
 
 namespace BoBedreVS
 {
@@ -27,7 +28,9 @@ namespace BoBedreVS
 
         private void Update_Click(object sender, EventArgs e)
         {
-            
+            Bolig boligData = new Bolig();
+
+           
         }
     }
 }

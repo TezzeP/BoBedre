@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Models;
+using PersistensLag;
 
 namespace BoBedreVS
 {
@@ -25,9 +27,24 @@ namespace BoBedreVS
             Close(); // lukker forsiden
         }
 
-        private void OpdaterKunde_Load(object sender, EventArgs e)
+        
+        private void Update_Click(object sender, EventArgs e)
         {
 
+            Kunde kundeData = new Kunde();
+
+            kundeData.Navn = KundeNavnTextBox.Text;
+            kundeData.Telnr = Convert.ToInt32(KundeTelnrTextBox.Text);
+            kundeData.Mail = KundeMailTextBox.Text;
+            kundeData.Adresse = KundeAdresseTextBox.Text;
+
+            kundeData.Køber = KøberCB.Checked ? 1 : 0;
+            kundeData.Sælger = SælgerCB.Checked ? 1 : 0;
+
+            Update update = new Update();
+            update.UpdateBolig(kundeData);
         }
+
+        
     }
 }
