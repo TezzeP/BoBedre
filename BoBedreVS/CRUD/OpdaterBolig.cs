@@ -24,5 +24,10 @@ namespace BoBedreVS
             goTo.ShowDialog(); // viser forms af kundeoplsyninger
             Close(); // lukker forsiden
         }
+
+        private void Update_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
