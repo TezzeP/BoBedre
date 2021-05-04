@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Models;
+using PersistensLag;
 
 namespace BoBedreVS
 {
@@ -28,9 +30,25 @@ namespace BoBedreVS
 
         private void OpretMæglerKnap_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
-            conn.Open();
-            string sSQL = $"INSERT INTO mægler VALUES ('{NavnTextBox.Text}', {TelefonNrTextBox.Text}, '{MailTextBox.Text}', '{StillingTextBox.Text}');"; 
+            
+            
+                Ejendomsmælger sendEjendomsmælger = new Ejendomsmælger();
+                sendEjendomsmælger.Navn = NavnTextBox.Text;
+                sendEjendomsmælger.Tlf = Convert.ToInt32(TelefonNrTextBox.Text);
+                sendEjendomsmælger.Mail = MailTextBox.Text;
+                sendEjendomsmælger.Stilling = StillingTextBox.Text;
+                
+
+
+                Create create = new Create();
+                MessageBox.Show(create.OpretEjendomsmælger(sendEjendomsmælger));
+
+            
+            /*catch (Exception)
+            {
+                MessageBox.Show("mangler input (tror jeg) :)");
+
+            }*/
         }
     }
 }

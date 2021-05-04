@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class Ejendomsmælger
+    public class Ejendomsmælger
     {
-        public TYPE Type { get; set; }
+        public int MedarbejderId { get; set; }
+        public string Navn { get; set; }
+        public int Tlf { get; set; }
+        public string Mail { get; set; }
+        public string Stilling { get; set; }
     }
 }

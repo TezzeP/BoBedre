@@ -24,12 +24,12 @@ namespace PersistensLag
             if (checkSucces == 0)
             {
                 conn.Close();
-                return ("input påkrævet i alle felter udover salgsdato");
+                return ("Input påkrævet i alle felter udover salgsdato");
             }
             else 
             {
                 conn.Close();
-                return ("boligen er blevet tilføjet til databasen");
+                return ("Boligen er blevet tilføjet til databasen");
             }
             
 
@@ -38,7 +38,7 @@ namespace PersistensLag
         {
             SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
             conn.Open();
-            string sSQL = $"INSERT INTO Kunde VALUES ('{kunde.Navn}', {kunde.Tlfnr}, '{kunde.Mail}', '{kunde.Adresse}', {kunde.Køberbit}, {kunde.Sælgerbit});";
+            string sSQL = $"INSERT INTO Kunde VALUES ('{kunde.Navn}', {kunde.Telnr}, '{kunde.Mail}', '{kunde.Adresse}', {kunde.Køber}, {kunde.Sælger});";
 
             SqlCommand command = new SqlCommand(sSQL, conn);
 
@@ -46,13 +46,35 @@ namespace PersistensLag
             if (checkSucces == 0)
             {
                 conn.Close();
-                return ("input fejl");
+                return ("Input fejl");
             }
             else
             {
                 conn.Close();
-                return ("kunden er blevet tilføjet til databasen");
+                return ("Kunden er blevet tilføjet til databasen");
             }
+        }
+        public string OpretEjendomsmælger(Ejendomsmælger ejendomsmælger)
+        {
+            SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
+            conn.Open();
+            string sSQL = $"INSERT INTO Ejendomsmælger(Navn, Tlf, Mail, Stilling) VALUES ('{ejendomsmælger.Navn}', {ejendomsmælger.Tlf}, '{ejendomsmælger.Mail}', '{ejendomsmælger.Stilling}');";
+
+            SqlCommand command = new SqlCommand(sSQL, conn);
+
+            int checkSucces = command.ExecuteNonQuery();
+            if (checkSucces == 0)
+            {
+                conn.Close();
+                return ("Input fejl");
+            }
+            else
+            {
+                conn.Close();
+                return ("Ejendomsmælger er blevet tilføjet til databasen");
+            }
+
+
         }
 
     }

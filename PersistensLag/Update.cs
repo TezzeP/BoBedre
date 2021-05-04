@@ -40,6 +40,49 @@ namespace PersistensLag
 
 
 
+            UpdateBolig.Parameters.AddWithValue("navn", int.Parse(BoligNavnTextBox.Text));
+                cmd.Parameters.AddWithValue("@navn", textBox13.Text);
+                cmd.Parameters.AddWithValue("@adresse", textBox10.Text);
+                cmd.Parameters.AddWithValue("@mail", textBox11.Text);
+                cmd.Parameters.AddWithValue("@tlfNr", int.Parse(textBox12.Text));
+                cmd.Parameters.AddWithValue("@city", textBox5.Text);
+                cmd.Parameters.AddWithValue("@postNr", int.Parse(textBox9.Text));
+                cmd.Parameters.AddWithValue("@navn", textBox13.Text);
+                cmd.Parameters.AddWithValue("@adresse", textBox10.Text);
+                cmd.Parameters.AddWithValue("@mail", textBox11.Text);
+                cmd.Parameters.AddWithValue("@tlfNr", int.Parse(textBox12.Text));
+                cmd.Parameters.AddWithValue("@city", textBox5.Text);
+                cmd.Parameters.AddWithValue("@postNr", int.Parse(textBox9.Text));
+                cmd.Parameters.AddWithValue("@navn", textBox13.Text);
+                cmd.Parameters.AddWithValue("@adresse", textBox10.Text);
+                cmd.Parameters.AddWithValue("@mail", textBox11.Text);
+                cmd.Parameters.AddWithValue("@tlfNr", int.Parse(textBox12.Text));
+                cmd.Parameters.AddWithValue("@city", textBox5.Text);
+                cmd.Parameters.AddWithValue("@postNr", int.Parse(textBox9.Text));
+                cmd.Parameters.AddWithValue("@navn", textBox13.Text);
+                cmd.Parameters.AddWithValue("@adresse", textBox10.Text);
+                cmd.Parameters.AddWithValue("@mail", textBox11.Text);
+                cmd.Parameters.AddWithValue("@tlfNr", int.Parse(textBox12.Text));
+                cmd.Parameters.AddWithValue("@city", textBox5.Text);
+                cmd.Parameters.AddWithValue("@postNr", int.Parse(textBox9.Text));
+                cmd.Parameters.AddWithValue("@navn", textBox13.Text);
+                cmd.Parameters.AddWithValue("@adresse", textBox10.Text);
+                cmd.Parameters.AddWithValue("@mail", textBox11.Text);
+                cmd.Parameters.AddWithValue("@tlfNr", int.Parse(textBox12.Text));
+                cmd.Parameters.AddWithValue("@city", textBox5.Text);
+                cmd.Parameters.AddWithValue("@postNr", int.Parse(textBox9.Text));
+                cmd.Parameters.AddWithValue("@navn", textBox13.Text);
+                cmd.Parameters.AddWithValue("@adresse", textBox10.Text);
+                cmd.Parameters.AddWithValue("@mail", textBox11.Text);
+                cmd.Parameters.AddWithValue("@tlfNr", int.Parse(textBox12.Text));
+                cmd.Parameters.AddWithValue("@city", textBox5.Text);
+                cmd.Parameters.AddWithValue("@postNr", int.Parse(textBox9.Text));
+                cmd.Parameters.AddWithValue("@navn", textBox13.Text);
+                cmd.Parameters.AddWithValue("@adresse", textBox10.Text);
+                cmd.Parameters.AddWithValue("@mail", textBox11.Text);
+                cmd.Parameters.AddWithValue("@tlfNr", int.Parse(textBox12.Text));
+                cmd.Parameters.AddWithValue("@city", textBox5.Text);
+                cmd.Parameters.AddWithValue("@postNr", int.Parse(textBox9.Text));
 
         }
            

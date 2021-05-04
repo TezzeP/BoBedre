@@ -20,5 +20,10 @@ namespace BusinessLogic
             Create create = new Create();
             return create.OpretKunde(kunde);
         }
+        public string HandleOpretEjendomsmælger(Ejendomsmælger ejendomsmælger)
+        {
+            Create create = new Create();
+            return create.OpretEjendomsmælger(ejendomsmælger);
+        }
     }
 }
