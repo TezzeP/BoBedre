@@ -57,6 +57,15 @@ namespace BoBedreVS
         private void udSKRIV_Click(object sender, EventArgs e)
         {
 
+            
+
+        }
+
+        private void udSKRIV_Click_1(object sender, EventArgs e)
+        {
+            Sorting sorting = new Sorting();
+
+            dataGridView1.DataSource = sorting.SortByAdresseFirstLetterAndM2Over145();
         }
     }
 }
