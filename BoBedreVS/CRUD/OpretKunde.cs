@@ -51,17 +51,17 @@ namespace BoBedreVS
             }
             try
             {
-                Kunde sendBolig = new Kunde();
+                Kunde sendKunde = new Kunde();
                 sendKunde.Navn = KundeNavnTextBox.Text;
-                sendKunde.Tlfnr = Convert.ToInt32(KundeTelefonNrTextBox.Text);
+                sendKunde.Telnr = Convert.ToInt32(KundeTelefonNrTextBox.Text);
                 sendKunde.Mail = KundeMailTextBox.Text;
                 sendKunde.Adresse = KundeAdresseTextBox.Text;
-                sendKunde.Køberbit = Køberbit;
-                sendKunde.Sælgerbit = Sælgerbit;
+                sendKunde.Køber = Køberbit;
+                sendKunde.Sælger = Sælgerbit;
                 
 
                 Create create = new Create();
-                MessageBox.Show(create.OpretBolig(sendBolig));
+                MessageBox.Show(create.OpretKunde(sendKunde));
 
             }
             catch (Exception)
