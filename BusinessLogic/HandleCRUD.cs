@@ -15,5 +15,10 @@ namespace BusinessLogic
             Create create = new Create();
             return create.OpretBolig(bolig);
         }
+        public string HandleOpretKunde(Kunde kunde)
+        {
+            Create create = new Create();
+            return create.OpretKunde(kunde);
+        }
     }
 }

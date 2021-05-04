@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Models;
+using PersistensLag;
 
 namespace BoBedreVS
 {
@@ -29,7 +31,45 @@ namespace BoBedreVS
 
         private void OpretKundeKnab_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
+            int Sælgerbit = 1;
+            int Køberbit = 1;
+            if (KøberCheckBox.Checked == true)
+            {
+                Køberbit = 1;
+            }
+            else if (KøberCheckBox.Checked == false)
+            {
+                Køberbit = 0;
+            }
+            if (SælgerCheckBox.Checked == true)
+            {
+                Sælgerbit = 1;
+            }
+            else if (SælgerCheckBox.Checked == false)
+            {
+                Sælgerbit = 0;
+            }
+            try
+            {
+                Kunde sendBolig = new Kunde();
+                sendKunde.Navn = KundeNavnTextBox.Text;
+                sendKunde.Tlfnr = Convert.ToInt32(KundeTelefonNrTextBox.Text);
+                sendKunde.Mail = KundeMailTextBox.Text;
+                sendKunde.Adresse = KundeAdresseTextBox.Text;
+                sendKunde.Køberbit = Køberbit;
+                sendKunde.Sælgerbit = Sælgerbit;
+                
+
+                Create create = new Create();
+                MessageBox.Show(create.OpretBolig(sendBolig));
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("mangler input (tror jeg) :)");
+
+            }
+            /*SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
             conn.Open();
             int sælgerbit = 1;
             int køberbit = 1;
@@ -71,8 +111,8 @@ namespace BoBedreVS
                 command.ExecuteNonQuery();
                 MessageBox.Show($"kunden er blevet tilføjet til databasen");
                 conn.Close();
-            }
-            
+            }*/
+
         }
     }
 }

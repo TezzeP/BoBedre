@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using PersistensLag;
 using Models;
 
 namespace PersistensLag
@@ -33,8 +34,29 @@ namespace PersistensLag
             
 
         }
+        public string OpretKunde(Kunde kunde)
+        {
+            SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
+            conn.Open();
+            string sSQL = $"INSERT INTO Kunde VALUES ('{kunde.Navn}', {kunde.Tlfnr}, '{kunde.Mail}', '{kunde.Adresse}', {kunde.Køberbit}, {kunde.Sælgerbit});";
+
+            SqlCommand command = new SqlCommand(sSQL, conn);
+
+            int checkSucces = command.ExecuteNonQuery();
+            if (checkSucces == 0)
+            {
+                conn.Close();
+                return ("input fejl");
+            }
+            else
+            {
+                conn.Close();
+                return ("kunden er blevet tilføjet til databasen");
+            }
+        }
 
     }
+    
 
     
 }
