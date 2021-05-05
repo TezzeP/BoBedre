@@ -37,6 +37,9 @@ namespace BoBedreVS
             this.KundeAdresseTextBox = new System.Windows.Forms.MaskedTextBox();
             this.KøberCB = new System.Windows.Forms.CheckBox();
             this.SælgerCB = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.KundeIdTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.LæsKundeData = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -109,12 +112,42 @@ namespace BoBedreVS
             this.SælgerCB.Text = "Sælger";
             this.SælgerCB.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label1.Location = new System.Drawing.Point(117, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Choose KundeId too update ";
+            // 
+            // KundeIdTextBox
+            // 
+            this.KundeIdTextBox.Location = new System.Drawing.Point(299, 13);
+            this.KundeIdTextBox.Name = "KundeIdTextBox";
+            this.KundeIdTextBox.Size = new System.Drawing.Size(100, 23);
+            this.KundeIdTextBox.TabIndex = 9;
+            // 
+            // LæsKundeData
+            // 
+            this.LæsKundeData.Location = new System.Drawing.Point(13, 72);
+            this.LæsKundeData.Name = "LæsKundeData";
+            this.LæsKundeData.Size = new System.Drawing.Size(102, 23);
+            this.LæsKundeData.TabIndex = 10;
+            this.LæsKundeData.Text = "LæsKundeData";
+            this.LæsKundeData.UseVisualStyleBackColor = true;
+            this.LæsKundeData.Click += new System.EventHandler(this.LæsKundeData_Click);
+            // 
             // OpdaterKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LæsKundeData);
+            this.Controls.Add(this.KundeIdTextBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.SælgerCB);
             this.Controls.Add(this.KøberCB);
             this.Controls.Add(this.KundeAdresseTextBox);
@@ -140,5 +173,8 @@ namespace BoBedreVS
         private System.Windows.Forms.MaskedTextBox KundeAdresseTextBox;
         private System.Windows.Forms.CheckBox KøberCB;
         private System.Windows.Forms.CheckBox SælgerCB;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox KundeIdTextBox;
+        private System.Windows.Forms.Button LæsKundeData;
     }
 }

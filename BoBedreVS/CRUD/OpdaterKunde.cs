@@ -30,9 +30,14 @@ namespace BoBedreVS
         
         private void Update_Click(object sender, EventArgs e)
         {
-
+            Read readOne = new Read();
             Kunde kundeData = new Kunde();
+            Update update = new Update();
 
+
+            
+
+            kundeData.KundeId = Convert.ToInt32(KundeIdTextBox.Text);
             kundeData.Navn = KundeNavnTextBox.Text;
             kundeData.Telnr = Convert.ToInt32(KundeTelnrTextBox.Text);
             kundeData.Mail = KundeMailTextBox.Text;
@@ -41,10 +46,23 @@ namespace BoBedreVS
             kundeData.Køber = KøberCB.Checked ? 1 : 0;
             kundeData.Sælger = SælgerCB.Checked ? 1 : 0;
 
-            Update update = new Update();
-            update.UpdateBolig(kundeData);
+            
+            update.UpdateKunde(kundeData);
         }
 
-        
+        private void LæsKundeData_Click(object sender, EventArgs e)
+        {
+            
+            Read readOne = new Read();
+            Kunde kundeData = readOne.ReadOneCoustomer(Convert.ToInt32(KundeIdTextBox.Text));
+            
+            KundeNavnTextBox.Text = kundeData.Navn;
+            KundeTelnrTextBox.Text = Convert.ToString(kundeData.Telnr);
+            KundeMailTextBox.Text = kundeData.Mail;
+            KundeAdresseTextBox.Text = kundeData.Adresse;
+            
+
+
+        }
     }
 }

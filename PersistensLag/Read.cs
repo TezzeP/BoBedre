@@ -51,9 +51,84 @@ namespace PersistensLag
             conn.Close();
 
             return returnList;
-        }  
+        }
 
-        
+        public Kunde ReadOneCoustomer(int KundeId)
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            //var readAllProducts = new SqlCommand // dette er det samme 
+            SqlCommand ReadBoligForSale = new SqlCommand
+            {
+                Connection = conn,
+                CommandText = ("select * from Kunde where KundeId = @kundeId")
+            };
+
+            ReadBoligForSale.Parameters.AddWithValue("@kundeId", Convert.ToInt32(KundeId));
+
+            SqlDataReader reader = ReadBoligForSale.ExecuteReader();
+            while (reader.Read())
+            {
+                Kunde tempProduct = new Kunde
+                {
+                    KundeId = Convert.ToInt32(reader[0]),
+                    Navn = Convert.ToString(reader[1]),
+                    Telnr = Convert.ToInt32(reader[2]),
+                    Mail = Convert.ToString(reader[3]),
+                    Adresse = Convert.ToString(reader[4]),
+                    Køber = Convert.ToInt32(reader[5]),
+                    Sælger = Convert.ToInt32(reader[6]),
+                    
+                };
+
+                return tempProduct;
+            }
+
+            return default;
+        }
+
+        public Bolig ReadOneBolig(int BoligId)
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            //var readAllProducts = new SqlCommand // dette er det samme 
+            SqlCommand ReadOneBoligcmd = new SqlCommand
+            {
+                Connection = conn,
+                CommandText = ("select * from Bolig where BoligId = @BoligId")
+            };
+
+            ReadOneBoligcmd.Parameters.AddWithValue("@BoligId", Convert.ToInt32(BoligId));
+
+            SqlDataReader reader = ReadOneBoligcmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Bolig tempBolig = new Bolig
+                {
+                    BoligID = Convert.ToInt32(reader[0]),
+                    Adresse = Convert.ToString(reader[1]),
+                    PostNr = Convert.ToInt32(reader[2]),
+                    GrundM2 = Convert.ToInt32(reader[3]),
+                    HusM2 = Convert.ToInt32(reader[4]),
+                    Pris = Convert.ToInt32(reader[5]),
+                    SalgsDato = Convert.ToString(reader[6]),
+                    OprettelsesDato = Convert.ToString(reader[7]),
+                    StandSkala = Convert.ToInt32(reader[8])
+                };
+
+                return tempBolig;
+            }
+
+            return default;
+        }
+
+
+
+
 
     }
 }
