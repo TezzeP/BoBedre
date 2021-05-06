@@ -7,15 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using Models;
 using PersistensLag;
 
 namespace BoBedreVS
 {
-    public partial class OpretMægler : Form
+    public partial class OpdaterMægler : Form
     {
-        public OpretMægler()
+        public OpdaterMægler()
         {
             InitializeComponent();
         }
@@ -28,27 +27,35 @@ namespace BoBedreVS
             Close(); // lukker forsiden
         }
 
-        private void OpretMæglerKnap_Click(object sender, EventArgs e)
+        
+        private void LæsMælgerData_Click(object sender, EventArgs e)
         {
-            
-            
-                Ejendomsmælger sendEjendomsmælger = new Ejendomsmælger();
-                sendEjendomsmælger.Navn = NavnTextBox.Text;
-                sendEjendomsmælger.Tlf = Convert.ToInt32(TelefonNrTextBox.Text);
-                sendEjendomsmælger.Mail = MailTextBox.Text;
-                sendEjendomsmælger.Stilling = StillingTextBox.Text;
-                
+            Read readOneMægler = new Read();
+            Ejendomsmælger mælgerData = readOneMægler.ReadOneMælger(Convert.ToInt32(MedarbejderIdTextBox1.Text));
+
+            MedarbejderIdTextBox1.Text = Convert.ToString(mælgerData.MedarbejderId);
+            MælgerNavnTextBox.Text = Convert.ToString(mælgerData.Navn);
+            MæglerTlfTextBox3.Text = Convert.ToString(mælgerData.Tlf);
+            MæglerMailTextBox4.Text = Convert.ToString(mælgerData.Mail);
+            MæglerStillingTextBox5.Text = Convert.ToString(mælgerData.Stilling);
+        }
+
+        private void UpdateMælger_Click(object sender, EventArgs e)
+        {
+            Ejendomsmælger mælgerData = new Ejendomsmælger();
+            Read readOneMÆgler = new Read();
+            Update update = new Update();
 
 
-                Create create = new Create();
-                MessageBox.Show(create.OpretEjendomsmælger(sendEjendomsmælger));
+            mælgerData.MedarbejderId = Convert.ToInt32(MedarbejderIdTextBox1.Text);
+            mælgerData.Navn = Convert.ToString(MælgerNavnTextBox.Text);
+            mælgerData.Tlf = Convert.ToInt32(MæglerTlfTextBox3.Text);
+            mælgerData.Mail = Convert.ToString(MæglerMailTextBox4.Text);
+            mælgerData.Stilling = Convert.ToString(MæglerStillingTextBox5.Text);
+           
 
-            
-            /*catch (Exception)
-            {
-                MessageBox.Show("mangler input (tror jeg) :)");
+            update.UpdateMægler(mælgerData);
 
-            }*/
         }
 
         private void CRUD_Click(object sender, EventArgs e)
@@ -84,6 +91,7 @@ namespace BoBedreVS
             MedarbejderInfo goTo = new MedarbejderInfo();
             goTo.ShowDialog();
             Close();
+
         }
 
         private void AabentHus_Click(object sender, EventArgs e)
@@ -92,7 +100,6 @@ namespace BoBedreVS
             AabentHus goTo = new AabentHus();
             goTo.ShowDialog();
             Close();
-
         }
     }
 }

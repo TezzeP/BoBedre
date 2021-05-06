@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Models;
+using PersistensLag;
 
 namespace BoBedreVS
 {
     public partial class OpretKunde : Form
     {
-        public static string strconn = "Server=den1.mssql8.gear.host; Database=bobedre1; User ID=bobedre1; Password=Js63Ot-_y8SE";
+        
         public OpretKunde()
         {
             InitializeComponent();
@@ -29,9 +31,65 @@ namespace BoBedreVS
 
         private void OpretKundeKnab_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(strconn);
+            int Sælgerbit = 1;
+            int Køberbit = 1;
+            if (KøberCheckBox.Checked == true)
+            {
+                Køberbit = 1;
+            }
+            else if (KøberCheckBox.Checked == false)
+            {
+                Køberbit = 0;
+            }
+            if (SælgerCheckBox.Checked == true)
+            {
+                Sælgerbit = 1;
+            }
+            else if (SælgerCheckBox.Checked == false)
+            {
+                Sælgerbit = 0;
+            }
+            try
+            {
+                Kunde sendKunde = new Kunde();
+                sendKunde.Navn = KundeNavnTextBox.Text;
+                sendKunde.Telnr = Convert.ToInt32(KundeTelefonNrTextBox.Text);
+                sendKunde.Mail = KundeMailTextBox.Text;
+                sendKunde.Adresse = KundeAdresseTextBox.Text;
+                sendKunde.Køber = Køberbit;
+                sendKunde.Sælger = Sælgerbit;
+                
+
+                Create create = new Create();
+                MessageBox.Show(create.OpretKunde(sendKunde));
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("mangler input (tror jeg) :)");
+
+            }
+            /*SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
             conn.Open();
-            string sSQL = $"INSERT INTO Kunde VALUES ({KundeNavnTextBox.Text}, {KundeTelefonNrTextBox.Text}, {KundeMailTextBox.Text}, {KundeAdresseTextBox.Text}, '{KøberCheckBox.Checked}', {SælgerCheckBox.Checked});";
+            int sælgerbit = 1;
+            int køberbit = 1;
+            if (KøberCheckBox.Checked == true)
+            {
+                køberbit = 1;
+            }
+            else if (KøberCheckBox.Checked == false)
+            {
+                køberbit = 0;
+            }
+            if (SælgerCheckBox.Checked == true)
+            {
+                sælgerbit = 1;
+            }
+            else if (SælgerCheckBox.Checked == false)
+            {
+                sælgerbit = 0;
+            }
+            string sSQL = $"INSERT INTO Kunde VALUES ('{KundeNavnTextBox.Text}', {KundeTelefonNrTextBox.Text}, '{KundeMailTextBox.Text}', '{KundeAdresseTextBox.Text}', {køberbit}, {sælgerbit});";
             SqlCommand command = new SqlCommand(sSQL, conn);
             bool tekstUdfyldt = KundeAdresseTextBox.Text != "" && KundeMailTextBox.Text != "" && KundeNavnTextBox.Text != "" && KundeTelefonNrTextBox.Text != ""
                 && KøberCheckBox.Checked == true;
@@ -53,8 +111,48 @@ namespace BoBedreVS
                 command.ExecuteNonQuery();
                 MessageBox.Show($"kunden er blevet tilføjet til databasen");
                 conn.Close();
-            }
-            
+            }*/
+
+        }
+
+        private void CRUD_Click(object sender, EventArgs e)
+        {
+            Hide();
+            CRUD goTo = new CRUD();
+            goTo.ShowDialog();
+            Close();
+        }
+
+        private void Statistik_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Statistik goTo = new Statistik();
+            goTo.ShowDialog();
+            Close();
+        }
+
+        private void PrisVudering_Click(object sender, EventArgs e)
+        {
+            Hide();
+            PrisVudering goTo = new PrisVudering();
+            goTo.ShowDialog();
+            Close();
+        }
+
+        private void MedarbejderPortal_Click(object sender, EventArgs e)
+        {
+            Hide();
+            MedarbejderInfo goTo = new MedarbejderInfo();
+            goTo.ShowDialog();
+            Close();
+        }
+
+        private void AabentHus_Click(object sender, EventArgs e)
+        {
+            Hide();
+            AabentHus goTo = new AabentHus();
+            goTo.ShowDialog();
+            Close();
         }
     }
 }

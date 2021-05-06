@@ -31,7 +31,7 @@ namespace BoBedreVS
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.MedarbejderPortal = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.PrisVUUdering = new System.Windows.Forms.Button();
             this.AabentHus = new System.Windows.Forms.Button();
             this.CRUD = new System.Windows.Forms.Button();
             this.Statistik = new System.Windows.Forms.Button();
@@ -72,7 +72,7 @@ namespace BoBedreVS
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.MedarbejderPortal);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.PrisVUUdering);
             this.panel1.Controls.Add(this.AabentHus);
             this.panel1.Controls.Add(this.CRUD);
             this.panel1.Controls.Add(this.Statistik);
@@ -96,20 +96,22 @@ namespace BoBedreVS
             this.MedarbejderPortal.Text = "Medarbejder Portal";
             this.MedarbejderPortal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.MedarbejderPortal.UseVisualStyleBackColor = true;
+            this.MedarbejderPortal.Click += new System.EventHandler(this.MedarbejderPortal_Click);
             // 
-            // button1
+            // PrisVUUdering
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.button1.Location = new System.Drawing.Point(0, 201);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Pris Vudering";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button1.UseVisualStyleBackColor = true;
+            this.PrisVUUdering.FlatAppearance.BorderSize = 0;
+            this.PrisVUUdering.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PrisVUUdering.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PrisVUUdering.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.PrisVUUdering.Location = new System.Drawing.Point(0, 201);
+            this.PrisVUUdering.Name = "PrisVUUdering";
+            this.PrisVUUdering.Size = new System.Drawing.Size(186, 30);
+            this.PrisVUUdering.TabIndex = 3;
+            this.PrisVUUdering.Text = "Pris Vudering";
+            this.PrisVUUdering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.PrisVUUdering.UseVisualStyleBackColor = true;
+            this.PrisVUUdering.Click += new System.EventHandler(this.PrisVUUdering_Click);
             // 
             // AabentHus
             // 
@@ -124,6 +126,7 @@ namespace BoBedreVS
             this.AabentHus.Text = "Aabet Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
+            this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
             // 
             // CRUD
             // 
@@ -138,6 +141,7 @@ namespace BoBedreVS
             this.CRUD.Text = "CRUD";
             this.CRUD.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.CRUD.UseVisualStyleBackColor = true;
+            this.CRUD.Click += new System.EventHandler(this.CRUD_Click);
             // 
             // Statistik
             // 
@@ -152,6 +156,7 @@ namespace BoBedreVS
             this.Statistik.Text = "Statistik";
             this.Statistik.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Statistik.UseVisualStyleBackColor = true;
+            this.Statistik.Click += new System.EventHandler(this.Statistik_Click);
             // 
             // panel2
             // 
@@ -426,6 +431,10 @@ namespace BoBedreVS
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PostNrBox);
             this.Controls.Add(this.panel1);
+<<<<<<< HEAD
+=======
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+>>>>>>> 043ae1a50c77128cc9a8623939594d2ea907ced0
             this.Name = "PrisVudering";
             this.Text = "PrisVudering";
             this.panel1.ResumeLayout(false);
@@ -442,7 +451,7 @@ namespace BoBedreVS
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button MedarbejderPortal;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button PrisVUUdering;
         private System.Windows.Forms.Button AabentHus;
         private System.Windows.Forms.Button CRUD;
         private System.Windows.Forms.Button Statistik;

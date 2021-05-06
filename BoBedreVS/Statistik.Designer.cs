@@ -73,6 +73,7 @@ namespace BoBedreVS
             this.MedarbejderPortal.Text = "Medarbejder Portal";
             this.MedarbejderPortal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.MedarbejderPortal.UseVisualStyleBackColor = true;
+            this.MedarbejderPortal.Click += new System.EventHandler(this.MedarbejderPortal_Click);
             // 
             // PrisVudering
             // 
@@ -87,6 +88,7 @@ namespace BoBedreVS
             this.PrisVudering.Text = "Pris Vudering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
+            this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
             // 
             // AabentHus
             // 
@@ -101,6 +103,7 @@ namespace BoBedreVS
             this.AabentHus.Text = "Aabet Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
+            this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
             // 
             // CRUD
             // 
@@ -115,6 +118,7 @@ namespace BoBedreVS
             this.CRUD.Text = "CRUD";
             this.CRUD.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.CRUD.UseVisualStyleBackColor = true;
+            this.CRUD.Click += new System.EventHandler(this.CRUD_Click);
             // 
             // button1
             // 
@@ -129,6 +133,7 @@ namespace BoBedreVS
             this.button1.Text = "Statistik ";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -195,7 +200,6 @@ namespace BoBedreVS
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Statistik";
             this.Text = "Statistik";
             this.panel1.ResumeLayout(false);

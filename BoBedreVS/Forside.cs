@@ -20,61 +20,57 @@ namespace BoBedreVS
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Hide(); // minimere forsiden
+            Hide(); 
             MedarbejderInfo goTo = new MedarbejderInfo();
-            goTo.ShowDialog(); // viser forms af kundeoplsyninger
-            Close(); // lukker forsiden
+            goTo.ShowDialog();
+            Close(); 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Hide(); // minimere forsiden
+            Hide(); 
             AabentHus goTo = new AabentHus();
-            goTo.ShowDialog(); // viser forms af kundeoplsyninger
-            Close(); // lukker forsiden
+            goTo.ShowDialog(); 
+            Close(); 
         }
 
         private void CRUD_Click(object sender, EventArgs e)
         {
-            Hide(); // minimere forsiden
+            Hide(); 
             CRUD goTo = new CRUD();
-            goTo.ShowDialog(); // viser forms af kundeoplsyninger
-            Close(); // lukker forsiden
-
+            goTo.ShowDialog(); 
+            Close();
         }
 
         private void Statistik_Click(object sender, EventArgs e)
         {
-            Hide(); // minimere forsiden
+            Hide(); 
             Statistik goTo = new Statistik();
-            goTo.ShowDialog(); // viser forms af kundeoplsyninger
-            Close(); // lukker forsiden
-
+            goTo.ShowDialog(); 
+            Close();
         }
 
         private void PrisVudering_Click(object sender, EventArgs e)
         {
-            Hide(); // minimere forsiden
+            Hide(); 
             PrisVudering goTo = new PrisVudering();
-            goTo.ShowDialog(); // viser forms af kundeoplsyninger
-            Close(); // lukker forsiden
+            goTo.ShowDialog(); 
+            Close(); 
         }
         private void MedarbejderPortal_Click(object sender, EventArgs e)
         {
-            Hide(); // minimere forsiden
+            Hide(); 
             MedarbejderInfo goTo = new MedarbejderInfo();
-            goTo.ShowDialog(); // viser forms af kundeoplsyninger
-            Close(); // lukker forsiden
-
+            goTo.ShowDialog(); 
+            Close();
         }
 
         private void AabentHus_Click(object sender, EventArgs e)
         {
-            Hide(); // minimere forsiden
+            Hide(); 
             AabentHus goTo = new AabentHus();
-            goTo.ShowDialog(); // viser forms af kundeoplsyninger
-            Close(); // lukker forsiden
-
+            goTo.ShowDialog(); 
+            Close();
         }
 
         

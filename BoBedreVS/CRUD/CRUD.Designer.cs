@@ -211,11 +211,11 @@ namespace BoBedreVS
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(50, 93);
+            this.label1.Location = new System.Drawing.Point(63, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 15);
+            this.label1.Size = new System.Drawing.Size(36, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "User Name";
+            this.label1.Text = "Guffe";
             // 
             // button6
             // 
@@ -225,7 +225,6 @@ namespace BoBedreVS
             this.button6.TabIndex = 7;
             this.button6.Text = "Opret mægler";
             this.button6.UseVisualStyleBackColor = true;
-            
             // 
             // button7
             // 
@@ -235,7 +234,6 @@ namespace BoBedreVS
             this.button7.TabIndex = 10;
             this.button7.Text = "Se/slet bolig(er)";
             this.button7.UseVisualStyleBackColor = true;
-            
             // 
             // button8
             // 
@@ -245,7 +243,6 @@ namespace BoBedreVS
             this.button8.TabIndex = 9;
             this.button8.Text = "Opdater bolig";
             this.button8.UseVisualStyleBackColor = true;
-            
             // 
             // button10
             // 
@@ -255,7 +252,6 @@ namespace BoBedreVS
             this.button10.TabIndex = 11;
             this.button10.Text = "Opret bolig";
             this.button10.UseVisualStyleBackColor = true;
-            
             // 
             // button11
             // 
@@ -265,7 +261,6 @@ namespace BoBedreVS
             this.button11.TabIndex = 14;
             this.button11.Text = "Se/slet Mæglere";
             this.button11.UseVisualStyleBackColor = true;
-           
             // 
             // button12
             // 
@@ -275,15 +270,14 @@ namespace BoBedreVS
             this.button12.TabIndex = 13;
             this.button12.Text = "Opdater mægler";
             this.button12.UseVisualStyleBackColor = true;
-            
             // 
             // OpretBoligKnap
             // 
-            this.OpretBoligKnap.Location = new System.Drawing.Point(353, 22);
+            this.OpretBoligKnap.Location = new System.Drawing.Point(353, 115);
             this.OpretBoligKnap.Name = "OpretBoligKnap";
             this.OpretBoligKnap.Size = new System.Drawing.Size(104, 23);
             this.OpretBoligKnap.TabIndex = 7;
-            this.OpretBoligKnap.Text = "Opret bolig";
+            this.OpretBoligKnap.Text = "Opdater bolig";
             this.OpretBoligKnap.UseVisualStyleBackColor = true;
             this.OpretBoligKnap.Click += new System.EventHandler(this.OpretBoligKnap_Click);
             // 
@@ -299,11 +293,11 @@ namespace BoBedreVS
             // 
             // OpdaterBoligKnap
             // 
-            this.OpdaterBoligKnap.Location = new System.Drawing.Point(353, 115);
+            this.OpdaterBoligKnap.Location = new System.Drawing.Point(353, 22);
             this.OpdaterBoligKnap.Name = "OpdaterBoligKnap";
             this.OpdaterBoligKnap.Size = new System.Drawing.Size(104, 23);
             this.OpdaterBoligKnap.TabIndex = 8;
-            this.OpdaterBoligKnap.Text = "Opdater bolig";
+            this.OpdaterBoligKnap.Text = "Opret bolig";
             this.OpdaterBoligKnap.UseVisualStyleBackColor = true;
             this.OpdaterBoligKnap.Click += new System.EventHandler(this.OpdaterBoligKnap_Click);
             // 
@@ -353,7 +347,6 @@ namespace BoBedreVS
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CRUD";
             this.Text = "CRUD";
             this.panel1.ResumeLayout(false);
