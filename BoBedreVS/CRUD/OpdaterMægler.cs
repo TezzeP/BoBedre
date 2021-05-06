@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Models;
+using PersistensLag;
 
 namespace BoBedreVS
 {
@@ -25,8 +27,34 @@ namespace BoBedreVS
             Close(); // lukker forsiden
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        
+        private void LæsMælgerData_Click(object sender, EventArgs e)
         {
+            Read readOneMægler = new Read();
+            Ejendomsmælger mælgerData = readOneMægler.ReadOneMælger(Convert.ToInt32(MedarbejderIdTextBox1.Text));
+
+            MedarbejderIdTextBox1.Text = Convert.ToString(mælgerData.MedarbejderId);
+            MælgerNavnTextBox.Text = Convert.ToString(mælgerData.Navn);
+            MæglerTlfTextBox3.Text = Convert.ToString(mælgerData.Tlf);
+            MæglerMailTextBox4.Text = Convert.ToString(mælgerData.Mail);
+            MæglerStillingTextBox5.Text = Convert.ToString(mælgerData.Stilling);
+        }
+
+        private void UpdateMælger_Click(object sender, EventArgs e)
+        {
+            Ejendomsmælger mælgerData = new Ejendomsmælger();
+            Read readOneMÆgler = new Read();
+            Update update = new Update();
+
+
+            mælgerData.MedarbejderId = Convert.ToInt32(MedarbejderIdTextBox1.Text);
+            mælgerData.Navn = Convert.ToString(MælgerNavnTextBox.Text);
+            mælgerData.Tlf = Convert.ToInt32(MæglerTlfTextBox3.Text);
+            mælgerData.Mail = Convert.ToString(MæglerMailTextBox4.Text);
+            mælgerData.Stilling = Convert.ToString(MæglerStillingTextBox5.Text);
+           
+
+            update.UpdateMægler(mælgerData);
 
         }
     }

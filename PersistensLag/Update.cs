@@ -71,6 +71,38 @@ namespace PersistensLag
             conn.Close();
         }
 
+        public void UpdateMægler(Ejendomsmælger mægler)
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            SqlCommand UpdateMægler = new SqlCommand
+            {
+                Connection = conn,
+                CommandText =
+                    (" Update Ejendomsmælger set " +
+                     " Navn=@Navn," +
+                     " Tlf=@Tlf,  " +
+                     " Mail=@Mail," +
+                     " Stilling= @Stilling" +
+                     " where MedarbejderId= @MedarbejderId")
+
+
+            };
+
+            UpdateMægler.Parameters.AddWithValue("@MedarbejderId", mægler.MedarbejderId);
+            UpdateMægler.Parameters.AddWithValue("@Navn", mægler.Navn);
+            UpdateMægler.Parameters.AddWithValue("@Tlf", mægler.Tlf);
+            UpdateMægler.Parameters.AddWithValue("@Mail", mægler.Mail);
+            UpdateMægler.Parameters.AddWithValue("@Stilling", mægler.Stilling);
+
+            UpdateMægler.ExecuteNonQuery();
+            conn.Close();
+        }
+
+
+
 
 
 

@@ -71,7 +71,7 @@ namespace PersistensLag
             SqlDataReader reader = ReadBoligForSale.ExecuteReader();
             while (reader.Read())
             {
-                Kunde tempProduct = new Kunde
+                Kunde tempKunde = new Kunde
                 {
                     KundeId = Convert.ToInt32(reader[0]),
                     Navn = Convert.ToString(reader[1]),
@@ -83,7 +83,7 @@ namespace PersistensLag
                     
                 };
 
-                return tempProduct;
+                return tempKunde;
             }
 
             return default;
@@ -107,7 +107,7 @@ namespace PersistensLag
             SqlDataReader reader = ReadOneBoligcmd.ExecuteReader();
             while (reader.Read())
             {
-                Bolig tempBolig = new Bolig
+                Bolig tempMælger = new Bolig
                 {
                     BoligID = Convert.ToInt32(reader[0]),
                     Adresse = Convert.ToString(reader[1]),
@@ -120,7 +120,41 @@ namespace PersistensLag
                     StandSkala = Convert.ToInt32(reader[8])
                 };
 
-                return tempBolig;
+                return tempMælger;
+            }
+
+            return default;
+        }
+
+        public Ejendomsmælger ReadOneMælger(int MedarbejderId)
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            //var readAllProducts = new SqlCommand // dette er det samme 
+            SqlCommand ReadOneMæglercmd = new SqlCommand
+            {
+                Connection = conn,
+                CommandText = ("select * from Ejendomsmælger where MedarbejderId = @MedarbejderId")
+            };
+
+            ReadOneMæglercmd.Parameters.AddWithValue("@MedarbejderId", Convert.ToInt32(MedarbejderId));
+
+            SqlDataReader reader = ReadOneMæglercmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Ejendomsmælger tempMælger = new Ejendomsmælger
+                {
+                    MedarbejderId = Convert.ToInt32(reader[0]),
+                    Navn = Convert.ToString(reader[1]),
+                    Tlf = Convert.ToInt32(reader[2]),
+                    Mail = Convert.ToString(reader[3]),
+                    Stilling = Convert.ToString(reader[4]),
+                   
+                };
+
+                return tempMælger;
             }
 
             return default;

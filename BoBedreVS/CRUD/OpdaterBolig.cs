@@ -40,8 +40,8 @@ namespace BoBedreVS
                  boligData.GrundM2 = Convert.ToInt32(BoligGrundM2TextBox.Text);
                  boligData.HusM2 = Convert.ToInt32(BoigHusM2TextBox.Text);
                  boligData.Pris = Convert.ToInt32(BoligPrisTextBox.Text);
-                 boligData.SalgsDato = BoligSalgsdatoTextBox.Text;
-                 boligData.OprettelsesDato = BoligOprettelsesTextBox.Text;
+                 boligData.SalgsDato = Convert.ToString(BoligSalgsdatoTextBox.Text);
+                 boligData.OprettelsesDato = Convert.ToString(BoligOprettelsesTextBox.Text);
                  boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
 
                 update.UpdateBolig(boligData); 
