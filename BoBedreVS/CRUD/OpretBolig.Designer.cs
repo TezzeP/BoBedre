@@ -66,7 +66,7 @@ namespace BoBedreVS
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(468, 12);
+            this.button1.Location = new System.Drawing.Point(192, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -76,14 +76,14 @@ namespace BoBedreVS
             // 
             // AdresseTextBox
             // 
-            this.AdresseTextBox.Location = new System.Drawing.Point(657, 39);
+            this.AdresseTextBox.Location = new System.Drawing.Point(381, 39);
             this.AdresseTextBox.Name = "AdresseTextBox";
             this.AdresseTextBox.Size = new System.Drawing.Size(100, 23);
             this.AdresseTextBox.TabIndex = 1;
             // 
             // PostNrTextBox
             // 
-            this.PostNrTextBox.Location = new System.Drawing.Point(657, 79);
+            this.PostNrTextBox.Location = new System.Drawing.Point(381, 79);
             this.PostNrTextBox.Mask = "0000";
             this.PostNrTextBox.Name = "PostNrTextBox";
             this.PostNrTextBox.Size = new System.Drawing.Size(100, 23);
@@ -91,7 +91,7 @@ namespace BoBedreVS
             // 
             // GrundM2TextBox
             // 
-            this.GrundM2TextBox.Location = new System.Drawing.Point(657, 119);
+            this.GrundM2TextBox.Location = new System.Drawing.Point(381, 119);
             this.GrundM2TextBox.Mask = "0000";
             this.GrundM2TextBox.Name = "GrundM2TextBox";
             this.GrundM2TextBox.Size = new System.Drawing.Size(100, 23);
@@ -99,7 +99,7 @@ namespace BoBedreVS
             // 
             // HusM2TextBox
             // 
-            this.HusM2TextBox.Location = new System.Drawing.Point(657, 158);
+            this.HusM2TextBox.Location = new System.Drawing.Point(381, 158);
             this.HusM2TextBox.Mask = "0000";
             this.HusM2TextBox.Name = "HusM2TextBox";
             this.HusM2TextBox.Size = new System.Drawing.Size(100, 23);
@@ -107,7 +107,7 @@ namespace BoBedreVS
             // 
             // PrisTextBox
             // 
-            this.PrisTextBox.Location = new System.Drawing.Point(657, 197);
+            this.PrisTextBox.Location = new System.Drawing.Point(381, 197);
             this.PrisTextBox.Mask = "000000000000";
             this.PrisTextBox.Name = "PrisTextBox";
             this.PrisTextBox.Size = new System.Drawing.Size(100, 23);
@@ -115,7 +115,7 @@ namespace BoBedreVS
             // 
             // StandSkalaTextBox
             // 
-            this.StandSkalaTextBox.Location = new System.Drawing.Point(657, 311);
+            this.StandSkalaTextBox.Location = new System.Drawing.Point(381, 311);
             this.StandSkalaTextBox.Mask = "0";
             this.StandSkalaTextBox.Name = "StandSkalaTextBox";
             this.StandSkalaTextBox.Size = new System.Drawing.Size(100, 23);
@@ -123,7 +123,7 @@ namespace BoBedreVS
             // 
             // KundeIdTextBox
             // 
-            this.KundeIdTextBox.Location = new System.Drawing.Point(657, 350);
+            this.KundeIdTextBox.Location = new System.Drawing.Point(381, 350);
             this.KundeIdTextBox.Mask = "0000";
             this.KundeIdTextBox.Name = "KundeIdTextBox";
             this.KundeIdTextBox.Size = new System.Drawing.Size(100, 23);
@@ -131,7 +131,7 @@ namespace BoBedreVS
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(543, 403);
+            this.button2.Location = new System.Drawing.Point(267, 403);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 10;
@@ -143,7 +143,7 @@ namespace BoBedreVS
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label1.Location = new System.Drawing.Point(540, 39);
+            this.label1.Location = new System.Drawing.Point(264, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 11;
@@ -153,7 +153,7 @@ namespace BoBedreVS
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label2.Location = new System.Drawing.Point(543, 79);
+            this.label2.Location = new System.Drawing.Point(267, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 15);
             this.label2.TabIndex = 12;
@@ -163,7 +163,7 @@ namespace BoBedreVS
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label3.Location = new System.Drawing.Point(540, 119);
+            this.label3.Location = new System.Drawing.Point(264, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 15);
             this.label3.TabIndex = 13;
@@ -173,7 +173,7 @@ namespace BoBedreVS
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label4.Location = new System.Drawing.Point(543, 158);
+            this.label4.Location = new System.Drawing.Point(267, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 15);
             this.label4.TabIndex = 14;
@@ -183,7 +183,7 @@ namespace BoBedreVS
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label5.Location = new System.Drawing.Point(543, 197);
+            this.label5.Location = new System.Drawing.Point(267, 197);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 15);
             this.label5.TabIndex = 15;
@@ -193,17 +193,17 @@ namespace BoBedreVS
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label6.Location = new System.Drawing.Point(543, 235);
+            this.label6.Location = new System.Drawing.Point(267, 235);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 15);
+            this.label6.Size = new System.Drawing.Size(61, 15);
             this.label6.TabIndex = 16;
-            this.label6.Text = "salgsdato ";
+            this.label6.Text = "Salgsdato ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label7.Location = new System.Drawing.Point(540, 273);
+            this.label7.Location = new System.Drawing.Point(264, 273);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 15);
             this.label7.TabIndex = 17;
@@ -213,7 +213,7 @@ namespace BoBedreVS
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label8.Location = new System.Drawing.Point(543, 311);
+            this.label8.Location = new System.Drawing.Point(267, 311);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 15);
             this.label8.TabIndex = 18;
@@ -223,7 +223,7 @@ namespace BoBedreVS
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label9.Location = new System.Drawing.Point(543, 350);
+            this.label9.Location = new System.Drawing.Point(267, 350);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 15);
             this.label9.TabIndex = 19;
@@ -231,7 +231,7 @@ namespace BoBedreVS
             // 
             // SalgsDatoTextBox
             // 
-            this.SalgsDatoTextBox.Location = new System.Drawing.Point(657, 235);
+            this.SalgsDatoTextBox.Location = new System.Drawing.Point(381, 235);
             this.SalgsDatoTextBox.Mask = "00/00/0000";
             this.SalgsDatoTextBox.Name = "SalgsDatoTextBox";
             this.SalgsDatoTextBox.Size = new System.Drawing.Size(100, 23);
@@ -240,7 +240,7 @@ namespace BoBedreVS
             // 
             // OprettelsesdatoTextBox
             // 
-            this.OprettelsesdatoTextBox.Location = new System.Drawing.Point(657, 273);
+            this.OprettelsesdatoTextBox.Location = new System.Drawing.Point(381, 273);
             this.OprettelsesdatoTextBox.Mask = "00/00/0000";
             this.OprettelsesdatoTextBox.Name = "OprettelsesdatoTextBox";
             this.OprettelsesdatoTextBox.Size = new System.Drawing.Size(100, 23);
@@ -287,7 +287,7 @@ namespace BoBedreVS
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
             this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
@@ -302,7 +302,7 @@ namespace BoBedreVS
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
             this.AabentHus.TabIndex = 3;
-            this.AabentHus.Text = "Aabet Hus";
+            this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);

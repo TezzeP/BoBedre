@@ -160,6 +160,78 @@ namespace PersistensLag
             return default;
         }
 
+        public static List<Kunde> ReadAllCoustomer()
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            //var readAllProducts = new SqlCommand // dette er det samme 
+            SqlCommand ReadBoligForSale = new SqlCommand
+            {
+                Connection = conn,
+                CommandText = ("select * from Kunde")
+            };
+
+            SqlDataReader reader = ReadBoligForSale.ExecuteReader();
+
+            List<Kunde> returnList = new List<Kunde>();
+            while (reader.Read())
+            {
+                Kunde tempKunde = new Kunde
+                {
+                    KundeId = Convert.ToInt32(reader[0]),
+                    Navn = Convert.ToString(reader[1]),
+                    Telnr = Convert.ToInt32(reader[2]),
+                    Mail = Convert.ToString(reader[3]),
+                    Adresse = Convert.ToString(reader[4]),
+                    Køber = Convert.ToInt32(reader[5]),
+                    Sælger = Convert.ToInt32(reader[6]),
+
+                };
+                returnList.Add(tempKunde);
+            }
+
+            conn.Close();
+
+            return returnList;
+        }
+
+        public static List<Ejendomsmælger> ReadAllMægler()
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            //var readAllProducts = new SqlCommand // dette er det samme 
+            SqlCommand ReadBoligForSale = new SqlCommand
+            {
+                Connection = conn,
+                CommandText = ("select * from Ejendomsmælger")
+            };
+
+            SqlDataReader reader = ReadBoligForSale.ExecuteReader();
+
+            List<Ejendomsmælger> returnList = new List<Ejendomsmælger>();
+            while (reader.Read())
+            {
+                Ejendomsmælger tempKunde = new Ejendomsmælger
+                {
+                    MedarbejderId = Convert.ToInt32(reader[0]),
+                    Navn = Convert.ToString(reader[1]),
+                    Tlf = Convert.ToInt32(reader[2]),
+                    Mail = Convert.ToString(reader[3]),
+                    Stilling = Convert.ToString(reader[4]),
+
+                };
+                returnList.Add(tempKunde);
+            }
+
+            conn.Close();
+
+            return returnList;
+        }
+
 
 
 

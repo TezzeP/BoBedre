@@ -431,10 +431,10 @@ namespace BoBedreVS
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PostNrBox);
             this.Controls.Add(this.panel1);
-<<<<<<< HEAD
-=======
+
+
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
->>>>>>> 043ae1a50c77128cc9a8623939594d2ea907ced0
+
             this.Name = "PrisVudering";
             this.Text = "PrisVudering";
             this.panel1.ResumeLayout(false);

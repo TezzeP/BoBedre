@@ -36,7 +36,7 @@ namespace BoBedreVS
             this.MedarbejderPortal = new System.Windows.Forms.Button();
             this.PrisVudering = new System.Windows.Forms.Button();
             this.AabentHus = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CRUDMenuknap = new System.Windows.Forms.Button();
             this.Statistik = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -95,7 +95,7 @@ namespace BoBedreVS
             this.panel1.Controls.Add(this.MedarbejderPortal);
             this.panel1.Controls.Add(this.PrisVudering);
             this.panel1.Controls.Add(this.AabentHus);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.CRUDMenuknap);
             this.panel1.Controls.Add(this.Statistik);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -117,6 +117,7 @@ namespace BoBedreVS
             this.MedarbejderPortal.Text = "Medarbejder Portal";
             this.MedarbejderPortal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.MedarbejderPortal.UseVisualStyleBackColor = true;
+            this.MedarbejderPortal.Click += new System.EventHandler(this.MedarbejderPortal_Click);
             // 
             // PrisVudering
             // 
@@ -131,6 +132,7 @@ namespace BoBedreVS
             this.PrisVudering.Text = "Pris Vudering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
+            this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
             // 
             // AabentHus
             // 
@@ -145,20 +147,22 @@ namespace BoBedreVS
             this.AabentHus.Text = "Aabet Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
+            this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
             // 
-            // button1
+            // CRUDMenuknap
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.button1.Location = new System.Drawing.Point(0, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button1.UseVisualStyleBackColor = true;
+            this.CRUDMenuknap.FlatAppearance.BorderSize = 0;
+            this.CRUDMenuknap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CRUDMenuknap.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CRUDMenuknap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.CRUDMenuknap.Location = new System.Drawing.Point(0, 143);
+            this.CRUDMenuknap.Name = "CRUDMenuknap";
+            this.CRUDMenuknap.Size = new System.Drawing.Size(186, 30);
+            this.CRUDMenuknap.TabIndex = 3;
+            this.CRUDMenuknap.Text = "CRUD";
+            this.CRUDMenuknap.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.CRUDMenuknap.UseVisualStyleBackColor = true;
+            this.CRUDMenuknap.Click += new System.EventHandler(this.CRUDMenuknap_Click);
             // 
             // Statistik
             // 
@@ -173,6 +177,7 @@ namespace BoBedreVS
             this.Statistik.Text = "Statistik";
             this.Statistik.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Statistik.UseVisualStyleBackColor = true;
+            this.Statistik.Click += new System.EventHandler(this.Statistik_Click);
             // 
             // panel2
             // 
@@ -365,7 +370,7 @@ namespace BoBedreVS
         private System.Windows.Forms.Button MedarbejderPortal;
         private System.Windows.Forms.Button PrisVudering;
         private System.Windows.Forms.Button AabentHus;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CRUDMenuknap;
         private System.Windows.Forms.Button Statistik;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;

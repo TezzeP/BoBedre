@@ -54,7 +54,7 @@ namespace BoBedreVS
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(474, 30);
+            this.button1.Location = new System.Drawing.Point(192, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -64,7 +64,7 @@ namespace BoBedreVS
             // 
             // LæsMælgerData
             // 
-            this.LæsMælgerData.Location = new System.Drawing.Point(473, 59);
+            this.LæsMælgerData.Location = new System.Drawing.Point(191, 41);
             this.LæsMælgerData.Name = "LæsMælgerData";
             this.LæsMælgerData.Size = new System.Drawing.Size(108, 23);
             this.LæsMælgerData.TabIndex = 1;
@@ -74,7 +74,7 @@ namespace BoBedreVS
             // 
             // MedarbejderIdTextBox1
             // 
-            this.MedarbejderIdTextBox1.Location = new System.Drawing.Point(634, 58);
+            this.MedarbejderIdTextBox1.Location = new System.Drawing.Point(352, 40);
             this.MedarbejderIdTextBox1.Mask = "000000";
             this.MedarbejderIdTextBox1.Name = "MedarbejderIdTextBox1";
             this.MedarbejderIdTextBox1.Size = new System.Drawing.Size(100, 23);
@@ -82,7 +82,7 @@ namespace BoBedreVS
             // 
             // MælgerNavnTextBox
             // 
-            this.MælgerNavnTextBox.Location = new System.Drawing.Point(634, 88);
+            this.MælgerNavnTextBox.Location = new System.Drawing.Point(352, 70);
             this.MælgerNavnTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.MælgerNavnTextBox.Name = "MælgerNavnTextBox";
             this.MælgerNavnTextBox.Size = new System.Drawing.Size(100, 23);
@@ -90,7 +90,7 @@ namespace BoBedreVS
             // 
             // MæglerTlfTextBox3
             // 
-            this.MæglerTlfTextBox3.Location = new System.Drawing.Point(634, 118);
+            this.MæglerTlfTextBox3.Location = new System.Drawing.Point(352, 100);
             this.MæglerTlfTextBox3.Mask = "0000000000";
             this.MæglerTlfTextBox3.Name = "MæglerTlfTextBox3";
             this.MæglerTlfTextBox3.Size = new System.Drawing.Size(100, 23);
@@ -98,7 +98,7 @@ namespace BoBedreVS
             // 
             // MæglerMailTextBox4
             // 
-            this.MæglerMailTextBox4.Location = new System.Drawing.Point(634, 148);
+            this.MæglerMailTextBox4.Location = new System.Drawing.Point(352, 130);
             this.MæglerMailTextBox4.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.MæglerMailTextBox4.Name = "MæglerMailTextBox4";
             this.MæglerMailTextBox4.Size = new System.Drawing.Size(100, 23);
@@ -106,7 +106,7 @@ namespace BoBedreVS
             // 
             // MæglerStillingTextBox5
             // 
-            this.MæglerStillingTextBox5.Location = new System.Drawing.Point(634, 178);
+            this.MæglerStillingTextBox5.Location = new System.Drawing.Point(352, 160);
             this.MæglerStillingTextBox5.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.MæglerStillingTextBox5.Name = "MæglerStillingTextBox5";
             this.MæglerStillingTextBox5.Size = new System.Drawing.Size(100, 23);
@@ -114,7 +114,7 @@ namespace BoBedreVS
             // 
             // UpdateMælger
             // 
-            this.UpdateMælger.Location = new System.Drawing.Point(473, 87);
+            this.UpdateMælger.Location = new System.Drawing.Point(191, 69);
             this.UpdateMælger.Name = "UpdateMælger";
             this.UpdateMælger.Size = new System.Drawing.Size(75, 23);
             this.UpdateMælger.TabIndex = 7;
