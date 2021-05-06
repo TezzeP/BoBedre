@@ -79,6 +79,7 @@ namespace BoBedreVS
             this.MedarbejderPortal.Text = "Medarbejder Portal";
             this.MedarbejderPortal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.MedarbejderPortal.UseVisualStyleBackColor = true;
+            this.MedarbejderPortal.Click += new System.EventHandler(this.MedarbejderPortal_Click_1);
             // 
             // PrisVudering
             // 
@@ -93,6 +94,7 @@ namespace BoBedreVS
             this.PrisVudering.Text = "Pris Vudering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
+            this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click_1);
             // 
             // button1
             // 
@@ -107,6 +109,7 @@ namespace BoBedreVS
             this.button1.Text = "Aabet Hus";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CRUD
             // 
@@ -121,6 +124,7 @@ namespace BoBedreVS
             this.CRUD.Text = "CRUD";
             this.CRUD.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.CRUD.UseVisualStyleBackColor = true;
+            this.CRUD.Click += new System.EventHandler(this.CRUD_Click_1);
             // 
             // Statistik
             // 
@@ -135,6 +139,7 @@ namespace BoBedreVS
             this.Statistik.Text = "Statistik";
             this.Statistik.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Statistik.UseVisualStyleBackColor = true;
+            this.Statistik.Click += new System.EventHandler(this.Statistik_Click_1);
             // 
             // panel2
             // 
@@ -160,6 +165,7 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources.cool_csgo_profile_pictures_2c3d8442_7fef_446e_9315_e9f8a46ece47;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
