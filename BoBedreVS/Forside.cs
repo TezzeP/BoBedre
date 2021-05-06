@@ -39,8 +39,7 @@ namespace BoBedreVS
             Hide(); 
             CRUD goTo = new CRUD();
             goTo.ShowDialog(); 
-            Close(); 
-
+            Close();
         }
 
         private void Statistik_Click(object sender, EventArgs e)
@@ -48,8 +47,7 @@ namespace BoBedreVS
             Hide(); 
             Statistik goTo = new Statistik();
             goTo.ShowDialog(); 
-            Close(); 
-
+            Close();
         }
 
         private void PrisVudering_Click(object sender, EventArgs e)
@@ -64,8 +62,7 @@ namespace BoBedreVS
             Hide(); 
             MedarbejderInfo goTo = new MedarbejderInfo();
             goTo.ShowDialog(); 
-            Close(); 
-
+            Close();
         }
 
         private void AabentHus_Click(object sender, EventArgs e)
@@ -73,7 +70,7 @@ namespace BoBedreVS
             Hide(); 
             AabentHus goTo = new AabentHus();
             goTo.ShowDialog(); 
-
+            Close();
         }
 
         
