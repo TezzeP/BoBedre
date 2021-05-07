@@ -40,8 +40,14 @@ namespace BoBedreVS
                  boligData.GrundM2 = Convert.ToDouble(BoligGrundM2TextBox.Text);
                  boligData.HusM2 = Convert.ToDouble(BoigHusM2TextBox.Text);
                  boligData.Pris = Convert.ToDouble(BoligPrisTextBox.Text);
+                 boligData.EjendomsType = Convert.ToString(EjendomsTypeTextBox.Text);
+                 boligData.Have = Convert.ToInt32(HaveTextBox.Text);
+                 boligData.Alder = Convert.ToString(AlderTextBox.Text);
+                 boligData.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
+                 boligData.BadeværelsesAlder = Convert.ToString(BadAlderTextBox1.Text);
                  boligData.SalgsDato = Convert.ToString(BoligSalgsdatoTextBox.Text);
                  boligData.OprettelsesDato = Convert.ToString(BoligOprettelsesTextBox.Text);
+                 boligData.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
                  boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
 
                 update.UpdateBolig(boligData); 
@@ -61,8 +67,15 @@ namespace BoBedreVS
             BoligGrundM2TextBox.Text = Convert.ToString(boligData.GrundM2);
             BoigHusM2TextBox.Text = Convert.ToString(boligData.HusM2);
             BoligPrisTextBox.Text = Convert.ToString(boligData.Pris);
+            EjendomsTypeTextBox.Text = Convert.ToString(boligData.EjendomsType);
+            HaveTextBox.Text = Convert.ToString(boligData.Have);
+            AlderTextBox.Text = Convert.ToString(boligData.Alder);
+            EtagerTextBox.Text = Convert.ToString(boligData.Etager);
+            KøkkenAlderTextBox.Text = Convert.ToString(boligData.KøkkenAlder);
+            BadAlderTextBox1.Text = Convert.ToString(boligData.BadeværelsesAlder);
             BoligSalgsdatoTextBox.Text = Convert.ToString(boligData.SalgsDato);
             BoligOprettelsesTextBox.Text = Convert.ToString(boligData.OprettelsesDato);
+            OmbygningsÅrTextBox.Text = Convert.ToString(boligData.OmbygningsÅr);
             StandSkalaTextBox.Text = Convert.ToString(boligData.StandSkala);
 
         }
@@ -106,5 +119,7 @@ namespace BoBedreVS
             goTo.ShowDialog();
 
         }
+
+        
     }
 }

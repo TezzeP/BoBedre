@@ -37,8 +37,8 @@ namespace BusinessLogic
         }
         public void HandleDeleteKunde(int kunde)
         {
-            Delete deleteBolig = new Delete();
-            deleteBolig.DeleteKunde(kunde);
+            Delete deleteKunde = new Delete();
+            deleteKunde.DeleteKunde(kunde);
         }
 
 

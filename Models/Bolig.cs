@@ -17,6 +17,7 @@ namespace Models
         public string EjendomsType { get; set; }
         public int Have { get; set; }
         public string Alder { get; set; }
+        public int Etager { get; set; }
         public string KøkkenAlder { get; set; }
         public string BadeværelsesAlder { get; set; }
         public string  SalgsDato { get; set; }
