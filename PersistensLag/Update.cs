@@ -22,7 +22,7 @@ namespace PersistensLag
                 CommandText =
                     (" Update Kunde set " +
                      " Navn=@navn,      " +
-                     " Telnr=@tlfNr,    " +
+                     " TlfNr=@TlfNr,    " +
                      " Mail=@mail,      " +
                      " Adresse=@adresse," +
                      " Køber=@Køber,    " +
@@ -83,7 +83,7 @@ namespace PersistensLag
                 CommandText =
                     (" Update Ejendomsmælger set " +
                      " Navn=@Navn," +
-                     " Tlf=@Tlf,  " +
+                     " TlfNr=@TlfNr,  " +
                      " Mail=@Mail," +
                      " Stilling= @Stilling" +
                      " where MedarbejderId= @MedarbejderId")
@@ -93,7 +93,7 @@ namespace PersistensLag
 
             UpdateMægler.Parameters.AddWithValue("@MedarbejderId", mægler.MedarbejderId);
             UpdateMægler.Parameters.AddWithValue("@Navn", mægler.Navn);
-            UpdateMægler.Parameters.AddWithValue("@Tlf", mægler.Tlf);
+            UpdateMægler.Parameters.AddWithValue("@TlfNr", mægler.Tlf);
             UpdateMægler.Parameters.AddWithValue("@Mail", mægler.Mail);
             UpdateMægler.Parameters.AddWithValue("@Stilling", mægler.Stilling);
 
