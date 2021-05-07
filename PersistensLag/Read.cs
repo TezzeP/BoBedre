@@ -115,9 +115,16 @@ namespace PersistensLag
                     GrundM2 = Convert.ToInt32(reader[3]),
                     HusM2 = Convert.ToInt32(reader[4]),
                     Pris = Convert.ToInt32(reader[5]),
-                    SalgsDato = Convert.ToString(reader[6]),
-                    OprettelsesDato = Convert.ToString(reader[7]),
-                    StandSkala = Convert.ToInt32(reader[8])
+                    EjendomsType = Convert.ToString(reader[6]),
+                    Have = Convert.ToInt32(reader[7]),
+                    Alder = Convert.ToString(reader[8]),
+                    Etager = Convert.ToInt32(reader[9]),
+                    KøkkenAlder = Convert.ToString(reader[10]),
+                    BadeværelsesAlder = Convert.ToString(reader[11]),
+                    SalgsDato = Convert.ToString(reader[12]),
+                    OprettelsesDato = Convert.ToString(reader[13]),
+                    OmbygningsÅr = Convert.ToString(reader[14]),
+                    StandSkala = Convert.ToInt32(reader[15])
                 };
 
                 return tempMælger;

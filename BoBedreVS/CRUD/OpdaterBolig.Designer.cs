@@ -492,23 +492,25 @@ namespace BoBedreVS
             // BadAlderTextBox1
             // 
             this.BadAlderTextBox1.Location = new System.Drawing.Point(587, 163);
-            this.BadAlderTextBox1.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.BadAlderTextBox1.Mask = "00/00/0000";
             this.BadAlderTextBox1.Name = "BadAlderTextBox1";
             this.BadAlderTextBox1.Size = new System.Drawing.Size(125, 23);
             this.BadAlderTextBox1.TabIndex = 30;
+            this.BadAlderTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // KøkkenAlderTextBox
             // 
             this.KøkkenAlderTextBox.Location = new System.Drawing.Point(587, 125);
-            this.KøkkenAlderTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.KøkkenAlderTextBox.Mask = "00/00/0000";
             this.KøkkenAlderTextBox.Name = "KøkkenAlderTextBox";
             this.KøkkenAlderTextBox.Size = new System.Drawing.Size(125, 23);
             this.KøkkenAlderTextBox.TabIndex = 31;
+            this.KøkkenAlderTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // EtagerTextBox
             // 
             this.EtagerTextBox.Location = new System.Drawing.Point(587, 80);
-            this.EtagerTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.EtagerTextBox.Mask = "00000";
             this.EtagerTextBox.Name = "EtagerTextBox";
             this.EtagerTextBox.Size = new System.Drawing.Size(125, 23);
             this.EtagerTextBox.TabIndex = 32;
@@ -516,7 +518,7 @@ namespace BoBedreVS
             // AlderTextBox
             // 
             this.AlderTextBox.Location = new System.Drawing.Point(298, 375);
-            this.AlderTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.AlderTextBox.Mask = "00000";
             this.AlderTextBox.Name = "AlderTextBox";
             this.AlderTextBox.Size = new System.Drawing.Size(125, 23);
             this.AlderTextBox.TabIndex = 33;
@@ -524,7 +526,7 @@ namespace BoBedreVS
             // HaveTextBox
             // 
             this.HaveTextBox.Location = new System.Drawing.Point(298, 334);
-            this.HaveTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.HaveTextBox.Mask = "0000";
             this.HaveTextBox.Name = "HaveTextBox";
             this.HaveTextBox.Size = new System.Drawing.Size(125, 23);
             this.HaveTextBox.TabIndex = 34;
@@ -550,10 +552,11 @@ namespace BoBedreVS
             // OmbygningsÅrTextBox
             // 
             this.OmbygningsÅrTextBox.Location = new System.Drawing.Point(587, 290);
-            this.OmbygningsÅrTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.OmbygningsÅrTextBox.Mask = "00/00/0000";
             this.OmbygningsÅrTextBox.Name = "OmbygningsÅrTextBox";
             this.OmbygningsÅrTextBox.Size = new System.Drawing.Size(125, 23);
             this.OmbygningsÅrTextBox.TabIndex = 37;
+            this.OmbygningsÅrTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // OpdaterBolig
             // 

@@ -77,7 +77,6 @@ namespace BoBedreVS
             BoligOprettelsesTextBox.Text = Convert.ToString(boligData.OprettelsesDato);
             OmbygningsÅrTextBox.Text = Convert.ToString(boligData.OmbygningsÅr);
             StandSkalaTextBox.Text = Convert.ToString(boligData.StandSkala);
-
         }
 
         private void CRUD_Click(object sender, EventArgs e)
