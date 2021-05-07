@@ -37,9 +37,9 @@ namespace BoBedreVS
                  boligData.BoligID = Convert.ToInt32(BoligIdTextBox.Text);
                  boligData.Adresse = Convert.ToString(BoligAdresseTextBox.Text);
                  boligData.PostNr = Convert.ToInt32(BoligPostNrTextBox.Text);
-                 boligData.GrundM2 = Convert.ToInt32(BoligGrundM2TextBox.Text);
-                 boligData.HusM2 = Convert.ToInt32(BoigHusM2TextBox.Text);
-                 boligData.Pris = Convert.ToInt32(BoligPrisTextBox.Text);
+                 boligData.GrundM2 = Convert.ToDouble(BoligGrundM2TextBox.Text);
+                 boligData.HusM2 = Convert.ToDouble(BoigHusM2TextBox.Text);
+                 boligData.Pris = Convert.ToDouble(BoligPrisTextBox.Text);
                  boligData.SalgsDato = Convert.ToString(BoligSalgsdatoTextBox.Text);
                  boligData.OprettelsesDato = Convert.ToString(BoligOprettelsesTextBox.Text);
                  boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);

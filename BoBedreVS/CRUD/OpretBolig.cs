@@ -36,29 +36,21 @@ namespace BoBedreVS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 Bolig sendBolig = new Bolig();
                 sendBolig.Adresse = AdresseTextBox.Text;
                 sendBolig.PostNr = Convert.ToInt32(PostNrTextBox.Text);
-                sendBolig.GrundM2 = Convert.ToInt32(GrundM2TextBox.Text);
-                sendBolig.HusM2 = Convert.ToInt32(HusM2TextBox.Text);
-                sendBolig.Pris = Convert.ToInt32(PrisTextBox.Text);
+                sendBolig.GrundM2 = Convert.ToDouble(GrundM2TextBox.Text);
+                sendBolig.HusM2 = Convert.ToDouble(HusM2TextBox.Text);
+                sendBolig.Pris = Convert.ToDouble(PrisTextBox.Text);
                 sendBolig.SalgsDato = SalgsDatoTextBox.Text;
                 sendBolig.OprettelsesDato = OprettelsesdatoTextBox.Text;
                 sendBolig.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
                 sendBolig.KundeID = Convert.ToInt32(KundeIdTextBox.Text);
+                
 
-                Create create = new Create();
+           Create create = new Create();
                 MessageBox.Show(create.OpretBolig(sendBolig));
-
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("mangler input (tror jeg) :)");
-
-            }
-            
                 
             // her mangler en try catch, men den hopper altid i catch klausul
             
