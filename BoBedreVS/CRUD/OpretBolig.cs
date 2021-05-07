@@ -36,7 +36,8 @@ namespace BoBedreVS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
                 Bolig sendBolig = new Bolig();
                 sendBolig.Adresse = AdresseTextBox.Text;
                 sendBolig.PostNr = Convert.ToInt32(PostNrTextBox.Text);
@@ -50,6 +51,14 @@ namespace BoBedreVS
 
                 Create create = new Create();
                 MessageBox.Show(create.OpretBolig(sendBolig));
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("mangler input (tror jeg) :)");
+
+            }
+            
                 
             // her mangler en try catch, men den hopper altid i catch klausul
             
