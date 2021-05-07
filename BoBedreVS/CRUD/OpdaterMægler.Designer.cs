@@ -47,6 +47,11 @@ namespace BoBedreVS
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.MedarbejderId = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,17 +69,17 @@ namespace BoBedreVS
             // 
             // LæsMælgerData
             // 
-            this.LæsMælgerData.Location = new System.Drawing.Point(191, 41);
+            this.LæsMælgerData.Location = new System.Drawing.Point(320, 121);
             this.LæsMælgerData.Name = "LæsMælgerData";
-            this.LæsMælgerData.Size = new System.Drawing.Size(108, 23);
+            this.LæsMælgerData.Size = new System.Drawing.Size(133, 23);
             this.LæsMælgerData.TabIndex = 1;
-            this.LæsMælgerData.Text = "Læs Mælger Data";
+            this.LæsMælgerData.Text = "Indlæs Mægler Data";
             this.LæsMælgerData.UseVisualStyleBackColor = true;
             this.LæsMælgerData.Click += new System.EventHandler(this.LæsMælgerData_Click);
             // 
             // MedarbejderIdTextBox1
             // 
-            this.MedarbejderIdTextBox1.Location = new System.Drawing.Point(352, 40);
+            this.MedarbejderIdTextBox1.Location = new System.Drawing.Point(205, 121);
             this.MedarbejderIdTextBox1.Mask = "000000";
             this.MedarbejderIdTextBox1.Name = "MedarbejderIdTextBox1";
             this.MedarbejderIdTextBox1.Size = new System.Drawing.Size(100, 23);
@@ -82,7 +87,7 @@ namespace BoBedreVS
             // 
             // MælgerNavnTextBox
             // 
-            this.MælgerNavnTextBox.Location = new System.Drawing.Point(352, 70);
+            this.MælgerNavnTextBox.Location = new System.Drawing.Point(320, 183);
             this.MælgerNavnTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.MælgerNavnTextBox.Name = "MælgerNavnTextBox";
             this.MælgerNavnTextBox.Size = new System.Drawing.Size(100, 23);
@@ -90,7 +95,7 @@ namespace BoBedreVS
             // 
             // MæglerTlfTextBox3
             // 
-            this.MæglerTlfTextBox3.Location = new System.Drawing.Point(352, 100);
+            this.MæglerTlfTextBox3.Location = new System.Drawing.Point(320, 213);
             this.MæglerTlfTextBox3.Mask = "0000000000";
             this.MæglerTlfTextBox3.Name = "MæglerTlfTextBox3";
             this.MæglerTlfTextBox3.Size = new System.Drawing.Size(100, 23);
@@ -98,7 +103,7 @@ namespace BoBedreVS
             // 
             // MæglerMailTextBox4
             // 
-            this.MæglerMailTextBox4.Location = new System.Drawing.Point(352, 130);
+            this.MæglerMailTextBox4.Location = new System.Drawing.Point(320, 243);
             this.MæglerMailTextBox4.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.MæglerMailTextBox4.Name = "MæglerMailTextBox4";
             this.MæglerMailTextBox4.Size = new System.Drawing.Size(100, 23);
@@ -106,7 +111,7 @@ namespace BoBedreVS
             // 
             // MæglerStillingTextBox5
             // 
-            this.MæglerStillingTextBox5.Location = new System.Drawing.Point(352, 160);
+            this.MæglerStillingTextBox5.Location = new System.Drawing.Point(320, 273);
             this.MæglerStillingTextBox5.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.MæglerStillingTextBox5.Name = "MæglerStillingTextBox5";
             this.MæglerStillingTextBox5.Size = new System.Drawing.Size(100, 23);
@@ -114,9 +119,10 @@ namespace BoBedreVS
             // 
             // UpdateMælger
             // 
-            this.UpdateMælger.Location = new System.Drawing.Point(191, 69);
+            this.UpdateMælger.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UpdateMælger.Location = new System.Drawing.Point(255, 312);
             this.UpdateMælger.Name = "UpdateMælger";
-            this.UpdateMælger.Size = new System.Drawing.Size(75, 23);
+            this.UpdateMælger.Size = new System.Drawing.Size(165, 62);
             this.UpdateMælger.TabIndex = 7;
             this.UpdateMælger.Text = "Update";
             this.UpdateMælger.UseVisualStyleBackColor = true;
@@ -134,7 +140,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 450);
+            this.panel1.Size = new System.Drawing.Size(186, 460);
             this.panel1.TabIndex = 25;
             // 
             // MedarbejderPortal
@@ -162,7 +168,7 @@ namespace BoBedreVS
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
             this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
@@ -177,7 +183,7 @@ namespace BoBedreVS
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
             this.AabentHus.TabIndex = 3;
-            this.AabentHus.Text = "Aabet Hus";
+            this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
@@ -255,12 +261,67 @@ namespace BoBedreVS
             this.label12.TabIndex = 1;
             this.label12.Text = "Guffe";
             // 
+            // MedarbejderId
+            // 
+            this.MedarbejderId.AutoSize = true;
+            this.MedarbejderId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.MedarbejderId.Location = new System.Drawing.Point(205, 88);
+            this.MedarbejderId.Name = "MedarbejderId";
+            this.MedarbejderId.Size = new System.Drawing.Size(190, 15);
+            this.MedarbejderId.TabIndex = 26;
+            this.MedarbejderId.Text = "Choose MedarbejderId Too Update";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label1.Location = new System.Drawing.Point(205, 186);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 15);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Navn";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label2.Location = new System.Drawing.Point(205, 216);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 15);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "TlfNr";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label3.Location = new System.Drawing.Point(205, 246);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 15);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Mail";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label4.Location = new System.Drawing.Point(205, 276);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 15);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Stilling";
+            // 
             // OpdaterMægler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(537, 460);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.MedarbejderId);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.UpdateMælger);
             this.Controls.Add(this.MæglerStillingTextBox5);
@@ -301,5 +362,10 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label MedarbejderId;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

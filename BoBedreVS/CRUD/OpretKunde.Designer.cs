@@ -60,7 +60,7 @@ namespace BoBedreVS
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(472, 12);
+            this.button1.Location = new System.Drawing.Point(203, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -70,21 +70,21 @@ namespace BoBedreVS
             // 
             // KundeNavnTextBox
             // 
-            this.KundeNavnTextBox.Location = new System.Drawing.Point(662, 93);
+            this.KundeNavnTextBox.Location = new System.Drawing.Point(322, 88);
             this.KundeNavnTextBox.Name = "KundeNavnTextBox";
             this.KundeNavnTextBox.Size = new System.Drawing.Size(100, 23);
             this.KundeNavnTextBox.TabIndex = 1;
             // 
             // KundeMailTextBox
             // 
-            this.KundeMailTextBox.Location = new System.Drawing.Point(662, 197);
+            this.KundeMailTextBox.Location = new System.Drawing.Point(322, 192);
             this.KundeMailTextBox.Name = "KundeMailTextBox";
             this.KundeMailTextBox.Size = new System.Drawing.Size(100, 23);
             this.KundeMailTextBox.TabIndex = 3;
             // 
             // KundeAdresseTextBox
             // 
-            this.KundeAdresseTextBox.Location = new System.Drawing.Point(662, 251);
+            this.KundeAdresseTextBox.Location = new System.Drawing.Point(322, 246);
             this.KundeAdresseTextBox.Name = "KundeAdresseTextBox";
             this.KundeAdresseTextBox.Size = new System.Drawing.Size(100, 23);
             this.KundeAdresseTextBox.TabIndex = 4;
@@ -93,7 +93,7 @@ namespace BoBedreVS
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(573, 93);
+            this.label1.Location = new System.Drawing.Point(233, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 15);
             this.label1.TabIndex = 6;
@@ -103,7 +103,7 @@ namespace BoBedreVS
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(573, 144);
+            this.label2.Location = new System.Drawing.Point(233, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 15);
             this.label2.TabIndex = 7;
@@ -113,7 +113,7 @@ namespace BoBedreVS
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(573, 197);
+            this.label3.Location = new System.Drawing.Point(233, 192);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 15);
             this.label3.TabIndex = 8;
@@ -123,7 +123,7 @@ namespace BoBedreVS
             // 
             this.Adresse.AutoSize = true;
             this.Adresse.ForeColor = System.Drawing.SystemColors.Control;
-            this.Adresse.Location = new System.Drawing.Point(570, 251);
+            this.Adresse.Location = new System.Drawing.Point(230, 246);
             this.Adresse.Name = "Adresse";
             this.Adresse.Size = new System.Drawing.Size(48, 15);
             this.Adresse.TabIndex = 9;
@@ -133,7 +133,7 @@ namespace BoBedreVS
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(570, 302);
+            this.label5.Location = new System.Drawing.Point(230, 297);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 15);
             this.label5.TabIndex = 10;
@@ -143,7 +143,7 @@ namespace BoBedreVS
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(570, 342);
+            this.label4.Location = new System.Drawing.Point(230, 337);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 15);
             this.label4.TabIndex = 11;
@@ -152,7 +152,7 @@ namespace BoBedreVS
             // KøberCheckBox
             // 
             this.KøberCheckBox.AutoSize = true;
-            this.KøberCheckBox.Location = new System.Drawing.Point(662, 302);
+            this.KøberCheckBox.Location = new System.Drawing.Point(322, 297);
             this.KøberCheckBox.Name = "KøberCheckBox";
             this.KøberCheckBox.Size = new System.Drawing.Size(15, 14);
             this.KøberCheckBox.TabIndex = 12;
@@ -161,7 +161,7 @@ namespace BoBedreVS
             // SælgerCheckBox
             // 
             this.SælgerCheckBox.AutoSize = true;
-            this.SælgerCheckBox.Location = new System.Drawing.Point(662, 342);
+            this.SælgerCheckBox.Location = new System.Drawing.Point(322, 337);
             this.SælgerCheckBox.Name = "SælgerCheckBox";
             this.SælgerCheckBox.Size = new System.Drawing.Size(15, 14);
             this.SælgerCheckBox.TabIndex = 13;
@@ -169,9 +169,10 @@ namespace BoBedreVS
             // 
             // OpretKundeKnab
             // 
-            this.OpretKundeKnab.Location = new System.Drawing.Point(573, 387);
+            this.OpretKundeKnab.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpretKundeKnab.Location = new System.Drawing.Point(371, 297);
             this.OpretKundeKnab.Name = "OpretKundeKnab";
-            this.OpretKundeKnab.Size = new System.Drawing.Size(104, 23);
+            this.OpretKundeKnab.Size = new System.Drawing.Size(140, 49);
             this.OpretKundeKnab.TabIndex = 14;
             this.OpretKundeKnab.Text = "Opret kunde";
             this.OpretKundeKnab.UseVisualStyleBackColor = true;
@@ -179,7 +180,7 @@ namespace BoBedreVS
             // 
             // KundeTelefonNrTextBox
             // 
-            this.KundeTelefonNrTextBox.Location = new System.Drawing.Point(662, 141);
+            this.KundeTelefonNrTextBox.Location = new System.Drawing.Point(322, 136);
             this.KundeTelefonNrTextBox.Mask = "00000000";
             this.KundeTelefonNrTextBox.Name = "KundeTelefonNrTextBox";
             this.KundeTelefonNrTextBox.Size = new System.Drawing.Size(100, 23);
@@ -197,7 +198,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 465);
+            this.panel1.Size = new System.Drawing.Size(186, 407);
             this.panel1.TabIndex = 27;
             // 
             // MedarbejderPortal
@@ -225,7 +226,7 @@ namespace BoBedreVS
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
             this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
@@ -240,7 +241,7 @@ namespace BoBedreVS
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
             this.AabentHus.TabIndex = 3;
-            this.AabentHus.Text = "Aabet Hus";
+            this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
@@ -322,8 +323,8 @@ namespace BoBedreVS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(800, 465);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.ClientSize = new System.Drawing.Size(560, 407);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.KundeTelefonNrTextBox);
             this.Controls.Add(this.OpretKundeKnab);
@@ -340,7 +341,7 @@ namespace BoBedreVS
             this.Controls.Add(this.KundeNavnTextBox);
             this.Controls.Add(this.button1);
             this.Name = "OpretKunde";
-            this.Text = "Create";
+            this.Text = "OpretKunde";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

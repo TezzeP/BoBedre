@@ -56,7 +56,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 577);
+            this.panel1.Size = new System.Drawing.Size(186, 489);
             this.panel1.TabIndex = 5;
             // 
             // MedarbejderPortal
@@ -84,7 +84,7 @@ namespace BoBedreVS
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
             this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
@@ -99,7 +99,7 @@ namespace BoBedreVS
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
             this.AabentHus.TabIndex = 3;
-            this.AabentHus.Text = "Aabet Hus";
+            this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
@@ -182,11 +182,11 @@ namespace BoBedreVS
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(951, 577);
+            this.ClientSize = new System.Drawing.Size(950, 489);
             this.Controls.Add(this.panel1);
             this.Name = "Forside";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Panel";
+            this.Text = "Forside";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

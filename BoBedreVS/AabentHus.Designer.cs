@@ -91,7 +91,7 @@ namespace BoBedreVS
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
             this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click_1);
@@ -106,7 +106,7 @@ namespace BoBedreVS
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 30);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Aabet Hus";
+            this.button1.Text = "Åbent Hus";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
