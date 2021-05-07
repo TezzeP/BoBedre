@@ -431,12 +431,9 @@ namespace BoBedreVS
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PostNrBox);
             this.Controls.Add(this.panel1);
-
-
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-
             this.Name = "PrisVudering";
-            this.Text = "PrisVudering";
+            this.Text = "Prisvurdering";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
