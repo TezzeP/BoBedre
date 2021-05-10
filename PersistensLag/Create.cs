@@ -15,8 +15,10 @@ namespace PersistensLag
         {
             SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
             conn.Open();
-            string sSQL = $"INSERT INTO Bolig(Adresse, PostNr, GrundM2, HusM2, Pris, SalgsDato, OprettelsesDato, StandSkala, KundeId) VALUES ('{bolig.Adresse}', {bolig.PostNr}, {bolig.GrundM2}, {bolig.HusM2}, {bolig.Pris}, '{bolig.SalgsDato}'," +
-                $"'{bolig.OprettelsesDato}', {bolig.StandSkala}, {bolig.KundeID});";
+            string sSQL = $"INSERT INTO Bolig(Adresse, PostNr, GrundM2, HusM2, Pris, EjendomsType, Have, Alder, Etager, KøkkenAlder, BadeværelsesAlder, " +
+                $"SalgsDato, OprettelsesDato, OmbygningsÅr, StandSkala, KundeId) VALUES ('{bolig.Adresse}', {bolig.PostNr}, {bolig.GrundM2}, " +
+                $"{bolig.HusM2}, {bolig.Pris}, '{bolig.EjendomsType}', {bolig.Have}, {bolig.Alder}, {bolig.Etager}, '{bolig.KøkkenAlder}', '{bolig.BadeværelsesAlder}', '{bolig.SalgsDato}'," +
+                $"'{bolig.OprettelsesDato}', {bolig.OmbygningsÅr}, {bolig.StandSkala}, {bolig.KundeID});";
             
             SqlCommand command = new SqlCommand(sSQL, conn);
 

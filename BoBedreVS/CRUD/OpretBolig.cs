@@ -43,8 +43,15 @@ namespace BoBedreVS
                 sendBolig.GrundM2 = Convert.ToDouble(GrundM2TextBox.Text);
                 sendBolig.HusM2 = Convert.ToDouble(HusM2TextBox.Text);
                 sendBolig.Pris = Convert.ToDouble(PrisTextBox.Text);
+            sendBolig.EjendomsType = EjendomsTypeTextBox.Text;
+            sendBolig.Have = Convert.ToInt32(HaveTextBox.Text);
+            sendBolig.Alder = AlderTextBox.Text;
+            sendBolig.Etager = Convert.ToInt32(EtagerTextBox.Text);
+            sendBolig.KøkkenAlder = KøkkenAlderTextBox.Text;
+            sendBolig.BadeværelsesAlder = BadeværelsesAlderTextBox.Text;
                 sendBolig.SalgsDato = SalgsDatoTextBox.Text;
                 sendBolig.OprettelsesDato = OprettelsesdatoTextBox.Text;
+            sendBolig.OmbygningsÅr = OmbygningsÅrTextBox.Text;
                 sendBolig.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
                 sendBolig.KundeID = Convert.ToInt32(KundeIdTextBox.Text);
                 
@@ -101,6 +108,16 @@ namespace BoBedreVS
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EjendomsTypeTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
