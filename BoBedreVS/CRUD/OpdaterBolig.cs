@@ -30,7 +30,6 @@ namespace BoBedreVS
         private void Update_Click(object sender, EventArgs e)
         {
             Bolig boligData = new Bolig();
-            Read readOne = new Read();
             Update update = new Update();
             
 

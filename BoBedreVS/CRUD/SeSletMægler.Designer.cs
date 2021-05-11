@@ -44,6 +44,7 @@ namespace BoBedreVS
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -62,26 +63,26 @@ namespace BoBedreVS
             // 
             // ReadAndShowMægler
             // 
-            this.ReadAndShowMægler.Location = new System.Drawing.Point(192, 52);
+            this.ReadAndShowMægler.Location = new System.Drawing.Point(192, 41);
             this.ReadAndShowMægler.Name = "ReadAndShowMægler";
-            this.ReadAndShowMægler.Size = new System.Drawing.Size(75, 23);
+            this.ReadAndShowMægler.Size = new System.Drawing.Size(110, 23);
             this.ReadAndShowMægler.TabIndex = 1;
-            this.ReadAndShowMægler.Text = "Read";
+            this.ReadAndShowMægler.Text = "Læs All Mæglere";
             this.ReadAndShowMægler.UseVisualStyleBackColor = true;
             this.ReadAndShowMægler.Click += new System.EventHandler(this.ReadAndShowMægler_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(229, 186);
+            this.dataGridView1.Location = new System.Drawing.Point(191, 124);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(559, 252);
+            this.dataGridView1.Size = new System.Drawing.Size(741, 314);
             this.dataGridView1.TabIndex = 2;
             // 
             // DeleteMægler
             // 
-            this.DeleteMægler.Location = new System.Drawing.Point(192, 82);
+            this.DeleteMægler.Location = new System.Drawing.Point(631, 12);
             this.DeleteMægler.Name = "DeleteMægler";
             this.DeleteMægler.Size = new System.Drawing.Size(75, 23);
             this.DeleteMægler.TabIndex = 3;
@@ -91,7 +92,7 @@ namespace BoBedreVS
             // 
             // MedarbejderIdTextBox
             // 
-            this.MedarbejderIdTextBox.Location = new System.Drawing.Point(301, 81);
+            this.MedarbejderIdTextBox.Location = new System.Drawing.Point(497, 13);
             this.MedarbejderIdTextBox.Name = "MedarbejderIdTextBox";
             this.MedarbejderIdTextBox.Size = new System.Drawing.Size(100, 23);
             this.MedarbejderIdTextBox.TabIndex = 4;
@@ -229,12 +230,23 @@ namespace BoBedreVS
             this.label12.TabIndex = 1;
             this.label12.Text = "Guffe";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label1.Location = new System.Drawing.Point(336, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 15);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Choose BoligId To Delete";
+            // 
             // SeSletMægler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(944, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MedarbejderIdTextBox);
             this.Controls.Add(this.DeleteMægler);
@@ -270,5 +282,6 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label1;
     }
 }

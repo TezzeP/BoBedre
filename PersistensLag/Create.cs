@@ -60,7 +60,7 @@ namespace PersistensLag
         {
             SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
             conn.Open();
-            string sSQL = $"INSERT INTO Ejendomsmælger(Navn, TlfNr, Mail, Stilling) VALUES ('{ejendomsmælger.Navn}', {ejendomsmælger.Tlf}, '{ejendomsmælger.Mail}', '{ejendomsmælger.Stilling}');";
+            string sSQL = $"INSERT INTO Ejendomsmægler(Navn, TlfNr, Mail, Stilling) VALUES ('{ejendomsmælger.Navn}', {ejendomsmælger.Tlf}, '{ejendomsmælger.Mail}', '{ejendomsmælger.Stilling}');";
 
             SqlCommand command = new SqlCommand(sSQL, conn);
 

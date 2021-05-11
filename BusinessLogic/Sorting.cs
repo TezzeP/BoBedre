@@ -46,6 +46,9 @@ namespace BusinessLogic
            return Read.ReadAllBolig().Where(x=>Char.ToLower(x.Adresse[0])>=Char.ToLower(firstLetter) && Char.ToLower(x.Adresse[0])<=Char.ToLower(secondLetter)).ToList();
         }
 
-       
-    }
+
+
+      
+
+     }
 }

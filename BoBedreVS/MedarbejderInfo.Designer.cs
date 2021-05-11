@@ -39,11 +39,14 @@ namespace BoBedreVS
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.MINavnBox1 = new System.Windows.Forms.TextBox();
+            this.MIStillingtextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -179,15 +182,50 @@ namespace BoBedreVS
             this.label1.TabIndex = 1;
             this.label1.Text = "User Name";
             // 
-            // pictureBox2
+            // MINavnBox1
             // 
-            this.pictureBox2.Image = global::BoBedreVS.Properties.Resources._512x512bb;
-            this.pictureBox2.Location = new System.Drawing.Point(230, -19);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(512, 512);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.MINavnBox1.Location = new System.Drawing.Point(319, 98);
+            this.MINavnBox1.Name = "MINavnBox1";
+            this.MINavnBox1.Size = new System.Drawing.Size(100, 23);
+            this.MINavnBox1.TabIndex = 8;
+           
+            // 
+            // MIStillingtextBox
+            // 
+            this.MIStillingtextBox.Location = new System.Drawing.Point(319, 144);
+            this.MIStillingtextBox.Name = "MIStillingtextBox";
+            this.MIStillingtextBox.Size = new System.Drawing.Size(100, 23);
+            this.MIStillingtextBox.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label3.Location = new System.Drawing.Point(223, 101);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 15);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Navn";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label4.Location = new System.Drawing.Point(223, 151);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 15);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Stilling ";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(625, 369);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MedarbejderInfo
             // 
@@ -195,15 +233,19 @@ namespace BoBedreVS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.MIStillingtextBox);
+            this.Controls.Add(this.MINavnBox1);
             this.Controls.Add(this.panel1);
             this.Name = "MedarbejderInfo";
             this.Text = "MedarbejderInfo";
+           
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,6 +263,10 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox MINavnBox1;
+        private System.Windows.Forms.TextBox MIStillingtextBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }

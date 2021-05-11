@@ -44,6 +44,7 @@ namespace BoBedreVS
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -52,26 +53,28 @@ namespace BoBedreVS
             // 
             // button1
             // 
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(192, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "back";
+            this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(192, 225);
+            this.dataGridView1.Location = new System.Drawing.Point(191, 124);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(596, 225);
+            this.dataGridView1.Size = new System.Drawing.Size(741, 314);
             this.dataGridView1.TabIndex = 1;
             // 
             // ReadAllMægler
             // 
-            this.ReadAllMægler.Location = new System.Drawing.Point(192, 52);
+            this.ReadAllMægler.ForeColor = System.Drawing.Color.Black;
+            this.ReadAllMægler.Location = new System.Drawing.Point(192, 41);
             this.ReadAllMægler.Name = "ReadAllMægler";
             this.ReadAllMægler.Size = new System.Drawing.Size(112, 23);
             this.ReadAllMægler.TabIndex = 2;
@@ -81,7 +84,8 @@ namespace BoBedreVS
             // 
             // Delete
             // 
-            this.Delete.Location = new System.Drawing.Point(192, 111);
+            this.Delete.ForeColor = System.Drawing.Color.Black;
+            this.Delete.Location = new System.Drawing.Point(644, 18);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(75, 23);
             this.Delete.TabIndex = 3;
@@ -91,7 +95,7 @@ namespace BoBedreVS
             // 
             // BoligIdTextBox
             // 
-            this.BoligIdTextBox.Location = new System.Drawing.Point(283, 111);
+            this.BoligIdTextBox.Location = new System.Drawing.Point(527, 18);
             this.BoligIdTextBox.Name = "BoligIdTextBox";
             this.BoligIdTextBox.Size = new System.Drawing.Size(100, 23);
             this.BoligIdTextBox.TabIndex = 4;
@@ -108,7 +112,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 459);
+            this.panel1.Size = new System.Drawing.Size(186, 450);
             this.panel1.TabIndex = 28;
             // 
             // MedarbejderPortal
@@ -229,18 +233,30 @@ namespace BoBedreVS
             this.label12.TabIndex = 1;
             this.label12.Text = "Guffe";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label1.Location = new System.Drawing.Point(359, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 15);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Choose BoligId To Delete";
+            // 
             // SeSletBolig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(805, 459);
+            this.ClientSize = new System.Drawing.Size(944, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BoligIdTextBox);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.ReadAllMægler);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "SeSletBolig";
             this.Text = "SeSletBolig";
             this.Load += new System.EventHandler(this.SeSletBolig_Load);
@@ -271,5 +287,6 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label1;
     }
 }

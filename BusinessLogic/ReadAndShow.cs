@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Models;
 using PersistensLag;
@@ -22,5 +23,15 @@ namespace BusinessLogic
         {
             return Read.ReadAllMægler().ToList();
         }
+
+        public List<Ejendomsmælger> ReadAndShowMedarbejder()
+        {
+            return Read.ReadOneMedarbejder2().ToList();
+        }
+
+       
+        
+
+       
     }
 }

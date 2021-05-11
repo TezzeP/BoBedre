@@ -5,8 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLogic;
+using Models;
+using PersistensLag;
 
 namespace BoBedreVS
 {
@@ -15,6 +19,31 @@ namespace BoBedreVS
         public MedarbejderInfo()
         {
             InitializeComponent();
+
+            Thread backgroundThread = new Thread(() =>
+            {
+                while (true)
+                {
+                    ReadAndShow readAndShow = new ReadAndShow();
+                    var alleMedarbejder = readAndShow.ReadAndShowMedarbejder();
+
+                    foreach (var medarbejder in alleMedarbejder)
+                    {
+
+                        this.Invoke(new MethodInvoker(delegate()
+                        {
+                            MINavnBox1.Text = Convert.ToString(medarbejder.Navn);
+                            MIStillingtextBox.Text = Convert.ToString(medarbejder.Stilling);
+                        }));
+
+                        Thread.Sleep(60000);
+                    }
+                }
+
+            });
+
+            backgroundThread.Start();
+
         }
 
         private void CRUD_Click(object sender, EventArgs e)
@@ -57,5 +86,22 @@ namespace BoBedreVS
             goTo.ShowDialog();
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Read readStillingNavn = new Read();
+            Ejendomsmælger medarbejderNavnStilling = readStillingNavn.ReadOneMedarbejder();
+            ReadAndShow readAndShow = new ReadAndShow();
+            List <Ejendomsmælger> navnpåliste = readAndShow.ReadAndShowMedarbejder();
+
+            MINavnBox1.Text = Convert.ToString(medarbejderNavnStilling.Navn);
+            MIStillingtextBox.Text = Convert.ToString(medarbejderNavnStilling.Stilling);
+
+
+            
+        }
+
+
+
     }
 }

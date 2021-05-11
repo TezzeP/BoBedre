@@ -40,9 +40,16 @@ namespace PersistensLag
                     GrundM2 = Convert.ToInt32(reader[3]),
                     HusM2 = Convert.ToInt32(reader[4]),
                     Pris = Convert.ToInt32(reader[5]),
-                    SalgsDato = Convert.ToString(reader[6]),
-                    OprettelsesDato = Convert.ToString(reader[7]),
-                    StandSkala = Convert.ToInt32(reader[8])
+                    EjendomsType = Convert.ToString(reader[6]),
+                    Have = Convert.ToInt32(reader[7]),
+                    Alder = Convert.ToString(reader[8]),
+                    Etager = Convert.ToInt32(reader[9]),
+                    KøkkenAlder = Convert.ToString(reader[10]),
+                    BadeværelsesAlder = Convert.ToString(reader[11]),
+                    SalgsDato = Convert.ToString(reader[12]),
+                    OprettelsesDato = Convert.ToString(reader[13]),
+                    OmbygningsÅr = Convert.ToString(reader[14]),
+                    StandSkala = Convert.ToInt32(reader[15])
                 };
 
                 returnList.Add(tempProduct);
@@ -214,7 +221,7 @@ namespace PersistensLag
             SqlCommand ReadBoligForSale = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ("select * from Ejendomsmælger")
+                CommandText = ("select * from Ejendomsmægler")
             };
 
             SqlDataReader reader = ReadBoligForSale.ExecuteReader();
@@ -232,6 +239,74 @@ namespace PersistensLag
 
                 };
                 returnList.Add(tempKunde);
+            }
+
+            conn.Close();
+
+            return returnList;
+        }
+
+
+        public Ejendomsmælger ReadOneMedarbejder()
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            //var readAllProducts = new SqlCommand // dette er det samme 
+            SqlCommand ReadOneMedarbejdercmd = new SqlCommand
+            {
+                Connection = conn,
+                CommandText = ("select Navn, Stilling from Ejendomsmægler")
+            };
+
+        
+
+            SqlDataReader reader = ReadOneMedarbejdercmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Ejendomsmælger tempMælger = new Ejendomsmælger
+                {
+                    
+                    Navn = Convert.ToString(reader[0]),
+                    Stilling = Convert.ToString(reader[1])
+
+                };
+
+                return tempMælger;
+            }
+
+            return default;
+        }
+
+
+        public static List<Ejendomsmælger> ReadOneMedarbejder2()
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            //var readAllProducts = new SqlCommand // dette er det samme 
+            SqlCommand ReadOneMedarbejdercmd = new SqlCommand
+            {
+                Connection = conn,
+                CommandText = ("select Navn, Stilling from Ejendomsmægler")
+            };
+
+            //ReadOneMedarbejdercmd.Parameters.AddWithValue("@MedarbejderId", mægler.MedarbejderId);
+
+            SqlDataReader reader = ReadOneMedarbejdercmd.ExecuteReader();
+
+            List<Ejendomsmælger> returnList = new List<Ejendomsmælger>();
+            while (reader.Read())
+            {
+                Ejendomsmælger tempMedarbejder = new Ejendomsmælger
+                {
+                    Navn = Convert.ToString(reader[0]),
+                    Stilling = Convert.ToString(reader[1])
+                };
+
+                returnList.Add(tempMedarbejder);
             }
 
             conn.Close();

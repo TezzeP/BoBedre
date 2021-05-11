@@ -44,6 +44,7 @@ namespace BoBedreVS
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -63,25 +64,25 @@ namespace BoBedreVS
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(192, 191);
+            this.dataGridView1.Location = new System.Drawing.Point(191, 124);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(596, 247);
+            this.dataGridView1.Size = new System.Drawing.Size(741, 314);
             this.dataGridView1.TabIndex = 1;
             // 
             // ReadAndShowKunde
             // 
             this.ReadAndShowKunde.Location = new System.Drawing.Point(192, 52);
             this.ReadAndShowKunde.Name = "ReadAndShowKunde";
-            this.ReadAndShowKunde.Size = new System.Drawing.Size(75, 23);
+            this.ReadAndShowKunde.Size = new System.Drawing.Size(115, 23);
             this.ReadAndShowKunde.TabIndex = 2;
-            this.ReadAndShowKunde.Text = "Læs";
+            this.ReadAndShowKunde.Text = "Læs Alle Kunder";
             this.ReadAndShowKunde.UseVisualStyleBackColor = true;
             this.ReadAndShowKunde.Click += new System.EventHandler(this.ReadAndShowKunde_Click);
             // 
             // Delete
             // 
-            this.Delete.Location = new System.Drawing.Point(192, 97);
+            this.Delete.Location = new System.Drawing.Point(635, 16);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(75, 23);
             this.Delete.TabIndex = 3;
@@ -91,7 +92,7 @@ namespace BoBedreVS
             // 
             // KundeIdTextBox
             // 
-            this.KundeIdTextBox.Location = new System.Drawing.Point(289, 97);
+            this.KundeIdTextBox.Location = new System.Drawing.Point(509, 17);
             this.KundeIdTextBox.Name = "KundeIdTextBox";
             this.KundeIdTextBox.Size = new System.Drawing.Size(100, 23);
             this.KundeIdTextBox.TabIndex = 4;
@@ -229,12 +230,23 @@ namespace BoBedreVS
             this.label12.TabIndex = 1;
             this.label12.Text = "Guffe";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label1.Location = new System.Drawing.Point(351, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 15);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Choose BoligId To Delete";
+            // 
             // SeSletKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(944, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.KundeIdTextBox);
             this.Controls.Add(this.Delete);
@@ -271,5 +283,6 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label1;
     }
 }
