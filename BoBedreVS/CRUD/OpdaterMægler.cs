@@ -54,7 +54,7 @@ namespace BoBedreVS
             mælgerData.Stilling = Convert.ToString(MæglerStillingTextBox5.Text);
            
 
-            update.UpdateMægler(mælgerData);
+            MessageBox.Show(update.UpdateMægler(mælgerData));
 
         }
 

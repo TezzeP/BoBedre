@@ -12,7 +12,6 @@ namespace PersistensLag
 {
     public class Read
     {
-
         public static List<Bolig> ReadAllBolig()
         {
             SqlConnection conn = new SqlConnection(Globals.strconn);
@@ -177,7 +176,7 @@ namespace PersistensLag
             return default;
         }
 
-        public Bolig ReadAllBoligWithBoligId(int BoligId)
+        public Bolig ReadAllBoligWithBoligId(string boligAttribut, int boligAttributVærdi)
         {
             SqlConnection conn = new SqlConnection(Globals.strconn);
 
@@ -187,13 +186,13 @@ namespace PersistensLag
             SqlCommand ReadOneBoligcmd = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ("select * from Bolig where BoligId = @BoligId")
+                CommandText = ($"select * from Bolig where {boligAttribut} = {boligAttributVærdi}")
             };
 
-            ReadOneBoligcmd.Parameters.AddWithValue("@BoligId", Convert.ToInt32(BoligId));
+            ReadOneBoligcmd.Parameters.AddWithValue($"{boligAttribut}", Convert.ToInt32(boligAttributVærdi));
 
             SqlDataReader reader = ReadOneBoligcmd.ExecuteReader();
-            conn.Close();
+            
             while (reader.Read())
                 {
                     Bolig tempMælger = new Bolig
@@ -217,11 +216,7 @@ namespace PersistensLag
                     };
 
                     return tempMælger;
-                }
-                
-                
-            
-
+            }
 
             return default;
         }
@@ -260,14 +255,6 @@ namespace PersistensLag
 
             return default;
         }
-
-
-
-
-        
-
-        
-
 
         public Ejendomsmælger ReadOneMedarbejder()
         {

@@ -10,7 +10,7 @@ namespace PersistensLag
 {
     public class Delete
     {
-        public void DeleteMægler(int MedarbejderId)
+        public string DeleteMægler(int MedarbejderId)
         {
             SqlConnection conn = new SqlConnection(Globals.strconn);
             conn.Open();
@@ -18,14 +18,23 @@ namespace PersistensLag
             {
                 Connection = conn,
                 CommandText = ($"DELETE FROM Ejendomsmælger WHERE MedarbejderId = @MedarbejderId")
-                
             };
 
             ReadOneMæglercmd.Parameters.AddWithValue("@MedarbejderId", Convert.ToInt32(MedarbejderId));
-            ReadOneMæglercmd.ExecuteReader();
+            int checkSucces = ReadOneMæglercmd.ExecuteNonQuery();
+            if (checkSucces == 0)
+            {
+                conn.Close();
+                return ("Medarbejder blev IKKE slettet");
+            }
+            else
+            {
+                conn.Close();
+                return ("Medarbejder Belv slettet");
+            }
         }
 
-        public void DeleteBolig(int BoligId)
+        public string DeleteBolig(int BoligId)
         {
             SqlConnection conn = new SqlConnection(Globals.strconn);
             conn.Open();
@@ -37,10 +46,20 @@ namespace PersistensLag
             };
 
             ReadOneMæglercmd.Parameters.AddWithValue("@BoligId", Convert.ToInt32(BoligId));
-            ReadOneMæglercmd.ExecuteReader();
+            int checkSucces = ReadOneMæglercmd.ExecuteNonQuery();
+            if (checkSucces == 0)
+            {
+                conn.Close();
+                return ("Bolig blev IKKE slettet");
+            }
+            else
+            {
+                conn.Close();
+                return ("Bolig blev slettet");
+            }
         }
 
-        public void DeleteKunde(int KundeId)
+        public string DeleteKunde(int KundeId)
         {
             SqlConnection conn = new SqlConnection(Globals.strconn);
             conn.Open();
@@ -52,7 +71,17 @@ namespace PersistensLag
             };
 
             ReadOneMæglercmd.Parameters.AddWithValue("@KundeId", Convert.ToInt32(KundeId));
-            ReadOneMæglercmd.ExecuteReader();
+            int checkSucces = ReadOneMæglercmd.ExecuteNonQuery();
+            if (checkSucces == 0)
+            {
+                conn.Close();
+                return ("Kunde blev IKKE slettet");
+            }
+            else
+            {
+                conn.Close();
+                return ("Kunde blev slettet");
+            }
         }
 
 

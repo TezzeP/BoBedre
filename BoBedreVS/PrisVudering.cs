@@ -113,10 +113,7 @@ namespace BoBedreVS
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
 
         private void refresh()
         {
@@ -124,18 +121,9 @@ namespace BoBedreVS
             dataGridView1.Refresh();
         }
 
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected_1(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
         private void UdregnButton_Click(object sender, EventArgs e)
         {
+
             if (!String.IsNullOrEmpty(StandardPrisBox.Text) && Double.TryParse(StandardPrisBox.Text, out double pris))
             {
                 Double.TryParse(GrundBox.Text, out double grund);
@@ -235,11 +223,7 @@ namespace BoBedreVS
                 MessageBox.Show("Angiv et tal som standardpris");
             }
         }
-
-        private void StandBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
+        
 
         private void CRUD_Click(object sender, EventArgs e)
         {
@@ -281,29 +265,6 @@ namespace BoBedreVS
             Close();
         }
 
-        private void UdbudsprisBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void HaveCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PostBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected_2(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
     }
+
 }

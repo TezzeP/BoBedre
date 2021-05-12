@@ -266,7 +266,7 @@ namespace BoBedreVS
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(596, 211);
             this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+           
             // 
             // BoligId
             // 
@@ -357,7 +357,7 @@ namespace BoBedreVS
             this.StandBox.Size = new System.Drawing.Size(100, 23);
             this.StandBox.TabIndex = 12;
             this.StandBox.ValidatingType = typeof(int);
-            this.StandBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.StandBox_MaskInputRejected);
+            
             // 
             // label4
             // 
@@ -396,7 +396,7 @@ namespace BoBedreVS
             this.UdbudsprisBox.ReadOnly = true;
             this.UdbudsprisBox.Size = new System.Drawing.Size(100, 23);
             this.UdbudsprisBox.TabIndex = 17;
-            this.UdbudsprisBox.TextChanged += new System.EventHandler(this.UdbudsprisBox_TextChanged);
+           
             // 
             // label7
             // 
@@ -430,7 +430,6 @@ namespace BoBedreVS
             this.PostBox.Size = new System.Drawing.Size(100, 23);
             this.PostBox.TabIndex = 21;
             this.PostBox.ValidatingType = typeof(int);
-            this.PostBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.PostBox_MaskInputRejected);
             // 
             // label8
             // 
@@ -450,7 +449,6 @@ namespace BoBedreVS
             this.EtagerBox.Size = new System.Drawing.Size(100, 23);
             this.EtagerBox.TabIndex = 23;
             this.EtagerBox.ValidatingType = typeof(int);
-            this.EtagerBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected_2);
             // 
             // label9
             // 
@@ -516,7 +514,7 @@ namespace BoBedreVS
             this.label12.Size = new System.Drawing.Size(82, 15);
             this.label12.TabIndex = 30;
             this.label12.Text = "Ejendomstype";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+           
             // 
             // HaveCheckBox
             // 
@@ -526,7 +524,7 @@ namespace BoBedreVS
             this.HaveCheckBox.Size = new System.Drawing.Size(15, 14);
             this.HaveCheckBox.TabIndex = 31;
             this.HaveCheckBox.UseVisualStyleBackColor = true;
-            this.HaveCheckBox.CheckedChanged += new System.EventHandler(this.HaveCheckBox_CheckedChanged);
+            
             // 
             // label13
             // 
