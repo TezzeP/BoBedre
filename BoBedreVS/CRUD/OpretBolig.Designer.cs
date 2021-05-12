@@ -397,7 +397,7 @@ namespace BoBedreVS
             // AlderTextBox
             // 
             this.AlderTextBox.Location = new System.Drawing.Point(381, 350);
-            this.AlderTextBox.Mask = "LLLLL";
+            this.AlderTextBox.Mask = "0000";
             this.AlderTextBox.Name = "AlderTextBox";
             this.AlderTextBox.Size = new System.Drawing.Size(100, 23);
             this.AlderTextBox.TabIndex = 27;
@@ -405,10 +405,11 @@ namespace BoBedreVS
             // HaveTextBox
             // 
             this.HaveTextBox.Location = new System.Drawing.Point(381, 308);
-            this.HaveTextBox.Mask = "LLLLL";
+            this.HaveTextBox.Mask = "0";
             this.HaveTextBox.Name = "HaveTextBox";
             this.HaveTextBox.Size = new System.Drawing.Size(100, 23);
             this.HaveTextBox.TabIndex = 28;
+            this.HaveTextBox.ValidatingType = typeof(int);
             // 
             // EjendomsTypeTextBox
             // 
@@ -422,7 +423,7 @@ namespace BoBedreVS
             // EtagerTextBox
             // 
             this.EtagerTextBox.Location = new System.Drawing.Point(647, 36);
-            this.EtagerTextBox.Mask = "LLLLL";
+            this.EtagerTextBox.Mask = "00";
             this.EtagerTextBox.Name = "EtagerTextBox";
             this.EtagerTextBox.Size = new System.Drawing.Size(100, 23);
             this.EtagerTextBox.TabIndex = 30;

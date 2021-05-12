@@ -163,7 +163,6 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources.cool_csgo_profile_pictures_2c3d8442_7fef_446e_9315_e9f8a46ece47;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
@@ -188,7 +187,7 @@ namespace BoBedreVS
             this.MINavnBox1.Name = "MINavnBox1";
             this.MINavnBox1.Size = new System.Drawing.Size(100, 23);
             this.MINavnBox1.TabIndex = 8;
-           
+            
             // 
             // MIStillingtextBox
             // 
@@ -241,7 +240,6 @@ namespace BoBedreVS
             this.Controls.Add(this.panel1);
             this.Name = "MedarbejderInfo";
             this.Text = "MedarbejderInfo";
-           
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
