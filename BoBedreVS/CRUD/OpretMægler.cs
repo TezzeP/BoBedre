@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BusinessLogic;
 using Models;
 using PersistensLag;
 
@@ -30,19 +31,15 @@ namespace BoBedreVS
 
         private void OpretMæglerKnap_Click(object sender, EventArgs e)
         {
-            
-            
-                Ejendomsmælger sendEjendomsmælger = new Ejendomsmælger();
+            Ejendomsmælger sendEjendomsmælger = new Ejendomsmælger();
+            HandleCRUD createMægler = new HandleCRUD();
+
                 sendEjendomsmælger.Navn = NavnTextBox.Text;
                 sendEjendomsmælger.Tlf = Convert.ToInt32(TelefonNrTextBox.Text);
                 sendEjendomsmælger.Mail = MailTextBox.Text;
                 sendEjendomsmælger.Stilling = StillingTextBox.Text;
-                
 
-
-                Create create = new Create();
-                MessageBox.Show(create.OpretEjendomsmælger(sendEjendomsmælger));
-
+                MessageBox.Show(createMægler.HandleOpretEjendomsmælger(sendEjendomsmælger));
             
             /*catch (Exception)
             {

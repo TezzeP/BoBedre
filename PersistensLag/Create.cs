@@ -33,8 +33,6 @@ namespace PersistensLag
                 conn.Close();
                 return ("Boligen er blevet tilføjet til databasen");
             }
-            
-
         }
 
         public string OpretBoligNowak(Bolig bolig)

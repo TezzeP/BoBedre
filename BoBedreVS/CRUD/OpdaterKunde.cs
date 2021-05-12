@@ -30,12 +30,8 @@ namespace BoBedreVS
         
         private void Update_Click(object sender, EventArgs e)
         {
-            Read readOne = new Read();
             Kunde kundeData = new Kunde();
             Update update = new Update();
-
-
-            
 
             kundeData.KundeId = Convert.ToInt32(KundeIdTextBox.Text);
             kundeData.Navn = KundeNavnTextBox.Text;
