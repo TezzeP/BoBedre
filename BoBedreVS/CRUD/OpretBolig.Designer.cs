@@ -37,7 +37,7 @@ namespace BoBedreVS
             this.PrisTextBox = new System.Windows.Forms.MaskedTextBox();
             this.StandSkalaTextBox = new System.Windows.Forms.MaskedTextBox();
             this.KundeIdTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.CreateBolig = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,6 +59,20 @@ namespace BoBedreVS
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.AlderTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.HaveTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.EjendomsTypeTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.EtagerTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.KøkkenAlderTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.BadeværelsesAlderTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.OmbygningsÅrTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,7 +80,7 @@ namespace BoBedreVS
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(468, 12);
+            this.button1.Location = new System.Drawing.Point(192, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -76,14 +90,14 @@ namespace BoBedreVS
             // 
             // AdresseTextBox
             // 
-            this.AdresseTextBox.Location = new System.Drawing.Point(657, 39);
+            this.AdresseTextBox.Location = new System.Drawing.Point(381, 39);
             this.AdresseTextBox.Name = "AdresseTextBox";
             this.AdresseTextBox.Size = new System.Drawing.Size(100, 23);
             this.AdresseTextBox.TabIndex = 1;
             // 
             // PostNrTextBox
             // 
-            this.PostNrTextBox.Location = new System.Drawing.Point(657, 79);
+            this.PostNrTextBox.Location = new System.Drawing.Point(381, 79);
             this.PostNrTextBox.Mask = "0000";
             this.PostNrTextBox.Name = "PostNrTextBox";
             this.PostNrTextBox.Size = new System.Drawing.Size(100, 23);
@@ -91,7 +105,7 @@ namespace BoBedreVS
             // 
             // GrundM2TextBox
             // 
-            this.GrundM2TextBox.Location = new System.Drawing.Point(657, 119);
+            this.GrundM2TextBox.Location = new System.Drawing.Point(381, 119);
             this.GrundM2TextBox.Mask = "0000";
             this.GrundM2TextBox.Name = "GrundM2TextBox";
             this.GrundM2TextBox.Size = new System.Drawing.Size(100, 23);
@@ -99,7 +113,7 @@ namespace BoBedreVS
             // 
             // HusM2TextBox
             // 
-            this.HusM2TextBox.Location = new System.Drawing.Point(657, 158);
+            this.HusM2TextBox.Location = new System.Drawing.Point(381, 158);
             this.HusM2TextBox.Mask = "0000";
             this.HusM2TextBox.Name = "HusM2TextBox";
             this.HusM2TextBox.Size = new System.Drawing.Size(100, 23);
@@ -107,43 +121,43 @@ namespace BoBedreVS
             // 
             // PrisTextBox
             // 
-            this.PrisTextBox.Location = new System.Drawing.Point(657, 197);
-            this.PrisTextBox.Mask = "000000000000";
+            this.PrisTextBox.Location = new System.Drawing.Point(381, 197);
+            this.PrisTextBox.Mask = "000000000";
             this.PrisTextBox.Name = "PrisTextBox";
             this.PrisTextBox.Size = new System.Drawing.Size(100, 23);
             this.PrisTextBox.TabIndex = 5;
             // 
             // StandSkalaTextBox
             // 
-            this.StandSkalaTextBox.Location = new System.Drawing.Point(657, 311);
-            this.StandSkalaTextBox.Mask = "0";
+            this.StandSkalaTextBox.Location = new System.Drawing.Point(647, 308);
+            this.StandSkalaTextBox.Mask = "00";
             this.StandSkalaTextBox.Name = "StandSkalaTextBox";
             this.StandSkalaTextBox.Size = new System.Drawing.Size(100, 23);
-            this.StandSkalaTextBox.TabIndex = 8;
+            this.StandSkalaTextBox.TabIndex = 15;
             // 
             // KundeIdTextBox
             // 
-            this.KundeIdTextBox.Location = new System.Drawing.Point(657, 350);
+            this.KundeIdTextBox.Location = new System.Drawing.Point(647, 350);
             this.KundeIdTextBox.Mask = "0000";
             this.KundeIdTextBox.Name = "KundeIdTextBox";
             this.KundeIdTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeIdTextBox.TabIndex = 9;
+            this.KundeIdTextBox.TabIndex = 16;
             // 
-            // button2
+            // CreateBolig
             // 
-            this.button2.Location = new System.Drawing.Point(543, 403);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Opret bolig";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.CreateBolig.Location = new System.Drawing.Point(267, 403);
+            this.CreateBolig.Name = "CreateBolig";
+            this.CreateBolig.Size = new System.Drawing.Size(75, 23);
+            this.CreateBolig.TabIndex = 10;
+            this.CreateBolig.Text = "Opret bolig";
+            this.CreateBolig.UseVisualStyleBackColor = true;
+            this.CreateBolig.Click += new System.EventHandler(this.CreateBolig_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label1.Location = new System.Drawing.Point(540, 39);
+            this.label1.Location = new System.Drawing.Point(264, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 11;
@@ -153,7 +167,7 @@ namespace BoBedreVS
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label2.Location = new System.Drawing.Point(543, 79);
+            this.label2.Location = new System.Drawing.Point(267, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 15);
             this.label2.TabIndex = 12;
@@ -163,7 +177,7 @@ namespace BoBedreVS
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label3.Location = new System.Drawing.Point(540, 119);
+            this.label3.Location = new System.Drawing.Point(264, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 15);
             this.label3.TabIndex = 13;
@@ -173,7 +187,7 @@ namespace BoBedreVS
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label4.Location = new System.Drawing.Point(543, 158);
+            this.label4.Location = new System.Drawing.Point(267, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 15);
             this.label4.TabIndex = 14;
@@ -183,7 +197,7 @@ namespace BoBedreVS
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label5.Location = new System.Drawing.Point(543, 197);
+            this.label5.Location = new System.Drawing.Point(267, 197);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 15);
             this.label5.TabIndex = 15;
@@ -193,17 +207,18 @@ namespace BoBedreVS
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label6.Location = new System.Drawing.Point(543, 235);
+            this.label6.Location = new System.Drawing.Point(503, 155);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 15);
+            this.label6.Size = new System.Drawing.Size(61, 15);
             this.label6.TabIndex = 16;
-            this.label6.Text = "salgsdato ";
+            this.label6.Text = "Salgsdato ";
+          
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label7.Location = new System.Drawing.Point(540, 273);
+            this.label7.Location = new System.Drawing.Point(503, 194);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 15);
             this.label7.TabIndex = 17;
@@ -213,7 +228,7 @@ namespace BoBedreVS
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label8.Location = new System.Drawing.Point(543, 311);
+            this.label8.Location = new System.Drawing.Point(503, 308);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 15);
             this.label8.TabIndex = 18;
@@ -223,7 +238,7 @@ namespace BoBedreVS
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label9.Location = new System.Drawing.Point(543, 350);
+            this.label9.Location = new System.Drawing.Point(503, 350);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 15);
             this.label9.TabIndex = 19;
@@ -231,20 +246,20 @@ namespace BoBedreVS
             // 
             // SalgsDatoTextBox
             // 
-            this.SalgsDatoTextBox.Location = new System.Drawing.Point(657, 235);
+            this.SalgsDatoTextBox.Location = new System.Drawing.Point(647, 158);
             this.SalgsDatoTextBox.Mask = "00/00/0000";
             this.SalgsDatoTextBox.Name = "SalgsDatoTextBox";
             this.SalgsDatoTextBox.Size = new System.Drawing.Size(100, 23);
-            this.SalgsDatoTextBox.TabIndex = 20;
+            this.SalgsDatoTextBox.TabIndex = 12;
             this.SalgsDatoTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // OprettelsesdatoTextBox
             // 
-            this.OprettelsesdatoTextBox.Location = new System.Drawing.Point(657, 273);
+            this.OprettelsesdatoTextBox.Location = new System.Drawing.Point(647, 194);
             this.OprettelsesdatoTextBox.Mask = "00/00/0000";
             this.OprettelsesdatoTextBox.Name = "OprettelsesdatoTextBox";
             this.OprettelsesdatoTextBox.Size = new System.Drawing.Size(100, 23);
-            this.OprettelsesdatoTextBox.TabIndex = 21;
+            this.OprettelsesdatoTextBox.TabIndex = 13;
             this.OprettelsesdatoTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // panel1
@@ -259,7 +274,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 450);
+            this.panel1.Size = new System.Drawing.Size(186, 448);
             this.panel1.TabIndex = 26;
             // 
             // MedarbejderPortal
@@ -287,7 +302,7 @@ namespace BoBedreVS
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
             this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
@@ -302,7 +317,7 @@ namespace BoBedreVS
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
             this.AabentHus.TabIndex = 3;
-            this.AabentHus.Text = "Aabet Hus";
+            this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
@@ -361,7 +376,6 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources.cool_csgo_profile_pictures_2c3d8442_7fef_446e_9315_e9f8a46ece47;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
@@ -380,12 +394,155 @@ namespace BoBedreVS
             this.label12.TabIndex = 1;
             this.label12.Text = "Guffe";
             // 
+            // AlderTextBox
+            // 
+            this.AlderTextBox.Location = new System.Drawing.Point(381, 350);
+            this.AlderTextBox.Mask = "00/00/0000";
+            this.AlderTextBox.Name = "AlderTextBox";
+            this.AlderTextBox.Size = new System.Drawing.Size(100, 23);
+            this.AlderTextBox.TabIndex = 8;
+            this.AlderTextBox.ValidatingType = typeof(System.DateTime);
+            // 
+            // HaveTextBox
+            // 
+            this.HaveTextBox.Location = new System.Drawing.Point(381, 308);
+            this.HaveTextBox.Mask = "LLL";
+            this.HaveTextBox.Name = "HaveTextBox";
+            this.HaveTextBox.Size = new System.Drawing.Size(100, 23);
+            this.HaveTextBox.TabIndex = 7;
+            // 
+            // EjendomsTypeTextBox
+            // 
+            this.EjendomsTypeTextBox.Location = new System.Drawing.Point(381, 255);
+            this.EjendomsTypeTextBox.Mask = "LLLLLLLLLLLLLLLLLL";
+            this.EjendomsTypeTextBox.Name = "EjendomsTypeTextBox";
+            this.EjendomsTypeTextBox.Size = new System.Drawing.Size(100, 23);
+            this.EjendomsTypeTextBox.TabIndex = 6;
+            
+            // 
+            // EtagerTextBox
+            // 
+            this.EtagerTextBox.Location = new System.Drawing.Point(647, 36);
+            this.EtagerTextBox.Mask = "000";
+            this.EtagerTextBox.Name = "EtagerTextBox";
+            this.EtagerTextBox.Size = new System.Drawing.Size(100, 23);
+            this.EtagerTextBox.TabIndex = 9;
+            // 
+            // KøkkenAlderTextBox
+            // 
+            this.KøkkenAlderTextBox.Location = new System.Drawing.Point(647, 79);
+            this.KøkkenAlderTextBox.Mask = "00/00/0000";
+            this.KøkkenAlderTextBox.Name = "KøkkenAlderTextBox";
+            this.KøkkenAlderTextBox.Size = new System.Drawing.Size(100, 23);
+            this.KøkkenAlderTextBox.TabIndex = 10;
+            // 
+            // BadeværelsesAlderTextBox
+            // 
+            this.BadeværelsesAlderTextBox.Location = new System.Drawing.Point(647, 119);
+            this.BadeværelsesAlderTextBox.Mask = "00/00/0000";
+            this.BadeværelsesAlderTextBox.Name = "BadeværelsesAlderTextBox";
+            this.BadeværelsesAlderTextBox.Size = new System.Drawing.Size(100, 23);
+            this.BadeværelsesAlderTextBox.TabIndex = 11;
+            // 
+            // OmbygningsÅrTextBox
+            // 
+            this.OmbygningsÅrTextBox.Location = new System.Drawing.Point(647, 252);
+            this.OmbygningsÅrTextBox.Mask = "00/00/0000";
+            this.OmbygningsÅrTextBox.Name = "OmbygningsÅrTextBox";
+            this.OmbygningsÅrTextBox.Size = new System.Drawing.Size(100, 23);
+            this.OmbygningsÅrTextBox.TabIndex = 14;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label10.Location = new System.Drawing.Point(264, 255);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(86, 15);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "Ejendoms Type";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label13.Location = new System.Drawing.Point(267, 308);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(34, 15);
+            this.label13.TabIndex = 35;
+            this.label13.Text = "Have";
+           
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label14.Location = new System.Drawing.Point(267, 358);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(35, 15);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "Alder";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label15.Location = new System.Drawing.Point(503, 36);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(40, 15);
+            this.label15.TabIndex = 37;
+            this.label15.Text = "Etager";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label16.Location = new System.Drawing.Point(503, 82);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(77, 15);
+            this.label16.TabIndex = 38;
+            this.label16.Text = "Køkken Alder";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label17.Location = new System.Drawing.Point(503, 122);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(109, 15);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "Badeværelses Alder";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label18.Location = new System.Drawing.Point(503, 255);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(91, 15);
+            this.label18.TabIndex = 40;
+            this.label18.Text = "Ombygnings År";
+            // 
             // OpretBolig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(842, 448);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.OmbygningsÅrTextBox);
+            this.Controls.Add(this.BadeværelsesAlderTextBox);
+            this.Controls.Add(this.KøkkenAlderTextBox);
+            this.Controls.Add(this.EtagerTextBox);
+            this.Controls.Add(this.EjendomsTypeTextBox);
+            this.Controls.Add(this.HaveTextBox);
+            this.Controls.Add(this.AlderTextBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.OprettelsesdatoTextBox);
             this.Controls.Add(this.SalgsDatoTextBox);
@@ -398,7 +555,7 @@ namespace BoBedreVS
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.CreateBolig);
             this.Controls.Add(this.KundeIdTextBox);
             this.Controls.Add(this.StandSkalaTextBox);
             this.Controls.Add(this.PrisTextBox);
@@ -408,8 +565,7 @@ namespace BoBedreVS
             this.Controls.Add(this.AdresseTextBox);
             this.Controls.Add(this.button1);
             this.Name = "OpretBolig";
-            this.Text = "OpdaterBolig";
-            this.Load += new System.EventHandler(this.OpretBolig_Load);
+            this.Text = "OpretBolig";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -429,7 +585,7 @@ namespace BoBedreVS
         private System.Windows.Forms.MaskedTextBox PrisTextBox;
         private System.Windows.Forms.MaskedTextBox StandSkalaTextBox;
         private System.Windows.Forms.MaskedTextBox KundeIdTextBox;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button CreateBolig;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -451,5 +607,19 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.MaskedTextBox AlderTextBox;
+        private System.Windows.Forms.MaskedTextBox HaveTextBox;
+        private System.Windows.Forms.MaskedTextBox EjendomsTypeTextBox;
+        private System.Windows.Forms.MaskedTextBox EtagerTextBox;
+        private System.Windows.Forms.MaskedTextBox KøkkenAlderTextBox;
+        private System.Windows.Forms.MaskedTextBox BadeværelsesAlderTextBox;
+        private System.Windows.Forms.MaskedTextBox OmbygningsÅrTextBox;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
     }
 }

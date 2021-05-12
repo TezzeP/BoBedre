@@ -63,7 +63,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 486);
+            this.panel1.Size = new System.Drawing.Size(186, 445);
             this.panel1.TabIndex = 6;
             // 
             // MedarbejderPortal
@@ -91,7 +91,7 @@ namespace BoBedreVS
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
             this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click_1);
@@ -106,7 +106,7 @@ namespace BoBedreVS
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 30);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Aabet Hus";
+            this.button1.Text = "Åbent Hus";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -186,7 +186,7 @@ namespace BoBedreVS
             // 
             // udSKRIV
             // 
-            this.udSKRIV.Location = new System.Drawing.Point(192, 142);
+            this.udSKRIV.Location = new System.Drawing.Point(192, 52);
             this.udSKRIV.Name = "udSKRIV";
             this.udSKRIV.Size = new System.Drawing.Size(150, 23);
             this.udSKRIV.TabIndex = 7;
@@ -197,7 +197,7 @@ namespace BoBedreVS
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(192, 171);
+            this.dataGridView1.Location = new System.Drawing.Point(192, 119);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(730, 304);
@@ -215,7 +215,7 @@ namespace BoBedreVS
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(616, 111);
+            this.button2.Location = new System.Drawing.Point(462, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 10;
@@ -225,7 +225,7 @@ namespace BoBedreVS
             // 
             // FirstLetterBox
             // 
-            this.FirstLetterBox.Location = new System.Drawing.Point(616, 140);
+            this.FirstLetterBox.Location = new System.Drawing.Point(462, 52);
             this.FirstLetterBox.Mask = "C";
             this.FirstLetterBox.Name = "FirstLetterBox";
             this.FirstLetterBox.Size = new System.Drawing.Size(18, 23);
@@ -233,7 +233,7 @@ namespace BoBedreVS
             // 
             // SecondLetterBox
             // 
-            this.SecondLetterBox.Location = new System.Drawing.Point(673, 140);
+            this.SecondLetterBox.Location = new System.Drawing.Point(519, 52);
             this.SecondLetterBox.Mask = "C";
             this.SecondLetterBox.Name = "SecondLetterBox";
             this.SecondLetterBox.Size = new System.Drawing.Size(18, 23);
@@ -244,7 +244,7 @@ namespace BoBedreVS
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(935, 486);
+            this.ClientSize = new System.Drawing.Size(935, 445);
             this.Controls.Add(this.SecondLetterBox);
             this.Controls.Add(this.FirstLetterBox);
             this.Controls.Add(this.button2);

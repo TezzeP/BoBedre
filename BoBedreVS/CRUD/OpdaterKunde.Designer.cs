@@ -50,6 +50,10 @@ namespace BoBedreVS
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,7 +61,7 @@ namespace BoBedreVS
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(249, 12);
+            this.button1.Location = new System.Drawing.Point(192, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -67,50 +71,51 @@ namespace BoBedreVS
             // 
             // Update
             // 
-            this.Update.Location = new System.Drawing.Point(249, 42);
+            this.Update.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Update.Location = new System.Drawing.Point(406, 309);
             this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(75, 23);
-            this.Update.TabIndex = 1;
+            this.Update.Size = new System.Drawing.Size(113, 60);
+            this.Update.TabIndex = 9;
             this.Update.Text = "Update";
             this.Update.UseVisualStyleBackColor = true;
             this.Update.Click += new System.EventHandler(this.Update_Click);
             // 
             // KundeNavnTextBox
             // 
-            this.KundeNavnTextBox.Location = new System.Drawing.Point(374, 43);
+            this.KundeNavnTextBox.Location = new System.Drawing.Point(264, 180);
             this.KundeNavnTextBox.Name = "KundeNavnTextBox";
             this.KundeNavnTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KundeNavnTextBox.TabIndex = 2;
+            this.KundeNavnTextBox.TabIndex = 3;
             // 
             // KundeTelnrTextBox
             // 
-            this.KundeTelnrTextBox.Location = new System.Drawing.Point(374, 72);
+            this.KundeTelnrTextBox.Location = new System.Drawing.Point(264, 210);
             this.KundeTelnrTextBox.Name = "KundeTelnrTextBox";
             this.KundeTelnrTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KundeTelnrTextBox.TabIndex = 3;
+            this.KundeTelnrTextBox.TabIndex = 4;
             // 
             // KundeMailTextBox
             // 
-            this.KundeMailTextBox.Location = new System.Drawing.Point(374, 101);
+            this.KundeMailTextBox.Location = new System.Drawing.Point(264, 239);
             this.KundeMailTextBox.Name = "KundeMailTextBox";
             this.KundeMailTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KundeMailTextBox.TabIndex = 4;
+            this.KundeMailTextBox.TabIndex = 5;
             // 
             // KundeAdresseTextBox
             // 
-            this.KundeAdresseTextBox.Location = new System.Drawing.Point(374, 130);
+            this.KundeAdresseTextBox.Location = new System.Drawing.Point(264, 268);
             this.KundeAdresseTextBox.Name = "KundeAdresseTextBox";
             this.KundeAdresseTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KundeAdresseTextBox.TabIndex = 5;
+            this.KundeAdresseTextBox.TabIndex = 6;
             // 
             // KøberCB
             // 
             this.KøberCB.AutoSize = true;
             this.KøberCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.KøberCB.Location = new System.Drawing.Point(374, 173);
+            this.KøberCB.Location = new System.Drawing.Point(264, 309);
             this.KøberCB.Name = "KøberCB";
             this.KøberCB.Size = new System.Drawing.Size(57, 19);
-            this.KøberCB.TabIndex = 6;
+            this.KøberCB.TabIndex = 7;
             this.KøberCB.Text = "Køber";
             this.KøberCB.UseVisualStyleBackColor = true;
             // 
@@ -118,10 +123,10 @@ namespace BoBedreVS
             // 
             this.SælgerCB.AutoSize = true;
             this.SælgerCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.SælgerCB.Location = new System.Drawing.Point(374, 214);
+            this.SælgerCB.Location = new System.Drawing.Point(264, 350);
             this.SælgerCB.Name = "SælgerCB";
             this.SælgerCB.Size = new System.Drawing.Size(62, 19);
-            this.SælgerCB.TabIndex = 7;
+            this.SælgerCB.TabIndex = 8;
             this.SælgerCB.Text = "Sælger";
             this.SælgerCB.UseVisualStyleBackColor = true;
             // 
@@ -129,7 +134,7 @@ namespace BoBedreVS
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label1.Location = new System.Drawing.Point(353, 12);
+            this.label1.Location = new System.Drawing.Point(193, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(158, 15);
             this.label1.TabIndex = 8;
@@ -137,17 +142,17 @@ namespace BoBedreVS
             // 
             // KundeIdTextBox
             // 
-            this.KundeIdTextBox.Location = new System.Drawing.Point(535, 12);
+            this.KundeIdTextBox.Location = new System.Drawing.Point(193, 85);
             this.KundeIdTextBox.Name = "KundeIdTextBox";
             this.KundeIdTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeIdTextBox.TabIndex = 9;
+            this.KundeIdTextBox.TabIndex = 1;
             // 
             // LæsKundeData
             // 
-            this.LæsKundeData.Location = new System.Drawing.Point(249, 71);
+            this.LæsKundeData.Location = new System.Drawing.Point(309, 85);
             this.LæsKundeData.Name = "LæsKundeData";
             this.LæsKundeData.Size = new System.Drawing.Size(102, 23);
-            this.LæsKundeData.TabIndex = 10;
+            this.LæsKundeData.TabIndex = 2;
             this.LæsKundeData.Text = "LæsKundeData";
             this.LæsKundeData.UseVisualStyleBackColor = true;
             this.LæsKundeData.Click += new System.EventHandler(this.LæsKundeData_Click);
@@ -164,7 +169,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 450);
+            this.panel1.Size = new System.Drawing.Size(186, 429);
             this.panel1.TabIndex = 24;
             // 
             // MedarbejderPortal
@@ -192,7 +197,7 @@ namespace BoBedreVS
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
             this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
@@ -207,7 +212,7 @@ namespace BoBedreVS
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
             this.AabentHus.TabIndex = 3;
-            this.AabentHus.Text = "Aabet Hus";
+            this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
@@ -285,12 +290,56 @@ namespace BoBedreVS
             this.label12.TabIndex = 1;
             this.label12.Text = "Guffe";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label2.Location = new System.Drawing.Point(193, 180);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 15);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Navn";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label3.Location = new System.Drawing.Point(193, 210);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 15);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "TlfNr";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label4.Location = new System.Drawing.Point(193, 239);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 15);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Mail";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label5.Location = new System.Drawing.Point(193, 268);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 15);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Adresse";
+            // 
             // OpdaterKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(558, 429);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LæsKundeData);
             this.Controls.Add(this.KundeIdTextBox);
@@ -304,7 +353,7 @@ namespace BoBedreVS
             this.Controls.Add(this.Update);
             this.Controls.Add(this.button1);
             this.Name = "OpdaterKunde";
-            this.Text = "Update";
+            this.Text = "UpdateKunde";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -317,7 +366,7 @@ namespace BoBedreVS
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Update;
+        private new System.Windows.Forms.Button Update;
         private System.Windows.Forms.MaskedTextBox KundeNavnTextBox;
         private System.Windows.Forms.MaskedTextBox KundeTelnrTextBox;
         private System.Windows.Forms.MaskedTextBox KundeMailTextBox;
@@ -337,5 +386,9 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

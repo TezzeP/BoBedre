@@ -92,7 +92,6 @@ namespace BoBedreVS
             AabentHus goTo = new AabentHus();
             goTo.ShowDialog();
             Close();
-
         }
     }
 }

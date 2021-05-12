@@ -28,57 +28,19 @@ namespace BoBedreVS
             goTo.ShowDialog(); // viser forms af kundeoplsyninger
             Close(); // lukker forsiden
         }
-
-        private void OpretBolig_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Bolig sendBolig = new Bolig();
-                sendBolig.Adresse = AdresseTextBox.Text;
-                sendBolig.PostNr = Convert.ToInt32(PostNrTextBox.Text);
-                sendBolig.GrundM2 = Convert.ToInt32(GrundM2TextBox.Text);
-                sendBolig.HusM2 = Convert.ToInt32(HusM2TextBox.Text);
-                sendBolig.Pris = Convert.ToInt32(PrisTextBox.Text);
-                sendBolig.SalgsDato = SalgsDatoTextBox.Text;
-                sendBolig.OprettelsesDato = OprettelsesdatoTextBox.Text;
-                sendBolig.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
-                sendBolig.KundeID = Convert.ToInt32(KundeIdTextBox.Text);
-
-                Create create = new Create();
-                MessageBox.Show(create.OpretBolig(sendBolig));
-                
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("mangler input (tror jeg) :)");
-                
-            }
-            
-            
-        }
-
-       
         private void CRUD_Click(object sender, EventArgs e)
         {
             Hide();
             CRUD goTo = new CRUD();
             goTo.ShowDialog();
             Close();
-
         }
-
         private void Statistik_Click(object sender, EventArgs e)
         {
-            Hide();
-            Statistik goTo = new Statistik();
+            Hide(); 
+            Statistik goTo = new Statistik(); 
             goTo.ShowDialog();
             Close();
-
         }
 
         private void PrisVudering_Click(object sender, EventArgs e)
@@ -103,6 +65,33 @@ namespace BoBedreVS
             AabentHus goTo = new AabentHus();
             goTo.ShowDialog();
             Close();
+        }
+
+        private void CreateBolig_Click(object sender, EventArgs e)
+        {
+            Bolig sendBolig = new Bolig();
+            Create create = new Create();
+
+            sendBolig.Adresse = Convert.ToString(AdresseTextBox.Text);
+            sendBolig.PostNr = Convert.ToInt32(PostNrTextBox.Text);
+            sendBolig.GrundM2 = Convert.ToDouble(GrundM2TextBox.Text);
+            sendBolig.HusM2 = Convert.ToDouble(HusM2TextBox.Text);
+            sendBolig.Pris = Convert.ToDouble(PrisTextBox.Text);
+            sendBolig.EjendomsType = Convert.ToString(EjendomsTypeTextBox.Text);
+            sendBolig.Have = Convert.ToString(HaveTextBox.Text);
+            sendBolig.Alder = Convert.ToString(AlderTextBox.Text);
+            sendBolig.Etager = Convert.ToInt32(EtagerTextBox.Text);
+            sendBolig.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
+            sendBolig.BadeværelsesAlder = Convert.ToString(BadeværelsesAlderTextBox.Text);
+            sendBolig.SalgsDato = Convert.ToString(SalgsDatoTextBox.Text);
+            sendBolig.OprettelsesDato = Convert.ToString(OprettelsesdatoTextBox.Text);
+            sendBolig.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
+            sendBolig.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
+            sendBolig.KundeID = Convert.ToInt32(KundeIdTextBox.Text);
+
+            MessageBox.Show(create.OpretBoligNowak(sendBolig));
+
+            // her mangler en try catch, men den hopper altid i catch klausul
         }
     }
 }

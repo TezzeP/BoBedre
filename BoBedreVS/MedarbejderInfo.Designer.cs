@@ -39,6 +39,10 @@ namespace BoBedreVS
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.MINavnBox1 = new System.Windows.Forms.TextBox();
+            this.MIStillingtextBox = new System.Windows.Forms.TextBox();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.StillingLable = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,14 +53,16 @@ namespace BoBedreVS
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.MedarbejderPortal);
             this.panel1.Controls.Add(this.PrisVudering);
+            this.panel1.Controls.Add(this.MIStillingtextBox);
             this.panel1.Controls.Add(this.AabentHus);
+            this.panel1.Controls.Add(this.MINavnBox1);
             this.panel1.Controls.Add(this.CRUD);
             this.panel1.Controls.Add(this.Statistik);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 450);
+            this.panel1.Size = new System.Drawing.Size(186, 462);
             this.panel1.TabIndex = 7;
             // 
             // MedarbejderPortal
@@ -84,7 +90,7 @@ namespace BoBedreVS
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
             this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.Text = "PrisVurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
@@ -99,7 +105,7 @@ namespace BoBedreVS
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
             this.AabentHus.TabIndex = 3;
-            this.AabentHus.Text = "Aabet Hus";
+            this.AabentHus.Text = "Åbent Hus ";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
@@ -177,20 +183,60 @@ namespace BoBedreVS
             this.label1.TabIndex = 1;
             this.label1.Text = "User Name";
             // 
+            // MINavnBox1
+            // 
+            this.MINavnBox1.Location = new System.Drawing.Point(0, 412);
+            this.MINavnBox1.Name = "MINavnBox1";
+            this.MINavnBox1.Size = new System.Drawing.Size(100, 23);
+            this.MINavnBox1.TabIndex = 8;
+            // 
+            // MIStillingtextBox
+            // 
+            this.MIStillingtextBox.Location = new System.Drawing.Point(0, 441);
+            this.MIStillingtextBox.Name = "MIStillingtextBox";
+            this.MIStillingtextBox.Size = new System.Drawing.Size(100, 23);
+            this.MIStillingtextBox.TabIndex = 9;
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Font = new System.Drawing.Font("Segoe UI", 80F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NameLabel.ForeColor = System.Drawing.Color.Red;
+            this.NameLabel.Location = new System.Drawing.Point(220, 9);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(335, 142);
+            this.NameLabel.TabIndex = 12;
+            this.NameLabel.Text = "Navn ";
+            // 
+            // StillingLable
+            // 
+            this.StillingLable.AutoSize = true;
+            this.StillingLable.Font = new System.Drawing.Font("Segoe UI", 80F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StillingLable.ForeColor = System.Drawing.Color.Red;
+            this.StillingLable.Location = new System.Drawing.Point(220, 225);
+            this.StillingLable.Name = "StillingLable";
+            this.StillingLable.Size = new System.Drawing.Size(378, 142);
+            this.StillingLable.TabIndex = 13;
+            this.StillingLable.Text = "Stilling";
+            // 
             // MedarbejderInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(778, 462);
+            this.Controls.Add(this.StillingLable);
+            this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.panel1);
             this.Name = "MedarbejderInfo";
             this.Text = "MedarbejderInfo";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -206,5 +252,9 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox MINavnBox1;
+        private System.Windows.Forms.TextBox MIStillingtextBox;
+        private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.Label StillingLable;
     }
 }

@@ -31,7 +31,7 @@ namespace BoBedreVS
         private void LæsMælgerData_Click(object sender, EventArgs e)
         {
             Read readOneMægler = new Read();
-            Ejendomsmælger mælgerData = readOneMægler.ReadOneMælger(Convert.ToInt32(MedarbejderIdTextBox1.Text));
+            Ejendomsmælger mælgerData = readOneMægler.ReadAllMælgerWithMedarbejderId(Convert.ToInt32(MedarbejderIdTextBox1.Text));
 
             MedarbejderIdTextBox1.Text = Convert.ToString(mælgerData.MedarbejderId);
             MælgerNavnTextBox.Text = Convert.ToString(mælgerData.Navn);

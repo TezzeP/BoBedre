@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BusinessLogic;
 
 
 namespace BoBedreVS
@@ -33,7 +34,58 @@ namespace BoBedreVS
             Close(); // lukker forsiden
         }
 
-        
-        
+        private void ReadAndShowKunde_Click(object sender, EventArgs e)
+        {
+            ReadAndShow readAndShowBolig = new ReadAndShow();
+
+            dataGridView1.DataSource = readAndShowBolig.ReadAndShowKunde();
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            HandleCRUD deleteKunde = new HandleCRUD();
+            deleteKunde.HandleDeleteKunde(Convert.ToInt32(KundeIdTextBox.Text));
+        }
+
+        private void CRUD_Click(object sender, EventArgs e)
+        {
+            Hide();
+            CRUD goTo = new CRUD();
+            goTo.ShowDialog();
+            Close();
+        }
+
+        private void Statistik_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Statistik goTo = new Statistik();
+            goTo.ShowDialog();
+            Close();
+        }
+        private void PrisVudering_Click(object sender, EventArgs e)
+        {
+            Hide();
+            PrisVudering goTo = new PrisVudering();
+            goTo.ShowDialog();
+            Close();
+        }
+
+        private void MedarbejderPortal_Click(object sender, EventArgs e)
+        {
+            Hide();
+            MedarbejderInfo goTo = new MedarbejderInfo();
+            goTo.ShowDialog();
+            Close();
+        }
+
+      
+
+        private void AabentHus_Click(object sender, EventArgs e)
+        {
+            Hide();
+            AabentHus goTo = new AabentHus();
+            goTo.ShowDialog();
+            Close();
+        }
     }
 }

@@ -56,17 +56,17 @@ namespace BoBedreVS
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(308, 12);
+            this.button1.Location = new System.Drawing.Point(192, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // NavnTextBox
             // 
-            this.NavnTextBox.Location = new System.Drawing.Point(552, 60);
+            this.NavnTextBox.Location = new System.Drawing.Point(276, 64);
             this.NavnTextBox.Name = "NavnTextBox";
             this.NavnTextBox.Size = new System.Drawing.Size(100, 23);
             this.NavnTextBox.TabIndex = 1;
@@ -74,7 +74,8 @@ namespace BoBedreVS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(473, 60);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label1.Location = new System.Drawing.Point(197, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 15);
             this.label1.TabIndex = 2;
@@ -82,29 +83,30 @@ namespace BoBedreVS
             // 
             // TelefonNrTextBox
             // 
-            this.TelefonNrTextBox.Location = new System.Drawing.Point(552, 121);
+            this.TelefonNrTextBox.Location = new System.Drawing.Point(276, 102);
             this.TelefonNrTextBox.Name = "TelefonNrTextBox";
             this.TelefonNrTextBox.Size = new System.Drawing.Size(100, 23);
-            this.TelefonNrTextBox.TabIndex = 3;
+            this.TelefonNrTextBox.TabIndex = 2;
             // 
             // MailTextBox
             // 
-            this.MailTextBox.Location = new System.Drawing.Point(552, 184);
+            this.MailTextBox.Location = new System.Drawing.Point(276, 140);
             this.MailTextBox.Name = "MailTextBox";
             this.MailTextBox.Size = new System.Drawing.Size(100, 23);
-            this.MailTextBox.TabIndex = 4;
+            this.MailTextBox.TabIndex = 3;
             // 
             // StillingTextBox
             // 
-            this.StillingTextBox.Location = new System.Drawing.Point(552, 257);
+            this.StillingTextBox.Location = new System.Drawing.Point(276, 179);
             this.StillingTextBox.Name = "StillingTextBox";
             this.StillingTextBox.Size = new System.Drawing.Size(100, 23);
-            this.StillingTextBox.TabIndex = 5;
+            this.StillingTextBox.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(473, 121);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label2.Location = new System.Drawing.Point(197, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 15);
             this.label2.TabIndex = 6;
@@ -113,7 +115,8 @@ namespace BoBedreVS
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(473, 187);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label3.Location = new System.Drawing.Point(197, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 15);
             this.label3.TabIndex = 7;
@@ -122,7 +125,8 @@ namespace BoBedreVS
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(473, 257);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label4.Location = new System.Drawing.Point(197, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 15);
             this.label4.TabIndex = 8;
@@ -130,10 +134,10 @@ namespace BoBedreVS
             // 
             // OpretMæglerKnap
             // 
-            this.OpretMæglerKnap.Location = new System.Drawing.Point(473, 321);
+            this.OpretMæglerKnap.Location = new System.Drawing.Point(197, 232);
             this.OpretMæglerKnap.Name = "OpretMæglerKnap";
             this.OpretMæglerKnap.Size = new System.Drawing.Size(92, 23);
-            this.OpretMæglerKnap.TabIndex = 9;
+            this.OpretMæglerKnap.TabIndex = 5;
             this.OpretMæglerKnap.Text = "Opret mægler";
             this.OpretMæglerKnap.UseVisualStyleBackColor = true;
             this.OpretMæglerKnap.Click += new System.EventHandler(this.OpretMæglerKnap_Click);
@@ -150,7 +154,7 @@ namespace BoBedreVS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 450);
+            this.panel1.Size = new System.Drawing.Size(186, 397);
             this.panel1.TabIndex = 27;
             // 
             // MedarbejderPortal
@@ -162,7 +166,7 @@ namespace BoBedreVS
             this.MedarbejderPortal.Location = new System.Drawing.Point(0, 225);
             this.MedarbejderPortal.Name = "MedarbejderPortal";
             this.MedarbejderPortal.Size = new System.Drawing.Size(186, 30);
-            this.MedarbejderPortal.TabIndex = 3;
+            this.MedarbejderPortal.TabIndex = 10;
             this.MedarbejderPortal.Text = "Medarbejder Portal";
             this.MedarbejderPortal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.MedarbejderPortal.UseVisualStyleBackColor = true;
@@ -177,8 +181,8 @@ namespace BoBedreVS
             this.PrisVudering.Location = new System.Drawing.Point(0, 201);
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
-            this.PrisVudering.TabIndex = 3;
-            this.PrisVudering.Text = "Pris Vudering";
+            this.PrisVudering.TabIndex = 9;
+            this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
@@ -192,8 +196,8 @@ namespace BoBedreVS
             this.AabentHus.Location = new System.Drawing.Point(0, 255);
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
-            this.AabentHus.TabIndex = 3;
-            this.AabentHus.Text = "Aabet Hus";
+            this.AabentHus.TabIndex = 11;
+            this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
@@ -207,7 +211,7 @@ namespace BoBedreVS
             this.CRUD.Location = new System.Drawing.Point(0, 143);
             this.CRUD.Name = "CRUD";
             this.CRUD.Size = new System.Drawing.Size(186, 30);
-            this.CRUD.TabIndex = 3;
+            this.CRUD.TabIndex = 7;
             this.CRUD.Text = "CRUD";
             this.CRUD.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.CRUD.UseVisualStyleBackColor = true;
@@ -222,7 +226,7 @@ namespace BoBedreVS
             this.Statistik.Location = new System.Drawing.Point(0, 171);
             this.Statistik.Name = "Statistik";
             this.Statistik.Size = new System.Drawing.Size(186, 30);
-            this.Statistik.TabIndex = 3;
+            this.Statistik.TabIndex = 8;
             this.Statistik.Text = "Statistik";
             this.Statistik.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Statistik.UseVisualStyleBackColor = true;
@@ -275,7 +279,8 @@ namespace BoBedreVS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.ClientSize = new System.Drawing.Size(483, 397);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.OpretMæglerKnap);
             this.Controls.Add(this.label4);
