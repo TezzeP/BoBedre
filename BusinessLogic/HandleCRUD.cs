@@ -13,7 +13,7 @@ namespace BusinessLogic
         public string HandleOpretBolig(Bolig bolig)
         {
             Create create = new Create();
-            return create.OpretBolig(bolig);
+            return create.OpretBoligGustav(bolig);
         }
         public string HandleOpretKunde(Kunde kunde)
         {
@@ -40,9 +40,5 @@ namespace BusinessLogic
             Delete deleteKunde = new Delete();
             deleteKunde.DeleteKunde(kunde);
         }
-
-
-
-
     }
 }

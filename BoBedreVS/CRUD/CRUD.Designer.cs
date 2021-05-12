@@ -74,7 +74,7 @@ namespace BoBedreVS
             this.button4.Location = new System.Drawing.Point(218, 115);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(104, 23);
-            this.button4.TabIndex = 3;
+            this.button4.TabIndex = 7;
             this.button4.Text = "Opdater kunde";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -113,7 +113,7 @@ namespace BoBedreVS
             this.MedarbejderPortal.Location = new System.Drawing.Point(0, 225);
             this.MedarbejderPortal.Name = "MedarbejderPortal";
             this.MedarbejderPortal.Size = new System.Drawing.Size(186, 30);
-            this.MedarbejderPortal.TabIndex = 3;
+            this.MedarbejderPortal.TabIndex = 13;
             this.MedarbejderPortal.Text = "Medarbejder Portal";
             this.MedarbejderPortal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.MedarbejderPortal.UseVisualStyleBackColor = true;
@@ -128,7 +128,7 @@ namespace BoBedreVS
             this.PrisVudering.Location = new System.Drawing.Point(0, 201);
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
-            this.PrisVudering.TabIndex = 3;
+            this.PrisVudering.TabIndex = 12;
             this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@ namespace BoBedreVS
             this.AabentHus.Location = new System.Drawing.Point(0, 255);
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
-            this.AabentHus.TabIndex = 3;
+            this.AabentHus.TabIndex = 14;
             this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
@@ -158,7 +158,7 @@ namespace BoBedreVS
             this.CRUDMenuknap.Location = new System.Drawing.Point(0, 143);
             this.CRUDMenuknap.Name = "CRUDMenuknap";
             this.CRUDMenuknap.Size = new System.Drawing.Size(186, 30);
-            this.CRUDMenuknap.TabIndex = 3;
+            this.CRUDMenuknap.TabIndex = 10;
             this.CRUDMenuknap.Text = "CRUD";
             this.CRUDMenuknap.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.CRUDMenuknap.UseVisualStyleBackColor = true;
@@ -173,7 +173,7 @@ namespace BoBedreVS
             this.Statistik.Location = new System.Drawing.Point(0, 171);
             this.Statistik.Name = "Statistik";
             this.Statistik.Size = new System.Drawing.Size(186, 30);
-            this.Statistik.TabIndex = 3;
+            this.Statistik.TabIndex = 11;
             this.Statistik.Text = "Statistik";
             this.Statistik.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Statistik.UseVisualStyleBackColor = true;
@@ -281,7 +281,7 @@ namespace BoBedreVS
             this.OpretBoligKnap.Location = new System.Drawing.Point(353, 115);
             this.OpretBoligKnap.Name = "OpretBoligKnap";
             this.OpretBoligKnap.Size = new System.Drawing.Size(104, 23);
-            this.OpretBoligKnap.TabIndex = 7;
+            this.OpretBoligKnap.TabIndex = 8;
             this.OpretBoligKnap.Text = "Opdater bolig";
             this.OpretBoligKnap.UseVisualStyleBackColor = true;
             this.OpretBoligKnap.Click += new System.EventHandler(this.OpretBoligKnap_Click);
@@ -291,7 +291,7 @@ namespace BoBedreVS
             this.SeSletBoligKnap.Location = new System.Drawing.Point(353, 68);
             this.SeSletBoligKnap.Name = "SeSletBoligKnap";
             this.SeSletBoligKnap.Size = new System.Drawing.Size(104, 23);
-            this.SeSletBoligKnap.TabIndex = 9;
+            this.SeSletBoligKnap.TabIndex = 5;
             this.SeSletBoligKnap.Text = "Se/slet bolig(er)";
             this.SeSletBoligKnap.UseVisualStyleBackColor = true;
             this.SeSletBoligKnap.Click += new System.EventHandler(this.SeSletBoligKnap_Click);
@@ -301,7 +301,7 @@ namespace BoBedreVS
             this.OpdaterBoligKnap.Location = new System.Drawing.Point(353, 22);
             this.OpdaterBoligKnap.Name = "OpdaterBoligKnap";
             this.OpdaterBoligKnap.Size = new System.Drawing.Size(104, 23);
-            this.OpdaterBoligKnap.TabIndex = 8;
+            this.OpdaterBoligKnap.TabIndex = 2;
             this.OpdaterBoligKnap.Text = "Opret bolig";
             this.OpdaterBoligKnap.UseVisualStyleBackColor = true;
             this.OpdaterBoligKnap.Click += new System.EventHandler(this.OpdaterBoligKnap_Click);
@@ -311,7 +311,7 @@ namespace BoBedreVS
             this.OpretMæglerKnap.Location = new System.Drawing.Point(492, 22);
             this.OpretMæglerKnap.Name = "OpretMæglerKnap";
             this.OpretMæglerKnap.Size = new System.Drawing.Size(111, 23);
-            this.OpretMæglerKnap.TabIndex = 10;
+            this.OpretMæglerKnap.TabIndex = 3;
             this.OpretMæglerKnap.Text = "Opret mægler";
             this.OpretMæglerKnap.UseVisualStyleBackColor = true;
             this.OpretMæglerKnap.Click += new System.EventHandler(this.OpretMæglerKnap_Click);
@@ -321,7 +321,7 @@ namespace BoBedreVS
             this.SeSletMæglerKnap.Location = new System.Drawing.Point(492, 68);
             this.SeSletMæglerKnap.Name = "SeSletMæglerKnap";
             this.SeSletMæglerKnap.Size = new System.Drawing.Size(111, 23);
-            this.SeSletMæglerKnap.TabIndex = 12;
+            this.SeSletMæglerKnap.TabIndex = 6;
             this.SeSletMæglerKnap.Text = "Se/slet mægler(e)";
             this.SeSletMæglerKnap.UseVisualStyleBackColor = true;
             this.SeSletMæglerKnap.Click += new System.EventHandler(this.SeSletMæglerKnap_Click);
@@ -331,7 +331,7 @@ namespace BoBedreVS
             this.OpdaterMæglerKnap.Location = new System.Drawing.Point(492, 115);
             this.OpdaterMæglerKnap.Name = "OpdaterMæglerKnap";
             this.OpdaterMæglerKnap.Size = new System.Drawing.Size(111, 23);
-            this.OpdaterMæglerKnap.TabIndex = 11;
+            this.OpdaterMæglerKnap.TabIndex = 9;
             this.OpdaterMæglerKnap.Text = "Opdater mægler";
             this.OpdaterMæglerKnap.UseVisualStyleBackColor = true;
             this.OpdaterMæglerKnap.Click += new System.EventHandler(this.OpdaterMæglerKnap_Click);

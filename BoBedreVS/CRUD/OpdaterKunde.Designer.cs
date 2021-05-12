@@ -75,7 +75,7 @@ namespace BoBedreVS
             this.Update.Location = new System.Drawing.Point(406, 309);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(113, 60);
-            this.Update.TabIndex = 1;
+            this.Update.TabIndex = 9;
             this.Update.Text = "Update";
             this.Update.UseVisualStyleBackColor = true;
             this.Update.Click += new System.EventHandler(this.Update_Click);
@@ -85,28 +85,28 @@ namespace BoBedreVS
             this.KundeNavnTextBox.Location = new System.Drawing.Point(264, 180);
             this.KundeNavnTextBox.Name = "KundeNavnTextBox";
             this.KundeNavnTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KundeNavnTextBox.TabIndex = 2;
+            this.KundeNavnTextBox.TabIndex = 3;
             // 
             // KundeTelnrTextBox
             // 
             this.KundeTelnrTextBox.Location = new System.Drawing.Point(264, 210);
             this.KundeTelnrTextBox.Name = "KundeTelnrTextBox";
             this.KundeTelnrTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KundeTelnrTextBox.TabIndex = 3;
+            this.KundeTelnrTextBox.TabIndex = 4;
             // 
             // KundeMailTextBox
             // 
             this.KundeMailTextBox.Location = new System.Drawing.Point(264, 239);
             this.KundeMailTextBox.Name = "KundeMailTextBox";
             this.KundeMailTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KundeMailTextBox.TabIndex = 4;
+            this.KundeMailTextBox.TabIndex = 5;
             // 
             // KundeAdresseTextBox
             // 
             this.KundeAdresseTextBox.Location = new System.Drawing.Point(264, 268);
             this.KundeAdresseTextBox.Name = "KundeAdresseTextBox";
             this.KundeAdresseTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KundeAdresseTextBox.TabIndex = 5;
+            this.KundeAdresseTextBox.TabIndex = 6;
             // 
             // KøberCB
             // 
@@ -115,7 +115,7 @@ namespace BoBedreVS
             this.KøberCB.Location = new System.Drawing.Point(264, 309);
             this.KøberCB.Name = "KøberCB";
             this.KøberCB.Size = new System.Drawing.Size(57, 19);
-            this.KøberCB.TabIndex = 6;
+            this.KøberCB.TabIndex = 7;
             this.KøberCB.Text = "Køber";
             this.KøberCB.UseVisualStyleBackColor = true;
             // 
@@ -126,7 +126,7 @@ namespace BoBedreVS
             this.SælgerCB.Location = new System.Drawing.Point(264, 350);
             this.SælgerCB.Name = "SælgerCB";
             this.SælgerCB.Size = new System.Drawing.Size(62, 19);
-            this.SælgerCB.TabIndex = 7;
+            this.SælgerCB.TabIndex = 8;
             this.SælgerCB.Text = "Sælger";
             this.SælgerCB.UseVisualStyleBackColor = true;
             // 
@@ -145,14 +145,14 @@ namespace BoBedreVS
             this.KundeIdTextBox.Location = new System.Drawing.Point(193, 85);
             this.KundeIdTextBox.Name = "KundeIdTextBox";
             this.KundeIdTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeIdTextBox.TabIndex = 9;
+            this.KundeIdTextBox.TabIndex = 1;
             // 
             // LæsKundeData
             // 
             this.LæsKundeData.Location = new System.Drawing.Point(309, 85);
             this.LæsKundeData.Name = "LæsKundeData";
             this.LæsKundeData.Size = new System.Drawing.Size(102, 23);
-            this.LæsKundeData.TabIndex = 10;
+            this.LæsKundeData.TabIndex = 2;
             this.LæsKundeData.Text = "LæsKundeData";
             this.LæsKundeData.UseVisualStyleBackColor = true;
             this.LæsKundeData.Click += new System.EventHandler(this.LæsKundeData_Click);
@@ -366,7 +366,7 @@ namespace BoBedreVS
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Update;
+        private new System.Windows.Forms.Button Update;
         private System.Windows.Forms.MaskedTextBox KundeNavnTextBox;
         private System.Windows.Forms.MaskedTextBox KundeTelnrTextBox;
         private System.Windows.Forms.MaskedTextBox KundeMailTextBox;

@@ -34,6 +34,8 @@ namespace BoBedreVS
                         {
                             MINavnBox1.Text = Convert.ToString(medarbejder.Navn);
                             MIStillingtextBox.Text = Convert.ToString(medarbejder.Stilling);
+                            NameLabel.Text = Convert.ToString(medarbejder.Navn);
+                            StillingLable.Text = Convert.ToString(medarbejder.Stilling);
                         }));
 
                         Thread.Sleep(60000);
@@ -87,21 +89,6 @@ namespace BoBedreVS
             Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Read readStillingNavn = new Read();
-            Ejendomsmælger medarbejderNavnStilling = readStillingNavn.ReadOneMedarbejder();
-            ReadAndShow readAndShow = new ReadAndShow();
-            List <Ejendomsmælger> navnpåliste = readAndShow.ReadAndShowMedarbejder();
-
-            MINavnBox1.Text = Convert.ToString(medarbejderNavnStilling.Navn);
-            MIStillingtextBox.Text = Convert.ToString(medarbejderNavnStilling.Stilling);
-
-
-            
-        }
-
-
-
+      
     }
 }
