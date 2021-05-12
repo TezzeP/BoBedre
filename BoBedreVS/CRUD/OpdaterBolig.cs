@@ -51,7 +51,7 @@ namespace BoBedreVS
                 boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
 
 
-                update.UpdateBolig(boligData);
+                MessageBox.Show(update.UpdateBolig(boligData));
             
 
         }
@@ -60,7 +60,7 @@ namespace BoBedreVS
         {
 
             Read readOne = new Read();
-            Bolig boligData = readOne.ReadAllBoligWithBoligId(Convert.ToInt32(BoligIdTextBox.Text));
+            Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId",Convert.ToInt32(BoligIdTextBox.Text));
 
             BoligIdTextBox.Text = Convert.ToString(boligData.BoligID);
             BoligAdresseTextBox.Text = Convert.ToString(boligData.Adresse);
@@ -78,6 +78,7 @@ namespace BoBedreVS
             BoligOprettelsesTextBox.Text = Convert.ToString(boligData.OprettelsesDato);
             OmbygningsÅrTextBox.Text = Convert.ToString(boligData.OmbygningsÅr);
             StandSkalaTextBox.Text = Convert.ToString(boligData.StandSkala);
+
         }
 
         private void CRUD_Click(object sender, EventArgs e)

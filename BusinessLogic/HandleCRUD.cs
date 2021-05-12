@@ -15,26 +15,36 @@ namespace BusinessLogic
             Create create = new Create();
             return create.OpretBoligGustav(bolig);
         }
+
+
         public string HandleOpretKunde(Kunde kunde)
         {
             Create create = new Create();
             return create.OpretKunde(kunde);
         }
+
+
         public string HandleOpretEjendomsmælger(Ejendomsmælger ejendomsmælger)
         {
             Create create = new Create();
             return create.OpretEjendomsmælger(ejendomsmælger);
         }
+
+
         public void HandleDeleteMægler(int mægler)
         {
             Delete deleteMægler = new Delete();
             deleteMægler.DeleteMægler(mægler);
         }
+
+
         public void HandleDeleteBolig(int bolig)
         {
             Delete deleteBolig = new Delete();
             deleteBolig.DeleteBolig(bolig);
         }
+
+
         public void HandleDeleteKunde(int kunde)
         {
             Delete deleteKunde = new Delete();

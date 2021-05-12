@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BusinessLogic;
 using Models;
 using PersistensLag;
 
@@ -31,6 +32,22 @@ namespace BoBedreVS
 
         private void OpretKundeKnab_Click(object sender, EventArgs e)
         {
+            Kunde kundeData = new Kunde();
+            HandleCRUD createKunde = new HandleCRUD();
+
+            kundeData.Navn = KundeNavnTextBox.Text;
+            kundeData.Telnr = Convert.ToInt32(KundeTelefonNrTextBox.Text);
+            kundeData.Mail = KundeMailTextBox.Text;
+            kundeData.Adresse = KundeAdresseTextBox.Text;
+
+            kundeData.Køber = KøberCheckBox.Checked ? 1 : 0;
+            kundeData.Sælger = SælgerCheckBox.Checked ? 1 : 0;
+
+
+            MessageBox.Show(createKunde.HandleOpretKunde(kundeData));
+            
+            // Kommenteret ud da koden oven over gør præsis det samme 
+            /*
             int Sælgerbit = 1;
             int Køberbit = 1;
             if (KøberCheckBox.Checked == true)
@@ -66,53 +83,10 @@ namespace BoBedreVS
             }
             catch (Exception)
             {
-                MessageBox.Show("mangler input (tror jeg) :)");
+                MessageBox.Show("Mangler input (tror jeg) :)");
 
             }
-            /*SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
-            conn.Open();
-            int sælgerbit = 1;
-            int køberbit = 1;
-            if (KøberCheckBox.Checked == true)
-            {
-                køberbit = 1;
-            }
-            else if (KøberCheckBox.Checked == false)
-            {
-                køberbit = 0;
-            }
-            if (SælgerCheckBox.Checked == true)
-            {
-                sælgerbit = 1;
-            }
-            else if (SælgerCheckBox.Checked == false)
-            {
-                sælgerbit = 0;
-            }
-            string sSQL = $"INSERT INTO Kunde VALUES ('{KundeNavnTextBox.Text}', {KundeTelefonNrTextBox.Text}, '{KundeMailTextBox.Text}', '{KundeAdresseTextBox.Text}', {køberbit}, {sælgerbit});";
-            SqlCommand command = new SqlCommand(sSQL, conn);
-            bool tekstUdfyldt = KundeAdresseTextBox.Text != "" && KundeMailTextBox.Text != "" && KundeNavnTextBox.Text != "" && KundeTelefonNrTextBox.Text != ""
-                && KøberCheckBox.Checked == true;
-            bool enCheckBoxUdfyldt = KøberCheckBox.Checked == true || SælgerCheckBox.Checked == true;
-
-
-            if (KundeAdresseTextBox.Text == "" || KundeMailTextBox.Text == "" || KundeNavnTextBox.Text == "" || KundeTelefonNrTextBox.Text == "")
-            {
-                MessageBox.Show("input påkrævet i navn, mail, adresse og telefon nr");
-            }
-            if (KøberCheckBox.Checked == false && SælgerCheckBox.Checked == false)
-            {
-                MessageBox.Show("kunde skal enten oprettes som køber eller sælger");
-                
-            }
-            
-            else if (tekstUdfyldt && enCheckBoxUdfyldt)
-            {
-                command.ExecuteNonQuery();
-                MessageBox.Show($"kunden er blevet tilføjet til databasen");
-                conn.Close();
-            }*/
-
+            */
         }
 
         private void CRUD_Click(object sender, EventArgs e)
