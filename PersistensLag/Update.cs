@@ -55,7 +55,7 @@ namespace PersistensLag
                     (" Update Bolig set " +
                      "Adresse=@Adresse, " +
                      "PostNr=@PostNr,   " +
-                     "GrundM2=@GrundM2,  " +
+                     "GrundM2=@GrundM2, " +
                      "HusM2=@HusM2, " +
                      "Pris=@Pris, " +
                      "EjendomsType= @EjendomsType," +
@@ -68,8 +68,6 @@ namespace PersistensLag
                      "OmbygningsÅr=@OmbygningsÅr,"+
                      "StandSkala = @StandSkala" +
                      "where BoligId= @BoligId")
-
-                
             };
 
             UpdateBolig.Parameters.AddWithValue("@Adresse", bolig.Adresse);

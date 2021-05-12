@@ -63,7 +63,7 @@ namespace BoBedreVS
             this.button1.Location = new System.Drawing.Point(203, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -155,7 +155,7 @@ namespace BoBedreVS
             this.KøberCheckBox.Location = new System.Drawing.Point(322, 297);
             this.KøberCheckBox.Name = "KøberCheckBox";
             this.KøberCheckBox.Size = new System.Drawing.Size(15, 14);
-            this.KøberCheckBox.TabIndex = 12;
+            this.KøberCheckBox.TabIndex = 5;
             this.KøberCheckBox.UseVisualStyleBackColor = true;
             // 
             // SælgerCheckBox
@@ -164,7 +164,7 @@ namespace BoBedreVS
             this.SælgerCheckBox.Location = new System.Drawing.Point(322, 337);
             this.SælgerCheckBox.Name = "SælgerCheckBox";
             this.SælgerCheckBox.Size = new System.Drawing.Size(15, 14);
-            this.SælgerCheckBox.TabIndex = 13;
+            this.SælgerCheckBox.TabIndex = 6;
             this.SælgerCheckBox.UseVisualStyleBackColor = true;
             // 
             // OpretKundeKnab
@@ -173,7 +173,7 @@ namespace BoBedreVS
             this.OpretKundeKnab.Location = new System.Drawing.Point(371, 297);
             this.OpretKundeKnab.Name = "OpretKundeKnab";
             this.OpretKundeKnab.Size = new System.Drawing.Size(140, 49);
-            this.OpretKundeKnab.TabIndex = 14;
+            this.OpretKundeKnab.TabIndex = 7;
             this.OpretKundeKnab.Text = "Opret kunde";
             this.OpretKundeKnab.UseVisualStyleBackColor = true;
             this.OpretKundeKnab.Click += new System.EventHandler(this.OpretKundeKnab_Click);
@@ -184,7 +184,7 @@ namespace BoBedreVS
             this.KundeTelefonNrTextBox.Mask = "00000000";
             this.KundeTelefonNrTextBox.Name = "KundeTelefonNrTextBox";
             this.KundeTelefonNrTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeTelefonNrTextBox.TabIndex = 15;
+            this.KundeTelefonNrTextBox.TabIndex = 2;
             // 
             // panel1
             // 
@@ -210,7 +210,7 @@ namespace BoBedreVS
             this.MedarbejderPortal.Location = new System.Drawing.Point(0, 225);
             this.MedarbejderPortal.Name = "MedarbejderPortal";
             this.MedarbejderPortal.Size = new System.Drawing.Size(186, 30);
-            this.MedarbejderPortal.TabIndex = 3;
+            this.MedarbejderPortal.TabIndex = 12;
             this.MedarbejderPortal.Text = "Medarbejder Portal";
             this.MedarbejderPortal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.MedarbejderPortal.UseVisualStyleBackColor = true;
@@ -225,7 +225,7 @@ namespace BoBedreVS
             this.PrisVudering.Location = new System.Drawing.Point(0, 201);
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
-            this.PrisVudering.TabIndex = 3;
+            this.PrisVudering.TabIndex = 11;
             this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
@@ -240,7 +240,7 @@ namespace BoBedreVS
             this.AabentHus.Location = new System.Drawing.Point(0, 255);
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
-            this.AabentHus.TabIndex = 3;
+            this.AabentHus.TabIndex = 13;
             this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
@@ -255,7 +255,7 @@ namespace BoBedreVS
             this.CRUD.Location = new System.Drawing.Point(0, 143);
             this.CRUD.Name = "CRUD";
             this.CRUD.Size = new System.Drawing.Size(186, 30);
-            this.CRUD.TabIndex = 3;
+            this.CRUD.TabIndex = 9;
             this.CRUD.Text = "CRUD";
             this.CRUD.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.CRUD.UseVisualStyleBackColor = true;
@@ -270,7 +270,7 @@ namespace BoBedreVS
             this.Statistik.Location = new System.Drawing.Point(0, 171);
             this.Statistik.Name = "Statistik";
             this.Statistik.Size = new System.Drawing.Size(186, 30);
-            this.Statistik.TabIndex = 3;
+            this.Statistik.TabIndex = 10;
             this.Statistik.Text = "Statistik";
             this.Statistik.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Statistik.UseVisualStyleBackColor = true;

@@ -41,9 +41,8 @@ namespace BoBedreVS
             this.label1 = new System.Windows.Forms.Label();
             this.MINavnBox1 = new System.Windows.Forms.TextBox();
             this.MIStillingtextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.StillingLable = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,14 +53,16 @@ namespace BoBedreVS
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.MedarbejderPortal);
             this.panel1.Controls.Add(this.PrisVudering);
+            this.panel1.Controls.Add(this.MIStillingtextBox);
             this.panel1.Controls.Add(this.AabentHus);
+            this.panel1.Controls.Add(this.MINavnBox1);
             this.panel1.Controls.Add(this.CRUD);
             this.panel1.Controls.Add(this.Statistik);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 450);
+            this.panel1.Size = new System.Drawing.Size(186, 462);
             this.panel1.TabIndex = 7;
             // 
             // MedarbejderPortal
@@ -183,64 +184,53 @@ namespace BoBedreVS
             // 
             // MINavnBox1
             // 
-            this.MINavnBox1.Location = new System.Drawing.Point(319, 98);
+            this.MINavnBox1.Location = new System.Drawing.Point(0, 412);
             this.MINavnBox1.Name = "MINavnBox1";
             this.MINavnBox1.Size = new System.Drawing.Size(100, 23);
             this.MINavnBox1.TabIndex = 8;
-            
             // 
             // MIStillingtextBox
             // 
-            this.MIStillingtextBox.Location = new System.Drawing.Point(319, 144);
+            this.MIStillingtextBox.Location = new System.Drawing.Point(0, 441);
             this.MIStillingtextBox.Name = "MIStillingtextBox";
             this.MIStillingtextBox.Size = new System.Drawing.Size(100, 23);
             this.MIStillingtextBox.TabIndex = 9;
             // 
-            // label3
+            // NameLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label3.Location = new System.Drawing.Point(223, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 15);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Navn";
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Font = new System.Drawing.Font("Segoe UI", 80F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NameLabel.ForeColor = System.Drawing.Color.Red;
+            this.NameLabel.Location = new System.Drawing.Point(220, 9);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(335, 142);
+            this.NameLabel.TabIndex = 12;
+            this.NameLabel.Text = "Navn ";
             // 
-            // label4
+            // StillingLable
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.label4.Location = new System.Drawing.Point(223, 151);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 15);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Stilling ";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(625, 369);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.StillingLable.AutoSize = true;
+            this.StillingLable.Font = new System.Drawing.Font("Segoe UI", 80F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StillingLable.ForeColor = System.Drawing.Color.Red;
+            this.StillingLable.Location = new System.Drawing.Point(220, 225);
+            this.StillingLable.Name = "StillingLable";
+            this.StillingLable.Size = new System.Drawing.Size(378, 142);
+            this.StillingLable.TabIndex = 13;
+            this.StillingLable.Text = "Stilling";
             // 
             // MedarbejderInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.MIStillingtextBox);
-            this.Controls.Add(this.MINavnBox1);
+            this.ClientSize = new System.Drawing.Size(778, 462);
+            this.Controls.Add(this.StillingLable);
+            this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.panel1);
             this.Name = "MedarbejderInfo";
             this.Text = "MedarbejderInfo";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -263,8 +253,7 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox MINavnBox1;
         private System.Windows.Forms.TextBox MIStillingtextBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.Label StillingLable;
     }
 }

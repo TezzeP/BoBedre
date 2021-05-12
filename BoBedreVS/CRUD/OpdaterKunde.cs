@@ -54,7 +54,7 @@ namespace BoBedreVS
         {
             
             Read readOne = new Read();
-            Kunde kundeData = readOne.ReadOneCoustomer(Convert.ToInt32(KundeIdTextBox.Text));
+            Kunde kundeData = readOne.ReadAllCoustomerWithKundeId(Convert.ToInt32(KundeIdTextBox.Text));
             
             KundeNavnTextBox.Text = kundeData.Navn;
             KundeTelnrTextBox.Text = Convert.ToString(kundeData.Telnr);

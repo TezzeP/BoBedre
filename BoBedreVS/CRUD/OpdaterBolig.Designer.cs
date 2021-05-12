@@ -86,7 +86,7 @@ namespace BoBedreVS
             this.button1.Location = new System.Drawing.Point(192, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 20;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -98,7 +98,7 @@ namespace BoBedreVS
             this.Update.Location = new System.Drawing.Point(749, 15);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(77, 33);
-            this.Update.TabIndex = 1;
+            this.Update.TabIndex = 19;
             this.Update.Text = "Update";
             this.Update.UseVisualStyleBackColor = true;
             this.Update.Click += new System.EventHandler(this.Update_Click);
@@ -109,7 +109,7 @@ namespace BoBedreVS
             this.BoligIdTextBox.Mask = "00000";
             this.BoligIdTextBox.Name = "BoligIdTextBox";
             this.BoligIdTextBox.Size = new System.Drawing.Size(125, 23);
-            this.BoligIdTextBox.TabIndex = 2;
+            this.BoligIdTextBox.TabIndex = 1;
             this.BoligIdTextBox.ValidatingType = typeof(int);
             // 
             // BoligAdresseTextBox
@@ -134,7 +134,7 @@ namespace BoBedreVS
             this.KundeIdFKTextBox.Mask = "00000";
             this.KundeIdFKTextBox.Name = "KundeIdFKTextBox";
             this.KundeIdFKTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KundeIdFKTextBox.TabIndex = 5;
+            this.KundeIdFKTextBox.TabIndex = 18;
             // 
             // BoligGrundM2TextBox
             // 
@@ -142,7 +142,7 @@ namespace BoBedreVS
             this.BoligGrundM2TextBox.Mask = "00000";
             this.BoligGrundM2TextBox.Name = "BoligGrundM2TextBox";
             this.BoligGrundM2TextBox.Size = new System.Drawing.Size(125, 23);
-            this.BoligGrundM2TextBox.TabIndex = 6;
+            this.BoligGrundM2TextBox.TabIndex = 5;
             // 
             // BoigHusM2TextBox
             // 
@@ -150,7 +150,7 @@ namespace BoBedreVS
             this.BoigHusM2TextBox.Mask = "00000";
             this.BoigHusM2TextBox.Name = "BoigHusM2TextBox";
             this.BoigHusM2TextBox.Size = new System.Drawing.Size(125, 23);
-            this.BoigHusM2TextBox.TabIndex = 7;
+            this.BoigHusM2TextBox.TabIndex = 6;
             // 
             // BoligPrisTextBox
             // 
@@ -158,7 +158,7 @@ namespace BoBedreVS
             this.BoligPrisTextBox.Mask = "000000000";
             this.BoligPrisTextBox.Name = "BoligPrisTextBox";
             this.BoligPrisTextBox.Size = new System.Drawing.Size(125, 23);
-            this.BoligPrisTextBox.TabIndex = 8;
+            this.BoligPrisTextBox.TabIndex = 7;
             this.BoligPrisTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // BoligSalgsdatoTextBox
@@ -167,7 +167,7 @@ namespace BoBedreVS
             this.BoligSalgsdatoTextBox.Mask = "00/00/0000";
             this.BoligSalgsdatoTextBox.Name = "BoligSalgsdatoTextBox";
             this.BoligSalgsdatoTextBox.Size = new System.Drawing.Size(125, 23);
-            this.BoligSalgsdatoTextBox.TabIndex = 9;
+            this.BoligSalgsdatoTextBox.TabIndex = 14;
             // 
             // BoligOprettelsesTextBox
             // 
@@ -175,7 +175,7 @@ namespace BoBedreVS
             this.BoligOprettelsesTextBox.Mask = "00/00/0000";
             this.BoligOprettelsesTextBox.Name = "BoligOprettelsesTextBox";
             this.BoligOprettelsesTextBox.Size = new System.Drawing.Size(125, 23);
-            this.BoligOprettelsesTextBox.TabIndex = 10;
+            this.BoligOprettelsesTextBox.TabIndex = 15;
             this.BoligOprettelsesTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // StandSkalaTextBox
@@ -184,7 +184,7 @@ namespace BoBedreVS
             this.StandSkalaTextBox.Mask = "000000000";
             this.StandSkalaTextBox.Name = "StandSkalaTextBox";
             this.StandSkalaTextBox.Size = new System.Drawing.Size(125, 23);
-            this.StandSkalaTextBox.TabIndex = 11;
+            this.StandSkalaTextBox.TabIndex = 17;
             // 
             // label1
             // 
@@ -201,7 +201,7 @@ namespace BoBedreVS
             this.LæsBoligData.Location = new System.Drawing.Point(616, 15);
             this.LæsBoligData.Name = "LæsBoligData";
             this.LæsBoligData.Size = new System.Drawing.Size(96, 23);
-            this.LæsBoligData.TabIndex = 13;
+            this.LæsBoligData.TabIndex = 2;
             this.LæsBoligData.Text = "Læs BoligData";
             this.LæsBoligData.UseVisualStyleBackColor = true;
             this.LæsBoligData.Click += new System.EventHandler(this.LæsBoligData_Click);
@@ -320,7 +320,7 @@ namespace BoBedreVS
             this.MedarbejderPortal.Location = new System.Drawing.Point(0, 225);
             this.MedarbejderPortal.Name = "MedarbejderPortal";
             this.MedarbejderPortal.Size = new System.Drawing.Size(186, 30);
-            this.MedarbejderPortal.TabIndex = 3;
+            this.MedarbejderPortal.TabIndex = 24;
             this.MedarbejderPortal.Text = "Medarbejder Portal";
             this.MedarbejderPortal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.MedarbejderPortal.UseVisualStyleBackColor = true;
@@ -335,7 +335,7 @@ namespace BoBedreVS
             this.PrisVudering.Location = new System.Drawing.Point(0, 201);
             this.PrisVudering.Name = "PrisVudering";
             this.PrisVudering.Size = new System.Drawing.Size(186, 30);
-            this.PrisVudering.TabIndex = 3;
+            this.PrisVudering.TabIndex = 23;
             this.PrisVudering.Text = "Prisvurdering";
             this.PrisVudering.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.PrisVudering.UseVisualStyleBackColor = true;
@@ -350,7 +350,7 @@ namespace BoBedreVS
             this.AabentHus.Location = new System.Drawing.Point(0, 255);
             this.AabentHus.Name = "AabentHus";
             this.AabentHus.Size = new System.Drawing.Size(186, 30);
-            this.AabentHus.TabIndex = 3;
+            this.AabentHus.TabIndex = 25;
             this.AabentHus.Text = "Åbent Hus";
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
@@ -365,7 +365,7 @@ namespace BoBedreVS
             this.CRUD.Location = new System.Drawing.Point(0, 143);
             this.CRUD.Name = "CRUD";
             this.CRUD.Size = new System.Drawing.Size(186, 30);
-            this.CRUD.TabIndex = 3;
+            this.CRUD.TabIndex = 21;
             this.CRUD.Text = "CRUD";
             this.CRUD.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.CRUD.UseVisualStyleBackColor = true;
@@ -380,7 +380,7 @@ namespace BoBedreVS
             this.Statistik.Location = new System.Drawing.Point(0, 171);
             this.Statistik.Name = "Statistik";
             this.Statistik.Size = new System.Drawing.Size(186, 30);
-            this.Statistik.TabIndex = 3;
+            this.Statistik.TabIndex = 22;
             this.Statistik.Text = "Statistik";
             this.Statistik.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Statistik.UseVisualStyleBackColor = true;
@@ -495,7 +495,7 @@ namespace BoBedreVS
             this.BadAlderTextBox1.Mask = "00/00/0000";
             this.BadAlderTextBox1.Name = "BadAlderTextBox1";
             this.BadAlderTextBox1.Size = new System.Drawing.Size(125, 23);
-            this.BadAlderTextBox1.TabIndex = 30;
+            this.BadAlderTextBox1.TabIndex = 13;
             this.BadAlderTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // KøkkenAlderTextBox
@@ -504,7 +504,7 @@ namespace BoBedreVS
             this.KøkkenAlderTextBox.Mask = "00/00/0000";
             this.KøkkenAlderTextBox.Name = "KøkkenAlderTextBox";
             this.KøkkenAlderTextBox.Size = new System.Drawing.Size(125, 23);
-            this.KøkkenAlderTextBox.TabIndex = 31;
+            this.KøkkenAlderTextBox.TabIndex = 12;
             this.KøkkenAlderTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // EtagerTextBox
@@ -513,7 +513,7 @@ namespace BoBedreVS
             this.EtagerTextBox.Mask = "00000";
             this.EtagerTextBox.Name = "EtagerTextBox";
             this.EtagerTextBox.Size = new System.Drawing.Size(125, 23);
-            this.EtagerTextBox.TabIndex = 32;
+            this.EtagerTextBox.TabIndex = 11;
             // 
             // AlderTextBox
             // 
@@ -521,7 +521,7 @@ namespace BoBedreVS
             this.AlderTextBox.Mask = "00000";
             this.AlderTextBox.Name = "AlderTextBox";
             this.AlderTextBox.Size = new System.Drawing.Size(125, 23);
-            this.AlderTextBox.TabIndex = 33;
+            this.AlderTextBox.TabIndex = 10;
             // 
             // HaveTextBox
             // 
@@ -529,7 +529,7 @@ namespace BoBedreVS
             this.HaveTextBox.Mask = "0000";
             this.HaveTextBox.Name = "HaveTextBox";
             this.HaveTextBox.Size = new System.Drawing.Size(125, 23);
-            this.HaveTextBox.TabIndex = 34;
+            this.HaveTextBox.TabIndex = 9;
             // 
             // EjendomsTypeTextBox
             // 
@@ -537,7 +537,7 @@ namespace BoBedreVS
             this.EjendomsTypeTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.EjendomsTypeTextBox.Name = "EjendomsTypeTextBox";
             this.EjendomsTypeTextBox.Size = new System.Drawing.Size(125, 23);
-            this.EjendomsTypeTextBox.TabIndex = 35;
+            this.EjendomsTypeTextBox.TabIndex = 8;
             // 
             // label19
             // 
@@ -555,7 +555,7 @@ namespace BoBedreVS
             this.OmbygningsÅrTextBox.Mask = "00/00/0000";
             this.OmbygningsÅrTextBox.Name = "OmbygningsÅrTextBox";
             this.OmbygningsÅrTextBox.Size = new System.Drawing.Size(125, 23);
-            this.OmbygningsÅrTextBox.TabIndex = 37;
+            this.OmbygningsÅrTextBox.TabIndex = 1;
             this.OmbygningsÅrTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // OpdaterBolig
@@ -616,7 +616,7 @@ namespace BoBedreVS
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Update;
+        private new System.Windows.Forms.Button Update;
         private System.Windows.Forms.MaskedTextBox BoligIdTextBox;
         private System.Windows.Forms.MaskedTextBox BoligAdresseTextBox;
         private System.Windows.Forms.MaskedTextBox BoligPostNrTextBox;

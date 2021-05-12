@@ -37,7 +37,7 @@ namespace BoBedreVS
             this.PrisTextBox = new System.Windows.Forms.MaskedTextBox();
             this.StandSkalaTextBox = new System.Windows.Forms.MaskedTextBox();
             this.KundeIdTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.CreateBolig = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -133,7 +133,7 @@ namespace BoBedreVS
             this.StandSkalaTextBox.Mask = "00";
             this.StandSkalaTextBox.Name = "StandSkalaTextBox";
             this.StandSkalaTextBox.Size = new System.Drawing.Size(100, 23);
-            this.StandSkalaTextBox.TabIndex = 8;
+            this.StandSkalaTextBox.TabIndex = 15;
             // 
             // KundeIdTextBox
             // 
@@ -141,17 +141,17 @@ namespace BoBedreVS
             this.KundeIdTextBox.Mask = "0000";
             this.KundeIdTextBox.Name = "KundeIdTextBox";
             this.KundeIdTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeIdTextBox.TabIndex = 9;
+            this.KundeIdTextBox.TabIndex = 16;
             // 
-            // button2
+            // CreateBolig
             // 
-            this.button2.Location = new System.Drawing.Point(267, 403);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Opret bolig";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.CreateBolig.Location = new System.Drawing.Point(267, 403);
+            this.CreateBolig.Name = "CreateBolig";
+            this.CreateBolig.Size = new System.Drawing.Size(75, 23);
+            this.CreateBolig.TabIndex = 10;
+            this.CreateBolig.Text = "Opret bolig";
+            this.CreateBolig.UseVisualStyleBackColor = true;
+            this.CreateBolig.Click += new System.EventHandler(this.CreateBolig_Click);
             // 
             // label1
             // 
@@ -212,7 +212,7 @@ namespace BoBedreVS
             this.label6.Size = new System.Drawing.Size(61, 15);
             this.label6.TabIndex = 16;
             this.label6.Text = "Salgsdato ";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+          
             // 
             // label7
             // 
@@ -250,7 +250,7 @@ namespace BoBedreVS
             this.SalgsDatoTextBox.Mask = "00/00/0000";
             this.SalgsDatoTextBox.Name = "SalgsDatoTextBox";
             this.SalgsDatoTextBox.Size = new System.Drawing.Size(100, 23);
-            this.SalgsDatoTextBox.TabIndex = 20;
+            this.SalgsDatoTextBox.TabIndex = 12;
             this.SalgsDatoTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // OprettelsesdatoTextBox
@@ -259,7 +259,7 @@ namespace BoBedreVS
             this.OprettelsesdatoTextBox.Mask = "00/00/0000";
             this.OprettelsesdatoTextBox.Name = "OprettelsesdatoTextBox";
             this.OprettelsesdatoTextBox.Size = new System.Drawing.Size(100, 23);
-            this.OprettelsesdatoTextBox.TabIndex = 21;
+            this.OprettelsesdatoTextBox.TabIndex = 13;
             this.OprettelsesdatoTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // panel1
@@ -397,36 +397,36 @@ namespace BoBedreVS
             // AlderTextBox
             // 
             this.AlderTextBox.Location = new System.Drawing.Point(381, 350);
-            this.AlderTextBox.Mask = "0000";
+            this.AlderTextBox.Mask = "00/00/0000";
             this.AlderTextBox.Name = "AlderTextBox";
             this.AlderTextBox.Size = new System.Drawing.Size(100, 23);
-            this.AlderTextBox.TabIndex = 27;
+            this.AlderTextBox.TabIndex = 8;
+            this.AlderTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // HaveTextBox
             // 
             this.HaveTextBox.Location = new System.Drawing.Point(381, 308);
-            this.HaveTextBox.Mask = "0";
+            this.HaveTextBox.Mask = "LLL";
             this.HaveTextBox.Name = "HaveTextBox";
             this.HaveTextBox.Size = new System.Drawing.Size(100, 23);
-            this.HaveTextBox.TabIndex = 28;
-            this.HaveTextBox.ValidatingType = typeof(int);
+            this.HaveTextBox.TabIndex = 7;
             // 
             // EjendomsTypeTextBox
             // 
             this.EjendomsTypeTextBox.Location = new System.Drawing.Point(381, 255);
-            this.EjendomsTypeTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.EjendomsTypeTextBox.Mask = "LLLLLLLLLLLLLLLLLL";
             this.EjendomsTypeTextBox.Name = "EjendomsTypeTextBox";
             this.EjendomsTypeTextBox.Size = new System.Drawing.Size(100, 23);
-            this.EjendomsTypeTextBox.TabIndex = 29;
-            this.EjendomsTypeTextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.EjendomsTypeTextBox_MaskInputRejected);
+            this.EjendomsTypeTextBox.TabIndex = 6;
+            
             // 
             // EtagerTextBox
             // 
             this.EtagerTextBox.Location = new System.Drawing.Point(647, 36);
-            this.EtagerTextBox.Mask = "00";
+            this.EtagerTextBox.Mask = "000";
             this.EtagerTextBox.Name = "EtagerTextBox";
             this.EtagerTextBox.Size = new System.Drawing.Size(100, 23);
-            this.EtagerTextBox.TabIndex = 30;
+            this.EtagerTextBox.TabIndex = 9;
             // 
             // KøkkenAlderTextBox
             // 
@@ -434,7 +434,7 @@ namespace BoBedreVS
             this.KøkkenAlderTextBox.Mask = "00/00/0000";
             this.KøkkenAlderTextBox.Name = "KøkkenAlderTextBox";
             this.KøkkenAlderTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KøkkenAlderTextBox.TabIndex = 31;
+            this.KøkkenAlderTextBox.TabIndex = 10;
             // 
             // BadeværelsesAlderTextBox
             // 
@@ -442,7 +442,7 @@ namespace BoBedreVS
             this.BadeværelsesAlderTextBox.Mask = "00/00/0000";
             this.BadeværelsesAlderTextBox.Name = "BadeværelsesAlderTextBox";
             this.BadeværelsesAlderTextBox.Size = new System.Drawing.Size(100, 23);
-            this.BadeværelsesAlderTextBox.TabIndex = 32;
+            this.BadeværelsesAlderTextBox.TabIndex = 11;
             // 
             // OmbygningsÅrTextBox
             // 
@@ -450,7 +450,7 @@ namespace BoBedreVS
             this.OmbygningsÅrTextBox.Mask = "00/00/0000";
             this.OmbygningsÅrTextBox.Name = "OmbygningsÅrTextBox";
             this.OmbygningsÅrTextBox.Size = new System.Drawing.Size(100, 23);
-            this.OmbygningsÅrTextBox.TabIndex = 33;
+            this.OmbygningsÅrTextBox.TabIndex = 14;
             // 
             // label10
             // 
@@ -471,7 +471,7 @@ namespace BoBedreVS
             this.label13.Size = new System.Drawing.Size(34, 15);
             this.label13.TabIndex = 35;
             this.label13.Text = "Have";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+           
             // 
             // label14
             // 
@@ -555,7 +555,7 @@ namespace BoBedreVS
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.CreateBolig);
             this.Controls.Add(this.KundeIdTextBox);
             this.Controls.Add(this.StandSkalaTextBox);
             this.Controls.Add(this.PrisTextBox);
@@ -566,7 +566,6 @@ namespace BoBedreVS
             this.Controls.Add(this.button1);
             this.Name = "OpretBolig";
             this.Text = "OpretBolig";
-            this.Load += new System.EventHandler(this.OpretBolig_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -586,7 +585,7 @@ namespace BoBedreVS
         private System.Windows.Forms.MaskedTextBox PrisTextBox;
         private System.Windows.Forms.MaskedTextBox StandSkalaTextBox;
         private System.Windows.Forms.MaskedTextBox KundeIdTextBox;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button CreateBolig;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
