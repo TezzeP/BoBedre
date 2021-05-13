@@ -15,7 +15,7 @@ namespace Models
         public double HusM2 { get; set; }
         public double Pris { get; set; }
         public string EjendomsType { get; set; }
-        public string Have { get; set; }
+        public int Have { get; set; }
         public string Alder { get; set; }
         public int Etager { get; set; }
         public string KøkkenAlder { get; set; }

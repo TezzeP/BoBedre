@@ -67,6 +67,7 @@ namespace BoBedreVS
             // NavnTextBox
             // 
             this.NavnTextBox.Location = new System.Drawing.Point(276, 64);
+            this.NavnTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.NavnTextBox.Name = "NavnTextBox";
             this.NavnTextBox.Size = new System.Drawing.Size(100, 23);
             this.NavnTextBox.TabIndex = 1;
@@ -84,6 +85,7 @@ namespace BoBedreVS
             // TelefonNrTextBox
             // 
             this.TelefonNrTextBox.Location = new System.Drawing.Point(276, 102);
+            this.TelefonNrTextBox.Mask = "000000000000";
             this.TelefonNrTextBox.Name = "TelefonNrTextBox";
             this.TelefonNrTextBox.Size = new System.Drawing.Size(100, 23);
             this.TelefonNrTextBox.TabIndex = 2;
@@ -91,6 +93,7 @@ namespace BoBedreVS
             // MailTextBox
             // 
             this.MailTextBox.Location = new System.Drawing.Point(276, 140);
+            this.MailTextBox.Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
             this.MailTextBox.Name = "MailTextBox";
             this.MailTextBox.Size = new System.Drawing.Size(100, 23);
             this.MailTextBox.TabIndex = 3;
@@ -98,6 +101,7 @@ namespace BoBedreVS
             // StillingTextBox
             // 
             this.StillingTextBox.Location = new System.Drawing.Point(276, 179);
+            this.StillingTextBox.Mask = "LLLLLLLLLLLLLLLLL";
             this.StillingTextBox.Name = "StillingTextBox";
             this.StillingTextBox.Size = new System.Drawing.Size(100, 23);
             this.StillingTextBox.TabIndex = 4;

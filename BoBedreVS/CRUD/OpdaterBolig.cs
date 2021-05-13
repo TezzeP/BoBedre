@@ -41,7 +41,7 @@ namespace BoBedreVS
                 boligData.HusM2 = Convert.ToDouble(BoigHusM2TextBox.Text);
                 boligData.Pris = Convert.ToDouble(BoligPrisTextBox.Text);
                 boligData.EjendomsType = Convert.ToString(EjendomsTypeTextBox.Text);
-                boligData.Have = Convert.ToString(HaveTextBox.Text);
+                boligData.Have = HaveCheckBox.Checked ? 0 : 1;
                 boligData.Alder = Convert.ToString(AlderTextBox.Text);
                 boligData.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
                 boligData.BadeværelsesAlder = Convert.ToString(BadAlderTextBox1.Text);
@@ -69,7 +69,7 @@ namespace BoBedreVS
             BoigHusM2TextBox.Text = Convert.ToString(boligData.HusM2);
             BoligPrisTextBox.Text = Convert.ToString(boligData.Pris);
             EjendomsTypeTextBox.Text = Convert.ToString(boligData.EjendomsType);
-            HaveTextBox.Text = Convert.ToString(boligData.Have);
+            HaveCheckBox.Checked = Convert.ToBoolean(boligData.Have);
             AlderTextBox.Text = Convert.ToString(boligData.Alder);
             EtagerTextBox.Text = Convert.ToString(boligData.Etager);
             KøkkenAlderTextBox.Text = Convert.ToString(boligData.KøkkenAlder);

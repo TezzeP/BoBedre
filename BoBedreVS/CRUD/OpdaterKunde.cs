@@ -56,9 +56,8 @@ namespace BoBedreVS
             KundeTelnrTextBox.Text = Convert.ToString(kundeData.Telnr);
             KundeMailTextBox.Text = kundeData.Mail;
             KundeAdresseTextBox.Text = kundeData.Adresse;
-            
-
-
+            KøberCB.Checked = Convert.ToBoolean(kundeData.Køber);
+            SælgerCB.Checked = Convert.ToBoolean(kundeData.Sælger);
         }
 
         private void CRUD_Click(object sender, EventArgs e)

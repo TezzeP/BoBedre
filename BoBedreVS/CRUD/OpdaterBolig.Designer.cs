@@ -76,6 +76,7 @@ namespace BoBedreVS
             this.EjendomsTypeTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.OmbygningsÅrTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.HaveCheckBox = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -302,6 +303,7 @@ namespace BoBedreVS
             this.panel1.Controls.Add(this.MedarbejderPortal);
             this.panel1.Controls.Add(this.PrisVudering);
             this.panel1.Controls.Add(this.AabentHus);
+            this.panel1.Controls.Add(this.HaveTextBox);
             this.panel1.Controls.Add(this.CRUD);
             this.panel1.Controls.Add(this.Statistik);
             this.panel1.Controls.Add(this.panel2);
@@ -525,7 +527,7 @@ namespace BoBedreVS
             // 
             // HaveTextBox
             // 
-            this.HaveTextBox.Location = new System.Drawing.Point(339, 334);
+            this.HaveTextBox.Location = new System.Drawing.Point(12, 402);
             this.HaveTextBox.Mask = "0000";
             this.HaveTextBox.Name = "HaveTextBox";
             this.HaveTextBox.Size = new System.Drawing.Size(125, 23);
@@ -558,16 +560,25 @@ namespace BoBedreVS
             this.OmbygningsÅrTextBox.TabIndex = 1;
             this.OmbygningsÅrTextBox.ValidatingType = typeof(System.DateTime);
             // 
+            // HaveCheckBox
+            // 
+            this.HaveCheckBox.AutoSize = true;
+            this.HaveCheckBox.Location = new System.Drawing.Point(339, 339);
+            this.HaveCheckBox.Name = "HaveCheckBox";
+            this.HaveCheckBox.Size = new System.Drawing.Size(15, 14);
+            this.HaveCheckBox.TabIndex = 37;
+            this.HaveCheckBox.UseVisualStyleBackColor = true;
+            // 
             // OpdaterBolig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(859, 437);
+            this.Controls.Add(this.HaveCheckBox);
             this.Controls.Add(this.OmbygningsÅrTextBox);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.EjendomsTypeTextBox);
-            this.Controls.Add(this.HaveTextBox);
             this.Controls.Add(this.AlderTextBox);
             this.Controls.Add(this.EtagerTextBox);
             this.Controls.Add(this.KøkkenAlderTextBox);
@@ -605,6 +616,7 @@ namespace BoBedreVS
             this.Name = "OpdaterBolig";
             this.Text = "OpdaterBolig";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -662,5 +674,6 @@ namespace BoBedreVS
         private System.Windows.Forms.MaskedTextBox EjendomsTypeTextBox;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.MaskedTextBox OmbygningsÅrTextBox;
+        private System.Windows.Forms.CheckBox HaveCheckBox;
     }
 }

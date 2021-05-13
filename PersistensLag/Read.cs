@@ -40,7 +40,7 @@ namespace PersistensLag
                     HusM2 = Convert.ToInt32(reader[4]),
                     Pris = Convert.ToInt32(reader[5]),
                     EjendomsType = Convert.ToString(reader[6]),
-                    Have = Convert.ToString(reader[7]),
+                    Have = Convert.ToInt32(reader[7]),
                     Alder = Convert.ToString(reader[8]),
                     Etager = Convert.ToInt32(reader[9]),
                     KøkkenAlder = Convert.ToString(reader[10]),
@@ -58,8 +58,6 @@ namespace PersistensLag
 
             return returnList;
         }
-
-
 
 
 
@@ -194,7 +192,7 @@ namespace PersistensLag
             SqlDataReader reader = ReadOneBoligcmd.ExecuteReader();
             
             while (reader.Read())
-                {
+            {
                     Bolig tempMælger = new Bolig
                     {
                         BoligID = Convert.ToInt32(reader[0]),
@@ -204,7 +202,7 @@ namespace PersistensLag
                         HusM2 = Convert.ToInt32(reader[4]),
                         Pris = Convert.ToInt32(reader[5]),
                         EjendomsType = Convert.ToString(reader[6]),
-                        Have = Convert.ToString(reader[7]),
+                        Have = Convert.ToInt32(reader[7]),
                         Alder = Convert.ToString(reader[8]),
                         Etager = Convert.ToInt32(reader[9]),
                         KøkkenAlder = Convert.ToString(reader[10]),
