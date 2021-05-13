@@ -34,9 +34,6 @@ namespace BoBedreVS
             Kunde kundeData = new Kunde();
             Update update = new Update();
 
-
-            
-
             kundeData.KundeId = Convert.ToInt32(KundeIdTextBox.Text);
             kundeData.Navn = KundeNavnTextBox.Text;
             kundeData.Telnr = Convert.ToInt32(KundeTelnrTextBox.Text);
