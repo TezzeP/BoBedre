@@ -30,7 +30,7 @@ namespace BoBedreVS
         
         private void LæsMælgerData_Click(object sender, EventArgs e)
         {
-            Read readOneMægler = new Read();
+            Read readOneMægler = Read.Instance();
             Ejendomsmælger mælgerData = readOneMægler.ReadAllMælgerWithMedarbejderId(Convert.ToInt32(MedarbejderIdTextBox1.Text));
 
             MedarbejderIdTextBox1.Text = Convert.ToString(mælgerData.MedarbejderId);
@@ -43,7 +43,7 @@ namespace BoBedreVS
         private void UpdateMælger_Click(object sender, EventArgs e)
         {
             Ejendomsmælger mælgerData = new Ejendomsmælger();
-            Read readOneMÆgler = new Read();
+            Read readOneMÆgler = Read.Instance();
             Update update = new Update();
 
 

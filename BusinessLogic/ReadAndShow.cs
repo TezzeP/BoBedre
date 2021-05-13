@@ -15,6 +15,13 @@ namespace BusinessLogic
         {
             return Read.ReadAllBolig().ToList();
         }
+
+        public List<Bolig> ReadAndShowBoligSpecific(string boligAttribut, int boligAttributVærdi)
+        {
+            Read reader = Read.Instance();
+            return reader.ReadAllBoligWithAttributeInt(boligAttribut, boligAttributVærdi).ToList();
+        }
+
         public List<Kunde> ReadAndShowKunde()
         {
             return Read.ReadAllCoustomer().ToList();

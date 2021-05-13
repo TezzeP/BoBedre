@@ -33,34 +33,34 @@ namespace BoBedreVS
             Update update = new Update();
 
 
-            
-                boligData.BoligID = Convert.ToInt32(BoligIdTextBox.Text);
-                boligData.Adresse = Convert.ToString(BoligAdresseTextBox.Text);
-                boligData.PostNr = Convert.ToInt32(BoligPostNrTextBox.Text);
-                boligData.GrundM2 = Convert.ToDouble(BoligGrundM2TextBox.Text);
-                boligData.HusM2 = Convert.ToDouble(BoigHusM2TextBox.Text);
-                boligData.Pris = Convert.ToDouble(BoligPrisTextBox.Text);
-                boligData.EjendomsType = Convert.ToString(EjendomsTypeTextBox.Text);
-                boligData.Have = Convert.ToString(HaveTextBox.Text);
-                boligData.Alder = Convert.ToString(AlderTextBox.Text);
-                boligData.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
-                boligData.BadeværelsesAlder = Convert.ToString(BadAlderTextBox1.Text);
-                boligData.SalgsDato = Convert.ToString(BoligSalgsdatoTextBox.Text);
-                boligData.OprettelsesDato = Convert.ToString(BoligOprettelsesTextBox.Text);
-                boligData.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
-                boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
+
+            boligData.BoligID = Convert.ToInt32(BoligIdTextBox.Text);
+            boligData.Adresse = Convert.ToString(BoligAdresseTextBox.Text);
+            boligData.PostNr = Convert.ToInt32(BoligPostNrTextBox.Text);
+            boligData.GrundM2 = Convert.ToDouble(BoligGrundM2TextBox.Text);
+            boligData.HusM2 = Convert.ToDouble(BoigHusM2TextBox.Text);
+            boligData.Pris = Convert.ToDouble(BoligPrisTextBox.Text);
+            boligData.EjendomsType = Convert.ToString(EjendomsTypeTextBox.Text);
+            boligData.Have = Convert.ToString(HaveTextBox.Text);
+            boligData.Alder = Convert.ToString(AlderTextBox.Text);
+            boligData.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
+            boligData.BadeværelsesAlder = Convert.ToString(BadAlderTextBox1.Text);
+            boligData.SalgsDato = Convert.ToString(BoligSalgsdatoTextBox.Text);
+            boligData.OprettelsesDato = Convert.ToString(BoligOprettelsesTextBox.Text);
+            boligData.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
+            boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
 
 
-                MessageBox.Show(update.UpdateBolig(boligData));
-            
+            MessageBox.Show(update.UpdateBolig(boligData));
+
 
         }
 
         private void LæsBoligData_Click(object sender, EventArgs e)
         {
 
-            Read readOne = new Read();
-            Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId",Convert.ToInt32(BoligIdTextBox.Text));
+            Read readOne = Read.Instance();
+            Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId", Convert.ToInt32(BoligIdTextBox.Text));
 
             BoligIdTextBox.Text = Convert.ToString(boligData.BoligID);
             BoligAdresseTextBox.Text = Convert.ToString(boligData.Adresse);
@@ -83,18 +83,18 @@ namespace BoBedreVS
 
         private void CRUD_Click(object sender, EventArgs e)
         {
-            Hide(); 
+            Hide();
             CRUD goTo = new CRUD();
-            goTo.ShowDialog(); 
-            Close(); 
+            goTo.ShowDialog();
+            Close();
         }
 
         private void Statistik_Click(object sender, EventArgs e)
         {
-            Hide(); 
+            Hide();
             Statistik goTo = new Statistik();
-            goTo.ShowDialog(); 
-            Close(); 
+            goTo.ShowDialog();
+            Close();
         }
 
         private void PrisVudering_Click(object sender, EventArgs e)
@@ -121,6 +121,6 @@ namespace BoBedreVS
 
         }
 
-        
+
     }
 }
