@@ -51,16 +51,16 @@ namespace BoBedreVS
                 boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
 
 
-                MessageBox.Show(update.UpdateBolig(boligData));
-            
+            MessageBox.Show(update.UpdateBolig(boligData));
+
 
         }
 
         private void LæsBoligData_Click(object sender, EventArgs e)
         {
 
-            Read readOne = new Read();
-            Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId",Convert.ToInt32(BoligIdTextBox.Text));
+            Read readOne = Read.Instance();
+            Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId", Convert.ToInt32(BoligIdTextBox.Text));
 
             BoligIdTextBox.Text = Convert.ToString(boligData.BoligID);
             BoligAdresseTextBox.Text = Convert.ToString(boligData.Adresse);
@@ -83,18 +83,18 @@ namespace BoBedreVS
 
         private void CRUD_Click(object sender, EventArgs e)
         {
-            Hide(); 
+            Hide();
             CRUD goTo = new CRUD();
-            goTo.ShowDialog(); 
-            Close(); 
+            goTo.ShowDialog();
+            Close();
         }
 
         private void Statistik_Click(object sender, EventArgs e)
         {
-            Hide(); 
+            Hide();
             Statistik goTo = new Statistik();
-            goTo.ShowDialog(); 
-            Close(); 
+            goTo.ShowDialog();
+            Close();
         }
 
         private void PrisVudering_Click(object sender, EventArgs e)
@@ -121,6 +121,6 @@ namespace BoBedreVS
 
         }
 
-        
+
     }
 }
