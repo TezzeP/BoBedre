@@ -15,15 +15,16 @@ namespace Models
         public double HusM2 { get; set; }
         public double Pris { get; set; }
         public string EjendomsType { get; set; }
-        public string Have { get; set; }
+        public int Have { get; set; }
         public string Alder { get; set; }
         public int Etager { get; set; }
         public string KøkkenAlder { get; set; }
         public string BadeværelsesAlder { get; set; }
-        public string  SalgsDato { get; set; }
+        public int  SalgsDato { get; set; }
         public string OprettelsesDato { get; set; }
         public string OmbygningsÅr { get; set; }
         public int StandSkala { get; set; }
         public int KundeID { get; set; }
+        public int MedarbejderID { get; set; }
     }
 }

@@ -39,6 +39,16 @@ namespace BoBedreVS
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.StatVejnavnBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.StatStartDatoBox = new System.Windows.Forms.MaskedTextBox();
+            this.StatSlutDatoBox = new System.Windows.Forms.MaskedTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.StatSøgButton = new System.Windows.Forms.Button();
+            this.FileReadButton = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.StatFileBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -177,12 +187,105 @@ namespace BoBedreVS
             this.label1.TabIndex = 1;
             this.label1.Text = "User Name";
             // 
+            // StatVejnavnBox
+            // 
+            this.StatVejnavnBox.Location = new System.Drawing.Point(227, 150);
+            this.StatVejnavnBox.Name = "StatVejnavnBox";
+            this.StatVejnavnBox.Size = new System.Drawing.Size(100, 23);
+            this.StatVejnavnBox.TabIndex = 7;
+            this.StatVejnavnBox.TextChanged += new System.EventHandler(this.StatVejnavnBox_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label3.Location = new System.Drawing.Point(252, 129);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Vejnavn";
+            // 
+            // StatStartDatoBox
+            // 
+            this.StatStartDatoBox.Location = new System.Drawing.Point(349, 151);
+            this.StatStartDatoBox.Mask = "00/00/0000";
+            this.StatStartDatoBox.Name = "StatStartDatoBox";
+            this.StatStartDatoBox.Size = new System.Drawing.Size(100, 23);
+            this.StatStartDatoBox.TabIndex = 10;
+            this.StatStartDatoBox.ValidatingType = typeof(System.DateTime);
+            // 
+            // StatSlutDatoBox
+            // 
+            this.StatSlutDatoBox.Location = new System.Drawing.Point(476, 151);
+            this.StatSlutDatoBox.Mask = "00/00/0000";
+            this.StatSlutDatoBox.Name = "StatSlutDatoBox";
+            this.StatSlutDatoBox.Size = new System.Drawing.Size(100, 23);
+            this.StatSlutDatoBox.TabIndex = 11;
+            this.StatSlutDatoBox.ValidatingType = typeof(System.DateTime);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label4.Location = new System.Drawing.Point(367, 133);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 15);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Start Dato";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
+            this.label5.Location = new System.Drawing.Point(498, 133);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 15);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Slut Dato";
+            // 
+            // StatSøgButton
+            // 
+            this.StatSøgButton.Location = new System.Drawing.Point(625, 151);
+            this.StatSøgButton.Name = "StatSøgButton";
+            this.StatSøgButton.Size = new System.Drawing.Size(75, 23);
+            this.StatSøgButton.TabIndex = 18;
+            this.StatSøgButton.Text = "Søg";
+            this.StatSøgButton.UseVisualStyleBackColor = true;
+            this.StatSøgButton.Click += new System.EventHandler(this.StatSøgButton_Click);
+            // 
+            // FileReadButton
+            // 
+            this.FileReadButton.Location = new System.Drawing.Point(252, 65);
+            this.FileReadButton.Name = "FileReadButton";
+            this.FileReadButton.Size = new System.Drawing.Size(75, 23);
+            this.FileReadButton.TabIndex = 19;
+            this.FileReadButton.Text = "Vælg Fil";
+            this.FileReadButton.UseVisualStyleBackColor = true;
+            this.FileReadButton.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // StatFileBox
+            // 
+            this.StatFileBox.Location = new System.Drawing.Point(367, 66);
+            this.StatFileBox.Name = "StatFileBox";
+            this.StatFileBox.ReadOnly = true;
+            this.StatFileBox.Size = new System.Drawing.Size(196, 23);
+            this.StatFileBox.TabIndex = 20;
+            // 
             // Statistik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.StatFileBox);
+            this.Controls.Add(this.FileReadButton);
+            this.Controls.Add(this.StatSøgButton);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.StatSlutDatoBox);
+            this.Controls.Add(this.StatStartDatoBox);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.StatVejnavnBox);
             this.Controls.Add(this.panel1);
             this.Name = "Statistik";
             this.Text = "Statistik";
@@ -191,6 +294,7 @@ namespace BoBedreVS
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -206,5 +310,15 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox StatVejnavnBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MaskedTextBox StatStartDatoBox;
+        private System.Windows.Forms.MaskedTextBox StatSlutDatoBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button StatSøgButton;
+        private System.Windows.Forms.Button FileReadButton;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.TextBox StatFileBox;
     }
 }

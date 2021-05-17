@@ -42,17 +42,6 @@ namespace BoBedreVS
             this.PostNrBox = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SearchButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BoligId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PostNr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GrundM2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HusM2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pris = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SalgsDato = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OprettelsesDato = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StandSkala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KundeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UdregnButton = new System.Windows.Forms.Button();
             this.StandBox = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -77,6 +66,7 @@ namespace BoBedreVS
             this.StandardPrisBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -247,98 +237,6 @@ namespace BoBedreVS
             this.SearchButton.UseVisualStyleBackColor = true;
             this.SearchButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.BoligId,
-            this.Adresse,
-            this.PostNr,
-            this.GrundM2,
-            this.HusM2,
-            this.Pris,
-            this.SalgsDato,
-            this.OprettelsesDato,
-            this.StandSkala,
-            this.KundeId});
-            this.dataGridView1.Location = new System.Drawing.Point(192, 74);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(596, 211);
-            this.dataGridView1.TabIndex = 10;
-           
-            // 
-            // BoligId
-            // 
-            this.BoligId.HeaderText = "Id";
-            this.BoligId.Name = "BoligId";
-            this.BoligId.ReadOnly = true;
-            this.BoligId.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.BoligId.Width = 45;
-            // 
-            // Adresse
-            // 
-            this.Adresse.HeaderText = "Adresse";
-            this.Adresse.Name = "Adresse";
-            this.Adresse.ReadOnly = true;
-            this.Adresse.Width = 80;
-            // 
-            // PostNr
-            // 
-            this.PostNr.HeaderText = "PostNr";
-            this.PostNr.Name = "PostNr";
-            this.PostNr.ReadOnly = true;
-            this.PostNr.Width = 50;
-            // 
-            // GrundM2
-            // 
-            this.GrundM2.HeaderText = "GrundM2";
-            this.GrundM2.Name = "GrundM2";
-            this.GrundM2.ReadOnly = true;
-            this.GrundM2.Width = 60;
-            // 
-            // HusM2
-            // 
-            this.HusM2.HeaderText = "HusM2";
-            this.HusM2.Name = "HusM2";
-            this.HusM2.ReadOnly = true;
-            this.HusM2.Width = 60;
-            // 
-            // Pris
-            // 
-            this.Pris.HeaderText = "Pris";
-            this.Pris.Name = "Pris";
-            this.Pris.ReadOnly = true;
-            this.Pris.Width = 60;
-            // 
-            // SalgsDato
-            // 
-            this.SalgsDato.HeaderText = "SDato";
-            this.SalgsDato.Name = "SalgsDato";
-            this.SalgsDato.ReadOnly = true;
-            this.SalgsDato.Width = 60;
-            // 
-            // OprettelsesDato
-            // 
-            this.OprettelsesDato.HeaderText = "ODato";
-            this.OprettelsesDato.Name = "OprettelsesDato";
-            this.OprettelsesDato.ReadOnly = true;
-            this.OprettelsesDato.Width = 60;
-            // 
-            // StandSkala
-            // 
-            this.StandSkala.HeaderText = "StandSkala";
-            this.StandSkala.Name = "StandSkala";
-            this.StandSkala.ReadOnly = true;
-            this.StandSkala.Width = 40;
-            // 
-            // KundeId
-            // 
-            this.KundeId.HeaderText = "KId";
-            this.KundeId.Name = "KundeId";
-            this.KundeId.ReadOnly = true;
-            this.KundeId.Width = 45;
-            // 
             // UdregnButton
             // 
             this.UdregnButton.Location = new System.Drawing.Point(593, 422);
@@ -357,7 +255,6 @@ namespace BoBedreVS
             this.StandBox.Size = new System.Drawing.Size(100, 23);
             this.StandBox.TabIndex = 12;
             this.StandBox.ValidatingType = typeof(int);
-            
             // 
             // label4
             // 
@@ -396,7 +293,6 @@ namespace BoBedreVS
             this.UdbudsprisBox.ReadOnly = true;
             this.UdbudsprisBox.Size = new System.Drawing.Size(100, 23);
             this.UdbudsprisBox.TabIndex = 17;
-           
             // 
             // label7
             // 
@@ -514,7 +410,6 @@ namespace BoBedreVS
             this.label12.Size = new System.Drawing.Size(82, 15);
             this.label12.TabIndex = 30;
             this.label12.Text = "Ejendomstype";
-           
             // 
             // HaveCheckBox
             // 
@@ -524,7 +419,6 @@ namespace BoBedreVS
             this.HaveCheckBox.Size = new System.Drawing.Size(15, 14);
             this.HaveCheckBox.TabIndex = 31;
             this.HaveCheckBox.UseVisualStyleBackColor = true;
-            
             // 
             // label13
             // 
@@ -563,12 +457,23 @@ namespace BoBedreVS
             this.label15.TabIndex = 35;
             this.label15.Text = "*Alder angives i måneder";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(202, 79);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(586, 218);
+            this.dataGridView1.TabIndex = 36;
+            // 
             // PrisVudering
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(800, 516);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.StandardPrisBox);
@@ -593,7 +498,6 @@ namespace BoBedreVS
             this.Controls.Add(this.label4);
             this.Controls.Add(this.StandBox);
             this.Controls.Add(this.UdregnButton);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PostNrBox);
@@ -626,17 +530,6 @@ namespace BoBedreVS
         private System.Windows.Forms.MaskedTextBox PostNrBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button SearchButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BoligId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Adresse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PostNr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GrundM2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HusM2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pris;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SalgsDato;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OprettelsesDato;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StandSkala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KundeId;
         private System.Windows.Forms.Button UdregnButton;
         private System.Windows.Forms.MaskedTextBox StandBox;
         private System.Windows.Forms.Label label4;
@@ -661,5 +554,6 @@ namespace BoBedreVS
         private System.Windows.Forms.TextBox StandardPrisBox;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

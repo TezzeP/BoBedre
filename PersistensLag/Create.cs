@@ -15,10 +15,13 @@ namespace PersistensLag
         {
             SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
             conn.Open();
-            string sSQL = $"INSERT INTO Bolig(Adresse, PostNr, GrundM2, HusM2, Pris, EjendomsType, Have, Alder, Etager, KøkkenAlder, BadeværelsesAlder, " +
-                          $"SalgsDato, OprettelsesDato, OmbygningsÅr, StandSkala, KundeId) VALUES ('{bolig.Adresse}', {bolig.PostNr}, {bolig.GrundM2}, " +
-                          $"{bolig.HusM2}, {bolig.Pris}, '{bolig.EjendomsType}', {bolig.Have}, {bolig.Alder}, {bolig.Etager}, '{bolig.KøkkenAlder}', '{bolig.BadeværelsesAlder}', '{bolig.SalgsDato}'," +
-                          $"'{bolig.OprettelsesDato}', {bolig.OmbygningsÅr}, {bolig.StandSkala}, {bolig.KundeID});";
+            string sSQL = $"INSERT INTO Bolig(Adresse, PostNr, GrundM2, HusM2, Pris," +
+                          $"EjendomsType, Have, Alder, Etager, KøkkenAlder, BadeværelsesAlder, " +
+                          $"SalgsDato, OprettelsesDato, OmbygningsÅr, StandSkala, KundeId) VALUES " +
+                          $"('{bolig.Adresse}', {bolig.PostNr}, {bolig.GrundM2}, {bolig.HusM2}, {bolig.Pris}," +
+                          $" '{bolig.EjendomsType}', {bolig.Have}, {bolig.Alder}, {bolig.Etager}, '{bolig.KøkkenAlder}'," +
+                          $" '{bolig.BadeværelsesAlder}', '{bolig.SalgsDato}','{bolig.OprettelsesDato}'," +
+                          $" {bolig.OmbygningsÅr}, {bolig.StandSkala}, {bolig.KundeID});";
 
             SqlCommand command = new SqlCommand(sSQL, conn);
 
@@ -47,7 +50,7 @@ namespace PersistensLag
                      "(@Adresse, @PostNr, @GrundM2, @HusM2, @Pris," +
                      "@EjendomsType,@Have,@Alder,@Etager,@KøkkenAlder," +
                      "@BadeværelsesAlder,@SalgsDato, @OprettelsesDato, " +
-                     "@OmbygningsÅr, @StandSkala, @KundeId)")
+                     "@OmbygningsÅr, @StandSkala, @KundeId, @MedarbejderId)")
 
                 
             };
@@ -67,6 +70,7 @@ namespace PersistensLag
             createBolig.Parameters.AddWithValue("@OmbygningsÅr", bolig.OmbygningsÅr);
             createBolig.Parameters.AddWithValue("@StandSkala", bolig.StandSkala);
             createBolig.Parameters.AddWithValue("@KundeId", bolig.KundeID);
+            createBolig.Parameters.AddWithValue("@MedarbejderId", bolig.MedarbejderID);
             int checkSucces = createBolig.ExecuteNonQuery();
             if (checkSucces == 0)
             {
@@ -85,7 +89,9 @@ namespace PersistensLag
         {
             SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
             conn.Open();
-            string sSQL = $"INSERT INTO Kunde VALUES ('{kunde.Navn}', {kunde.Telnr}, '{kunde.Mail}', '{kunde.Adresse}', {kunde.Køber}, {kunde.Sælger});";
+            string sSQL = $"INSERT INTO Kunde VALUES (" +
+                          $"'{kunde.Navn}', {kunde.Telnr}, '{kunde.Mail}'," +
+                          $"'{kunde.Adresse}', {kunde.Køber}, {kunde.Sælger});";
 
             SqlCommand command = new SqlCommand(sSQL, conn);
 
@@ -105,7 +111,8 @@ namespace PersistensLag
         {
             SqlConnection conn = new SqlConnection(PersistensLag.Globals.strconn);
             conn.Open();
-            string sSQL = $"INSERT INTO Ejendomsmægler(Navn, TlfNr, Mail, Stilling) VALUES ('{ejendomsmælger.Navn}', {ejendomsmælger.Tlf}, '{ejendomsmælger.Mail}', '{ejendomsmælger.Stilling}');";
+            string sSQL = $"INSERT INTO Ejendomsmægler(Navn, TlfNr, Mail, Stilling) VALUES " +
+                          $"('{ejendomsmælger.Navn}', {ejendomsmælger.Tlf}, '{ejendomsmælger.Mail}', '{ejendomsmælger.Stilling}');";
 
             SqlCommand command = new SqlCommand(sSQL, conn);
 

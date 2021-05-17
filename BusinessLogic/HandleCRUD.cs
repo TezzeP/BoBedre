@@ -13,7 +13,7 @@ namespace BusinessLogic
         public string HandleOpretBolig(Bolig bolig)
         {
             Create create = new Create();
-            return create.OpretBoligGustav(bolig);
+            return create.OpretBoligNowak(bolig);
         }
 
 

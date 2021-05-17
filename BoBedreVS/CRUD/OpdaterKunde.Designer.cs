@@ -83,6 +83,7 @@ namespace BoBedreVS
             // KundeNavnTextBox
             // 
             this.KundeNavnTextBox.Location = new System.Drawing.Point(264, 180);
+            this.KundeNavnTextBox.Mask = "CCCCCCCCCCCCCCCCCCCCC";
             this.KundeNavnTextBox.Name = "KundeNavnTextBox";
             this.KundeNavnTextBox.Size = new System.Drawing.Size(125, 23);
             this.KundeNavnTextBox.TabIndex = 3;
@@ -90,6 +91,7 @@ namespace BoBedreVS
             // KundeTelnrTextBox
             // 
             this.KundeTelnrTextBox.Location = new System.Drawing.Point(264, 210);
+            this.KundeTelnrTextBox.Mask = "000000000000";
             this.KundeTelnrTextBox.Name = "KundeTelnrTextBox";
             this.KundeTelnrTextBox.Size = new System.Drawing.Size(125, 23);
             this.KundeTelnrTextBox.TabIndex = 4;
@@ -97,6 +99,7 @@ namespace BoBedreVS
             // KundeMailTextBox
             // 
             this.KundeMailTextBox.Location = new System.Drawing.Point(264, 239);
+            this.KundeMailTextBox.Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
             this.KundeMailTextBox.Name = "KundeMailTextBox";
             this.KundeMailTextBox.Size = new System.Drawing.Size(125, 23);
             this.KundeMailTextBox.TabIndex = 5;
@@ -104,6 +107,7 @@ namespace BoBedreVS
             // KundeAdresseTextBox
             // 
             this.KundeAdresseTextBox.Location = new System.Drawing.Point(264, 268);
+            this.KundeAdresseTextBox.Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
             this.KundeAdresseTextBox.Name = "KundeAdresseTextBox";
             this.KundeAdresseTextBox.Size = new System.Drawing.Size(125, 23);
             this.KundeAdresseTextBox.TabIndex = 6;

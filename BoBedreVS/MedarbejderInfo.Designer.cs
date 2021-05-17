@@ -32,15 +32,15 @@ namespace BoBedreVS
             this.panel1 = new System.Windows.Forms.Panel();
             this.MedarbejderPortal = new System.Windows.Forms.Button();
             this.PrisVudering = new System.Windows.Forms.Button();
+            this.MIStillingtextBox = new System.Windows.Forms.TextBox();
             this.AabentHus = new System.Windows.Forms.Button();
+            this.MINavnBox1 = new System.Windows.Forms.TextBox();
             this.CRUD = new System.Windows.Forms.Button();
             this.Statistik = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.MINavnBox1 = new System.Windows.Forms.TextBox();
-            this.MIStillingtextBox = new System.Windows.Forms.TextBox();
             this.NameLabel = new System.Windows.Forms.Label();
             this.StillingLable = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -95,6 +95,13 @@ namespace BoBedreVS
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
             // 
+            // MIStillingtextBox
+            // 
+            this.MIStillingtextBox.Location = new System.Drawing.Point(0, 441);
+            this.MIStillingtextBox.Name = "MIStillingtextBox";
+            this.MIStillingtextBox.Size = new System.Drawing.Size(100, 23);
+            this.MIStillingtextBox.TabIndex = 9;
+            // 
             // AabentHus
             // 
             this.AabentHus.FlatAppearance.BorderSize = 0;
@@ -109,6 +116,13 @@ namespace BoBedreVS
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
+            // 
+            // MINavnBox1
+            // 
+            this.MINavnBox1.Location = new System.Drawing.Point(0, 412);
+            this.MINavnBox1.Name = "MINavnBox1";
+            this.MINavnBox1.Size = new System.Drawing.Size(100, 23);
+            this.MINavnBox1.TabIndex = 8;
             // 
             // CRUD
             // 
@@ -181,20 +195,6 @@ namespace BoBedreVS
             this.label1.Size = new System.Drawing.Size(65, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "User Name";
-            // 
-            // MINavnBox1
-            // 
-            this.MINavnBox1.Location = new System.Drawing.Point(0, 412);
-            this.MINavnBox1.Name = "MINavnBox1";
-            this.MINavnBox1.Size = new System.Drawing.Size(100, 23);
-            this.MINavnBox1.TabIndex = 8;
-            // 
-            // MIStillingtextBox
-            // 
-            this.MIStillingtextBox.Location = new System.Drawing.Point(0, 441);
-            this.MIStillingtextBox.Name = "MIStillingtextBox";
-            this.MIStillingtextBox.Size = new System.Drawing.Size(100, 23);
-            this.MIStillingtextBox.TabIndex = 9;
             // 
             // NameLabel
             // 

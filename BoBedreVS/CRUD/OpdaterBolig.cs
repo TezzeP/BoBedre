@@ -32,35 +32,45 @@ namespace BoBedreVS
             Bolig boligData = new Bolig();
             Update update = new Update();
 
+            string temp = BoligSalgsdatoTextBox.Text;
+            StringBuilder sb = new StringBuilder();
 
-            
-                boligData.BoligID = Convert.ToInt32(BoligIdTextBox.Text);
-                boligData.Adresse = Convert.ToString(BoligAdresseTextBox.Text);
-                boligData.PostNr = Convert.ToInt32(BoligPostNrTextBox.Text);
-                boligData.GrundM2 = Convert.ToDouble(BoligGrundM2TextBox.Text);
-                boligData.HusM2 = Convert.ToDouble(BoigHusM2TextBox.Text);
-                boligData.Pris = Convert.ToDouble(BoligPrisTextBox.Text);
-                boligData.EjendomsType = Convert.ToString(EjendomsTypeTextBox.Text);
-                boligData.Have = Convert.ToString(HaveTextBox.Text);
-                boligData.Alder = Convert.ToString(AlderTextBox.Text);
-                boligData.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
-                boligData.BadeværelsesAlder = Convert.ToString(BadAlderTextBox1.Text);
-                boligData.SalgsDato = Convert.ToString(BoligSalgsdatoTextBox.Text);
-                boligData.OprettelsesDato = Convert.ToString(BoligOprettelsesTextBox.Text);
-                boligData.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
-                boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
+            sb.Append(temp.Substring(6, 4));
+            sb.Append(temp.Substring(3, 2));
+            sb.Append(temp.Substring(0, 2));
+
+            MessageBox.Show(sb.ToString().Replace(" ", "0"));
+
+            boligData.BoligID = Convert.ToInt32(BoligIdTextBox.Text);
+            boligData.Adresse = Convert.ToString(BoligAdresseTextBox.Text);
+            boligData.PostNr = Convert.ToInt32(BoligPostNrTextBox.Text);
+            boligData.GrundM2 = Convert.ToDouble(BoligGrundM2TextBox.Text);
+            boligData.HusM2 = Convert.ToDouble(BoigHusM2TextBox.Text);
+            boligData.Pris = Convert.ToDouble(BoligPrisTextBox.Text);
+            boligData.EjendomsType = Convert.ToString(EjendomsTypeTextBox.Text);
+            boligData.Have = HaveCheckBox.Checked ? 0 : 1;
+            boligData.Alder = Convert.ToString(AlderTextBox.Text);
+            boligData.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
+            boligData.BadeværelsesAlder = Convert.ToString(BadAlderTextBox1.Text);
+            boligData.SalgsDato = Convert.ToInt32(sb.ToString().Replace(" ", "0"));
+            boligData.OprettelsesDato = Convert.ToString(BoligOprettelsesTextBox.Text);
+            boligData.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
+            boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
+            boligData.KundeID = Convert.ToInt32(KundeIdFKTextBox.Text);
+            boligData.MedarbejderID = Convert.ToInt32(MedarbejderIdTextBox.Text);
 
 
-                MessageBox.Show(update.UpdateBolig(boligData));
-            
+
+            MessageBox.Show(update.UpdateBolig(boligData));
+
 
         }
 
         private void LæsBoligData_Click(object sender, EventArgs e)
         {
 
-            Read readOne = new Read();
-            Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId",Convert.ToInt32(BoligIdTextBox.Text));
+            Read readOne = Read.Instance();
+            Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId", Convert.ToInt32(BoligIdTextBox.Text));
 
             BoligIdTextBox.Text = Convert.ToString(boligData.BoligID);
             BoligAdresseTextBox.Text = Convert.ToString(boligData.Adresse);
@@ -69,7 +79,7 @@ namespace BoBedreVS
             BoigHusM2TextBox.Text = Convert.ToString(boligData.HusM2);
             BoligPrisTextBox.Text = Convert.ToString(boligData.Pris);
             EjendomsTypeTextBox.Text = Convert.ToString(boligData.EjendomsType);
-            HaveTextBox.Text = Convert.ToString(boligData.Have);
+            HaveCheckBox.Checked = Convert.ToBoolean(boligData.Have);
             AlderTextBox.Text = Convert.ToString(boligData.Alder);
             EtagerTextBox.Text = Convert.ToString(boligData.Etager);
             KøkkenAlderTextBox.Text = Convert.ToString(boligData.KøkkenAlder);
@@ -83,18 +93,18 @@ namespace BoBedreVS
 
         private void CRUD_Click(object sender, EventArgs e)
         {
-            Hide(); 
+            Hide();
             CRUD goTo = new CRUD();
-            goTo.ShowDialog(); 
-            Close(); 
+            goTo.ShowDialog();
+            Close();
         }
 
         private void Statistik_Click(object sender, EventArgs e)
         {
-            Hide(); 
+            Hide();
             Statistik goTo = new Statistik();
-            goTo.ShowDialog(); 
-            Close(); 
+            goTo.ShowDialog();
+            Close();
         }
 
         private void PrisVudering_Click(object sender, EventArgs e)
@@ -121,6 +131,6 @@ namespace BoBedreVS
 
         }
 
-        
+
     }
 }

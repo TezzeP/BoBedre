@@ -60,7 +60,6 @@ namespace BoBedreVS
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.AlderTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.HaveTextBox = new System.Windows.Forms.MaskedTextBox();
             this.EjendomsTypeTextBox = new System.Windows.Forms.MaskedTextBox();
             this.EtagerTextBox = new System.Windows.Forms.MaskedTextBox();
             this.KøkkenAlderTextBox = new System.Windows.Forms.MaskedTextBox();
@@ -73,6 +72,9 @@ namespace BoBedreVS
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.JaCheckBox = new System.Windows.Forms.CheckBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.MedarbejderIdTextBox = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -212,7 +214,6 @@ namespace BoBedreVS
             this.label6.Size = new System.Drawing.Size(61, 15);
             this.label6.TabIndex = 16;
             this.label6.Text = "Salgsdato ";
-          
             // 
             // label7
             // 
@@ -247,7 +248,7 @@ namespace BoBedreVS
             // SalgsDatoTextBox
             // 
             this.SalgsDatoTextBox.Location = new System.Drawing.Point(647, 158);
-            this.SalgsDatoTextBox.Mask = "00/00/0000";
+            this.SalgsDatoTextBox.Mask = "00000000";
             this.SalgsDatoTextBox.Name = "SalgsDatoTextBox";
             this.SalgsDatoTextBox.Size = new System.Drawing.Size(100, 23);
             this.SalgsDatoTextBox.TabIndex = 12;
@@ -396,20 +397,12 @@ namespace BoBedreVS
             // 
             // AlderTextBox
             // 
-            this.AlderTextBox.Location = new System.Drawing.Point(381, 350);
+            this.AlderTextBox.Location = new System.Drawing.Point(381, 358);
             this.AlderTextBox.Mask = "00/00/0000";
             this.AlderTextBox.Name = "AlderTextBox";
             this.AlderTextBox.Size = new System.Drawing.Size(100, 23);
             this.AlderTextBox.TabIndex = 8;
             this.AlderTextBox.ValidatingType = typeof(System.DateTime);
-            // 
-            // HaveTextBox
-            // 
-            this.HaveTextBox.Location = new System.Drawing.Point(381, 308);
-            this.HaveTextBox.Mask = "LLL";
-            this.HaveTextBox.Name = "HaveTextBox";
-            this.HaveTextBox.Size = new System.Drawing.Size(100, 23);
-            this.HaveTextBox.TabIndex = 7;
             // 
             // EjendomsTypeTextBox
             // 
@@ -418,7 +411,6 @@ namespace BoBedreVS
             this.EjendomsTypeTextBox.Name = "EjendomsTypeTextBox";
             this.EjendomsTypeTextBox.Size = new System.Drawing.Size(100, 23);
             this.EjendomsTypeTextBox.TabIndex = 6;
-            
             // 
             // EtagerTextBox
             // 
@@ -471,7 +463,6 @@ namespace BoBedreVS
             this.label13.Size = new System.Drawing.Size(34, 15);
             this.label13.TabIndex = 35;
             this.label13.Text = "Have";
-           
             // 
             // label14
             // 
@@ -523,12 +514,42 @@ namespace BoBedreVS
             this.label18.TabIndex = 40;
             this.label18.Text = "Ombygnings År";
             // 
+            // JaCheckBox
+            // 
+            this.JaCheckBox.AutoSize = true;
+            this.JaCheckBox.Location = new System.Drawing.Point(381, 307);
+            this.JaCheckBox.Name = "JaCheckBox";
+            this.JaCheckBox.Size = new System.Drawing.Size(15, 14);
+            this.JaCheckBox.TabIndex = 41;
+            this.JaCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label19.Location = new System.Drawing.Point(502, 403);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(84, 15);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "MedarbejderId";
+            // 
+            // MedarbejderIdTextBox
+            // 
+            this.MedarbejderIdTextBox.Location = new System.Drawing.Point(647, 400);
+            this.MedarbejderIdTextBox.Mask = "0000";
+            this.MedarbejderIdTextBox.Name = "MedarbejderIdTextBox";
+            this.MedarbejderIdTextBox.Size = new System.Drawing.Size(100, 23);
+            this.MedarbejderIdTextBox.TabIndex = 43;
+            // 
             // OpretBolig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(842, 448);
+            this.Controls.Add(this.MedarbejderIdTextBox);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.JaCheckBox);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -541,7 +562,6 @@ namespace BoBedreVS
             this.Controls.Add(this.KøkkenAlderTextBox);
             this.Controls.Add(this.EtagerTextBox);
             this.Controls.Add(this.EjendomsTypeTextBox);
-            this.Controls.Add(this.HaveTextBox);
             this.Controls.Add(this.AlderTextBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.OprettelsesdatoTextBox);
@@ -608,7 +628,6 @@ namespace BoBedreVS
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.MaskedTextBox AlderTextBox;
-        private System.Windows.Forms.MaskedTextBox HaveTextBox;
         private System.Windows.Forms.MaskedTextBox EjendomsTypeTextBox;
         private System.Windows.Forms.MaskedTextBox EtagerTextBox;
         private System.Windows.Forms.MaskedTextBox KøkkenAlderTextBox;
@@ -621,5 +640,8 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.CheckBox JaCheckBox;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.MaskedTextBox MedarbejderIdTextBox;
     }
 }

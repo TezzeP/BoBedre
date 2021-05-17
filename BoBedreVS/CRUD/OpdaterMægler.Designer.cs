@@ -104,7 +104,7 @@ namespace BoBedreVS
             // MæglerMailTextBox4
             // 
             this.MæglerMailTextBox4.Location = new System.Drawing.Point(320, 243);
-            this.MæglerMailTextBox4.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.MæglerMailTextBox4.Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
             this.MæglerMailTextBox4.Name = "MæglerMailTextBox4";
             this.MæglerMailTextBox4.Size = new System.Drawing.Size(100, 23);
             this.MæglerMailTextBox4.TabIndex = 5;

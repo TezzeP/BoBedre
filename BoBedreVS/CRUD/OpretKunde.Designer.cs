@@ -30,9 +30,6 @@ namespace BoBedreVS
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.KundeNavnTextBox = new System.Windows.Forms.TextBox();
-            this.KundeMailTextBox = new System.Windows.Forms.TextBox();
-            this.KundeAdresseTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,6 +50,9 @@ namespace BoBedreVS
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.KundeNavnTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.KundeMailTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.KundeAdresseTextBox = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,27 +67,6 @@ namespace BoBedreVS
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // KundeNavnTextBox
-            // 
-            this.KundeNavnTextBox.Location = new System.Drawing.Point(322, 88);
-            this.KundeNavnTextBox.Name = "KundeNavnTextBox";
-            this.KundeNavnTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeNavnTextBox.TabIndex = 1;
-            // 
-            // KundeMailTextBox
-            // 
-            this.KundeMailTextBox.Location = new System.Drawing.Point(322, 192);
-            this.KundeMailTextBox.Name = "KundeMailTextBox";
-            this.KundeMailTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeMailTextBox.TabIndex = 3;
-            // 
-            // KundeAdresseTextBox
-            // 
-            this.KundeAdresseTextBox.Location = new System.Drawing.Point(322, 246);
-            this.KundeAdresseTextBox.Name = "KundeAdresseTextBox";
-            this.KundeAdresseTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeAdresseTextBox.TabIndex = 4;
             // 
             // label1
             // 
@@ -319,12 +298,39 @@ namespace BoBedreVS
             this.label12.TabIndex = 1;
             this.label12.Text = "Guffe";
             // 
+            // KundeNavnTextBox
+            // 
+            this.KundeNavnTextBox.Location = new System.Drawing.Point(322, 80);
+            this.KundeNavnTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.KundeNavnTextBox.Name = "KundeNavnTextBox";
+            this.KundeNavnTextBox.Size = new System.Drawing.Size(100, 23);
+            this.KundeNavnTextBox.TabIndex = 28;
+            // 
+            // KundeMailTextBox
+            // 
+            this.KundeMailTextBox.Location = new System.Drawing.Point(322, 189);
+            this.KundeMailTextBox.Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
+            this.KundeMailTextBox.Name = "KundeMailTextBox";
+            this.KundeMailTextBox.Size = new System.Drawing.Size(100, 23);
+            this.KundeMailTextBox.TabIndex = 29;
+            // 
+            // KundeAdresseTextBox
+            // 
+            this.KundeAdresseTextBox.Location = new System.Drawing.Point(322, 246);
+            this.KundeAdresseTextBox.Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
+            this.KundeAdresseTextBox.Name = "KundeAdresseTextBox";
+            this.KundeAdresseTextBox.Size = new System.Drawing.Size(100, 23);
+            this.KundeAdresseTextBox.TabIndex = 30;
+            // 
             // OpretKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(560, 407);
+            this.Controls.Add(this.KundeAdresseTextBox);
+            this.Controls.Add(this.KundeMailTextBox);
+            this.Controls.Add(this.KundeNavnTextBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.KundeTelefonNrTextBox);
             this.Controls.Add(this.OpretKundeKnab);
@@ -336,9 +342,6 @@ namespace BoBedreVS
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.KundeAdresseTextBox);
-            this.Controls.Add(this.KundeMailTextBox);
-            this.Controls.Add(this.KundeNavnTextBox);
             this.Controls.Add(this.button1);
             this.Name = "OpretKunde";
             this.Text = "OpretKunde";
@@ -354,9 +357,6 @@ namespace BoBedreVS
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox KundeNavnTextBox;
-        private System.Windows.Forms.TextBox KundeMailTextBox;
-        private System.Windows.Forms.TextBox KundeAdresseTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -377,5 +377,8 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.MaskedTextBox KundeNavnTextBox;
+        private System.Windows.Forms.MaskedTextBox KundeMailTextBox;
+        private System.Windows.Forms.MaskedTextBox KundeAdresseTextBox;
     }
 }

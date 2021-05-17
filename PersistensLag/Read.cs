@@ -12,6 +12,23 @@ namespace PersistensLag
 {
     public class Read
     {
+        private static Read instance;
+
+        protected Read()
+        {
+
+        }
+
+        public static Read Instance()
+        {
+            if (instance == null)
+            {
+                instance = new Read();
+            }
+
+            return instance;
+        }
+
         public static List<Bolig> ReadAllBolig()
         {
             SqlConnection conn = new SqlConnection(Globals.strconn);
@@ -40,15 +57,18 @@ namespace PersistensLag
                     HusM2 = Convert.ToInt32(reader[4]),
                     Pris = Convert.ToInt32(reader[5]),
                     EjendomsType = Convert.ToString(reader[6]),
-                    Have = Convert.ToString(reader[7]),
+                    Have = Convert.ToInt32(reader[7]),
                     Alder = Convert.ToString(reader[8]),
                     Etager = Convert.ToInt32(reader[9]),
                     KøkkenAlder = Convert.ToString(reader[10]),
                     BadeværelsesAlder = Convert.ToString(reader[11]),
-                    SalgsDato = Convert.ToString(reader[12]),
+                    SalgsDato = Convert.ToInt32(reader[12]),
                     OprettelsesDato = Convert.ToString(reader[13]),
                     OmbygningsÅr = Convert.ToString(reader[14]),
-                    StandSkala = Convert.ToInt32(reader[15])
+                    StandSkala = Convert.ToInt32(reader[15]),
+                    KundeID = Convert.ToInt32(reader[16]),
+                    MedarbejderID = Convert.ToInt32(reader[17])
+
                 };
 
                 returnList.Add(tempProduct);
@@ -58,8 +78,6 @@ namespace PersistensLag
 
             return returnList;
         }
-
-
 
 
 
@@ -138,8 +156,6 @@ namespace PersistensLag
         }
 
 
-        
-
         public Kunde ReadAllCoustomerWithKundeId(int KundeId)
         {
             SqlConnection conn = new SqlConnection(Globals.strconn);
@@ -192,10 +208,10 @@ namespace PersistensLag
             ReadOneBoligcmd.Parameters.AddWithValue($"{boligAttribut}", Convert.ToInt32(boligAttributVærdi));
 
             SqlDataReader reader = ReadOneBoligcmd.ExecuteReader();
-            
+
             while (reader.Read())
-                {
-                    Bolig tempMælger = new Bolig
+            {
+                    Bolig tempBolig = new Bolig
                     {
                         BoligID = Convert.ToInt32(reader[0]),
                         Adresse = Convert.ToString(reader[1]),
@@ -204,21 +220,121 @@ namespace PersistensLag
                         HusM2 = Convert.ToInt32(reader[4]),
                         Pris = Convert.ToInt32(reader[5]),
                         EjendomsType = Convert.ToString(reader[6]),
-                        Have = Convert.ToString(reader[7]),
+                        Have = Convert.ToInt32(reader[7]),
                         Alder = Convert.ToString(reader[8]),
                         Etager = Convert.ToInt32(reader[9]),
                         KøkkenAlder = Convert.ToString(reader[10]),
                         BadeværelsesAlder = Convert.ToString(reader[11]),
-                        SalgsDato = Convert.ToString(reader[12]),
+                        SalgsDato = Convert.ToInt32(reader[12]),
                         OprettelsesDato = Convert.ToString(reader[13]),
                         OmbygningsÅr = Convert.ToString(reader[14]),
-                        StandSkala = Convert.ToInt32(reader[15])
+                        StandSkala = Convert.ToInt32(reader[15]),
+                        KundeID = Convert.ToInt32(reader[16]),
+                        MedarbejderID = Convert.ToInt32(reader[17])
                     };
 
-                    return tempMælger;
+                return tempBolig;
             }
 
             return default;
+        }
+
+        public List<Bolig> ReadAllBoligWithAttributeInt(string boligAttribut, int boligAttributVærdi)
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            //var readAllProducts = new SqlCommand // dette er det samme 
+            SqlCommand ReadBoligForSale = new SqlCommand
+            {
+                Connection = conn,
+                CommandText = $"SELECT * FROM dbo.Bolig WHERE {boligAttribut} = '{boligAttributVærdi}'"
+            };
+
+            SqlDataReader reader = ReadBoligForSale.ExecuteReader();
+
+            List<Bolig> returnList = new List<Bolig>();
+
+            while (reader.Read())
+            {
+                Bolig tempProduct = new Bolig
+                {
+                    BoligID = Convert.ToInt32(reader[0]),
+                    Adresse = Convert.ToString(reader[1]),
+                    PostNr = Convert.ToInt32(reader[2]),
+                    GrundM2 = Convert.ToInt32(reader[3]),
+                    HusM2 = Convert.ToInt32(reader[4]),
+                    Pris = Convert.ToInt32(reader[5]),
+                    EjendomsType = Convert.ToString(reader[6]),
+                    Have = Convert.ToInt32(reader[7]),
+                    Alder = Convert.ToString(reader[8]),
+                    Etager = Convert.ToInt32(reader[9]),
+                    KøkkenAlder = Convert.ToString(reader[10]),
+                    BadeværelsesAlder = Convert.ToString(reader[11]),
+                    SalgsDato = Convert.ToInt32(reader[12]),
+                    OprettelsesDato = Convert.ToString(reader[13]),
+                    OmbygningsÅr = Convert.ToString(reader[14]),
+                    StandSkala = Convert.ToInt32(reader[15]),
+                    KundeID = Convert.ToInt32(reader[16]),
+                    MedarbejderID = Convert.ToInt32(reader[17])
+                };
+
+                returnList.Add(tempProduct);
+            }
+
+            conn.Close();
+
+            return returnList;
+        }
+
+        public List<Bolig> ReadAllBoligWithWithQuery(string SqlQuery)
+        {
+            SqlConnection conn = new SqlConnection(Globals.strconn);
+
+            conn.Open();
+
+            //var readAllProducts = new SqlCommand // dette er det samme 
+            SqlCommand ReadBoligForSale = new SqlCommand
+            {
+                Connection = conn,
+                CommandText = SqlQuery
+            };
+
+            SqlDataReader reader = ReadBoligForSale.ExecuteReader();
+
+            List<Bolig> returnList = new List<Bolig>();
+
+            while (reader.Read())
+            {
+                Bolig tempProduct = new Bolig
+                {
+                    BoligID = Convert.ToInt32(reader[0]),
+                    Adresse = Convert.ToString(reader[1]),
+                    PostNr = Convert.ToInt32(reader[2]),
+                    GrundM2 = Convert.ToInt32(reader[3]),
+                    HusM2 = Convert.ToInt32(reader[4]),
+                    Pris = Convert.ToInt32(reader[5]),
+                    EjendomsType = Convert.ToString(reader[6]),
+                    Have = Convert.ToInt32(reader[7]),
+                    Alder = Convert.ToString(reader[8]),
+                    Etager = Convert.ToInt32(reader[9]),
+                    KøkkenAlder = Convert.ToString(reader[10]),
+                    BadeværelsesAlder = Convert.ToString(reader[11]),
+                    SalgsDato = Convert.ToInt32(reader[12]),
+                    OprettelsesDato = Convert.ToString(reader[13]),
+                    OmbygningsÅr = Convert.ToString(reader[14]),
+                    StandSkala = Convert.ToInt32(reader[15]),
+                    KundeID = Convert.ToInt32(reader[16]),
+                    MedarbejderID = Convert.ToInt32(reader[17])
+                };
+
+                returnList.Add(tempProduct);
+            }
+
+            conn.Close();
+
+            return returnList;
         }
 
         public Ejendomsmælger ReadAllMælgerWithMedarbejderId(int MedarbejderId)

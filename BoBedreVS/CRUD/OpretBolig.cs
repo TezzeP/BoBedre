@@ -78,16 +78,20 @@ namespace BoBedreVS
             sendBolig.HusM2 = Convert.ToDouble(HusM2TextBox.Text);
             sendBolig.Pris = Convert.ToDouble(PrisTextBox.Text);
             sendBolig.EjendomsType = Convert.ToString(EjendomsTypeTextBox.Text);
-            sendBolig.Have = Convert.ToString(HaveTextBox.Text);
+            sendBolig.Have = JaCheckBox.Checked ? 1 : 0;
             sendBolig.Alder = Convert.ToString(AlderTextBox.Text);
             sendBolig.Etager = Convert.ToInt32(EtagerTextBox.Text);
             sendBolig.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
             sendBolig.BadeværelsesAlder = Convert.ToString(BadeværelsesAlderTextBox.Text);
-            sendBolig.SalgsDato = Convert.ToString(SalgsDatoTextBox.Text);
+            sendBolig.SalgsDato = Convert.ToInt32(SalgsDatoTextBox.Text);
             sendBolig.OprettelsesDato = Convert.ToString(OprettelsesdatoTextBox.Text);
             sendBolig.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
             sendBolig.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
             sendBolig.KundeID = Convert.ToInt32(KundeIdTextBox.Text);
+            sendBolig.MedarbejderID = Convert.ToInt32(MedarbejderIdTextBox.Text);
+
+          
+            
 
             MessageBox.Show(create.OpretBoligNowak(sendBolig));
 
