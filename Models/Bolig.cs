@@ -20,7 +20,7 @@ namespace Models
         public int Etager { get; set; }
         public string KøkkenAlder { get; set; }
         public string BadeværelsesAlder { get; set; }
-        public string  SalgsDato { get; set; }
+        public int  SalgsDato { get; set; }
         public string OprettelsesDato { get; set; }
         public string OmbygningsÅr { get; set; }
         public int StandSkala { get; set; }

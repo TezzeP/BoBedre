@@ -45,13 +45,16 @@ namespace BoBedreVS
                 boligData.Alder = Convert.ToString(AlderTextBox.Text);
                 boligData.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
                 boligData.BadeværelsesAlder = Convert.ToString(BadAlderTextBox1.Text);
-                boligData.SalgsDato = Convert.ToString(BoligSalgsdatoTextBox.Text);
+                //boligData.SalgsDato = Convert.ToInt32(BoligSalgsdatoTextBox.Text);
                 boligData.OprettelsesDato = Convert.ToString(BoligOprettelsesTextBox.Text);
                 boligData.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
                 boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
+                boligData.KundeID = Convert.ToInt32(KundeIdFKTextBox.Text);
+                boligData.MedarbejderID = Convert.ToInt32(MedarbejderIdTextBox.Text);
 
 
-            MessageBox.Show(update.UpdateBolig(boligData));
+
+MessageBox.Show(update.UpdateBolig(boligData));
 
 
         }

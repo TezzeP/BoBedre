@@ -62,10 +62,13 @@ namespace PersistensLag
                     Etager = Convert.ToInt32(reader[9]),
                     KøkkenAlder = Convert.ToString(reader[10]),
                     BadeværelsesAlder = Convert.ToString(reader[11]),
-                    SalgsDato = Convert.ToString(reader[12]),
+                    SalgsDato = Convert.ToInt32(reader[12]),
                     OprettelsesDato = Convert.ToString(reader[13]),
                     OmbygningsÅr = Convert.ToString(reader[14]),
-                    StandSkala = Convert.ToInt32(reader[15])
+                    StandSkala = Convert.ToInt32(reader[15]),
+                    KundeID = Convert.ToInt32(reader[16]),
+                    MedarbejderID = Convert.ToInt32(reader[17])
+
                 };
 
                 returnList.Add(tempProduct);
@@ -222,10 +225,12 @@ namespace PersistensLag
                         Etager = Convert.ToInt32(reader[9]),
                         KøkkenAlder = Convert.ToString(reader[10]),
                         BadeværelsesAlder = Convert.ToString(reader[11]),
-                        SalgsDato = Convert.ToString(reader[12]),
+                        SalgsDato = Convert.ToInt32(reader[12]),
                         OprettelsesDato = Convert.ToString(reader[13]),
                         OmbygningsÅr = Convert.ToString(reader[14]),
-                        StandSkala = Convert.ToInt32(reader[15])
+                        StandSkala = Convert.ToInt32(reader[15]),
+                        KundeID = Convert.ToInt32(reader[16]),
+                        MedarbejderID = Convert.ToInt32(reader[17])
                     };
 
                 return tempBolig;
@@ -267,10 +272,12 @@ namespace PersistensLag
                     Etager = Convert.ToInt32(reader[9]),
                     KøkkenAlder = Convert.ToString(reader[10]),
                     BadeværelsesAlder = Convert.ToString(reader[11]),
-                    SalgsDato = Convert.ToString(reader[12]),
+                    SalgsDato = Convert.ToInt32(reader[12]),
                     OprettelsesDato = Convert.ToString(reader[13]),
                     OmbygningsÅr = Convert.ToString(reader[14]),
-                    StandSkala = Convert.ToInt32(reader[15])
+                    StandSkala = Convert.ToInt32(reader[15]),
+                    KundeID = Convert.ToInt32(reader[16]),
+                    MedarbejderID = Convert.ToInt32(reader[17])
                 };
 
                 returnList.Add(tempProduct);
@@ -314,11 +321,12 @@ namespace PersistensLag
                     Etager = Convert.ToInt32(reader[9]),
                     KøkkenAlder = Convert.ToString(reader[10]),
                     BadeværelsesAlder = Convert.ToString(reader[11]),
-                    SalgsDato = Convert.ToString(reader[12]),
+                    SalgsDato = Convert.ToInt32(reader[12]),
                     OprettelsesDato = Convert.ToString(reader[13]),
                     OmbygningsÅr = Convert.ToString(reader[14]),
                     StandSkala = Convert.ToInt32(reader[15]),
-                    MedarbejderID = Convert.ToInt32(reader[16])
+                    KundeID = Convert.ToInt32(reader[16]),
+                    MedarbejderID = Convert.ToInt32(reader[17])
                 };
 
                 returnList.Add(tempProduct);

@@ -77,7 +77,9 @@ namespace PersistensLag
                      "SalgsDato= @SalgsDato," +
                      "OprettelsesDato= @OprettelsesDato," +
                      "OmbygningsÅr=@OmbygningsÅr,"+
-                     "StandSkala = @StandSkala " +
+                     "StandSkala = @StandSkala, " +
+                     "KundeId = @KundeId,"+
+                     "MedarbejderId = @MedarbejderId " +
                      "where BoligId= @BoligId")
             };
 
@@ -96,6 +98,8 @@ namespace PersistensLag
             UpdateBolig.Parameters.AddWithValue("@OmbygningsÅr", bolig.OmbygningsÅr);
             UpdateBolig.Parameters.AddWithValue("@StandSkala", bolig.StandSkala);
             UpdateBolig.Parameters.AddWithValue("@BoligId", bolig.BoligID);
+            UpdateBolig.Parameters.AddWithValue("@KundeId", bolig.KundeID);
+            UpdateBolig.Parameters.AddWithValue("@MedarbejderId", bolig.MedarbejderID);
 
             int checkSucces = UpdateBolig.ExecuteNonQuery();
             if (checkSucces == 0)
