@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using BusinessLogic;
 using Models;
 using PersistensLag;
 
@@ -71,7 +70,7 @@ namespace BoBedreVS
         private void CreateBolig_Click(object sender, EventArgs e)
         {
             Bolig sendBolig = new Bolig();
-            HandleCRUD createBolig = new HandleCRUD();
+            Create create = new Create();
 
             sendBolig.Adresse = Convert.ToString(AdresseTextBox.Text);
             sendBolig.PostNr = Convert.ToInt32(PostNrTextBox.Text);
@@ -94,7 +93,7 @@ namespace BoBedreVS
           
             
 
-            MessageBox.Show(createBolig.HandleOpretBolig(sendBolig));
+            MessageBox.Show(create.OpretBoligNowak(sendBolig));
 
             // her mangler en try catch, men den hopper altid i catch klausul
         }
