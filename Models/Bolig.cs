@@ -25,5 +25,6 @@ namespace Models
         public string OmbygningsÅr { get; set; }
         public int StandSkala { get; set; }
         public int KundeID { get; set; }
+        public int MedarbejderID { get; set; }
     }
 }
