@@ -76,18 +76,32 @@ namespace BoBedreVS
                     {
                         sb.Append($"AND Adresse LIKE '{StatVejnavnBox.Text}%' ");
                     }
-                    if (!String.IsNullOrEmpty(StatStartDatoBox.Text))
+                    if (StatStartDatoBox.MaskCompleted)
                     {
+                        StringBuilder startString = new StringBuilder();
+                        string start = StatStartDatoBox.Text;
 
+                        startString.Append(start.Substring(6));
+                        startString.Append(start.Substring(3, 2));
+                        startString.Append(start.Substring(0, 2));
+
+                        sb.Append($"AND SalgsDato >= '{startString}' ");
                     }
-                    if (!String.IsNullOrEmpty(StatSlutDatoBox.Text))
+                    if (StatSlutDatoBox.MaskCompleted)
                     {
+                        StringBuilder slutString = new StringBuilder();
+                        string slut = StatSlutDatoBox.Text;
 
+                        slutString.Append(slut.Substring(6));
+                        slutString.Append(slut.Substring(3, 2));
+                        slutString.Append(slut.Substring(0, 2));
+                        sb.Append($"AND SalgsDato <= '{slutString}' ");
                     }
 
+                    MessageBox.Show(sb.ToString());
                     List<Bolig> boligListe = reader.ReadAllBoligWithWithQuery(sb.ToString());
                     FilSkriver fileWriter = new FilSkriver();
-                    fileWriter.WriteBoligToFile(boligListe, filepath);
+                    fileWriter.WriteBoligToFile(boligListe, filepath, StatVejnavnBox.Text);
 
                     MessageBox.Show("Success");
                 }

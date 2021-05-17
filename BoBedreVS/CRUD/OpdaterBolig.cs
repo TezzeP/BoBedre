@@ -35,7 +35,7 @@ namespace BoBedreVS
             string temp = BoligSalgsdatoTextBox.Text;
             StringBuilder sb = new StringBuilder();
 
-            sb.Append(temp.Substring(6, 4));
+            sb.Append(temp.Substring(6));
             sb.Append(temp.Substring(3, 2));
             sb.Append(temp.Substring(0, 2));
 
