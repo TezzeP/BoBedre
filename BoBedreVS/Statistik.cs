@@ -89,6 +89,7 @@ namespace BoBedreVS
                     FilSkriver fileWriter = new FilSkriver();
                     fileWriter.WriteBoligToFile(boligListe, filepath);
 
+                    MessageBox.Show("Success");
                 }
                 catch (Exception ex)
                 {
