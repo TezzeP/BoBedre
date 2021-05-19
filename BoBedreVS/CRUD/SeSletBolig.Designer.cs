@@ -78,7 +78,7 @@ namespace BoBedreVS
             this.ReadAllMægler.Name = "ReadAllMægler";
             this.ReadAllMægler.Size = new System.Drawing.Size(112, 23);
             this.ReadAllMægler.TabIndex = 2;
-            this.ReadAllMægler.Text = "Læs Alle Mæglere ";
+            this.ReadAllMægler.Text = "Læs Alle Boliger";
             this.ReadAllMægler.UseVisualStyleBackColor = true;
             this.ReadAllMægler.Click += new System.EventHandler(this.ReadAllMægler_Click);
             // 

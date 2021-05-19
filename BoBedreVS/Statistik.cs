@@ -98,7 +98,7 @@ namespace BoBedreVS
                         sb.Append($"AND SalgsDato <= '{slutString}' ");
                     }
 
-                    MessageBox.Show(sb.ToString());
+                    //MessageBox.Show(sb.ToString());
                     List<Bolig> boligListe = reader.ReadAllBoligWithWithQuery(sb.ToString());
                     FilSkriver fileWriter = new FilSkriver();
                     fileWriter.WriteBoligToFile(boligListe, filepath, StatVejnavnBox.Text);

@@ -29,6 +29,27 @@ namespace PersistensLag
             return instance;
         }
 
+        public static string IntToStringDate(int dato)
+        {
+            StringBuilder sb = new StringBuilder();
+            string s = dato.ToString();
+
+            if (s.Length == 8)
+            {
+                sb.Append(s.Substring(6));
+                sb.Append("/");
+                sb.Append(s.Substring(4, 2));
+                sb.Append("/");
+                sb.Append(s.Substring(0, 4));
+            }
+            else
+            {
+                sb.Append("Invalid Date");
+            }
+
+            return sb.ToString();
+        }
+
         public static List<Bolig> ReadAllBolig()
         {
             SqlConnection conn = new SqlConnection(Globals.strconn);
@@ -50,6 +71,7 @@ namespace PersistensLag
             {
                 Bolig tempProduct = new Bolig
                 {
+
                     BoligID = Convert.ToInt32(reader[0]),
                     Adresse = Convert.ToString(reader[1]),
                     PostNr = Convert.ToInt32(reader[2]),
@@ -62,7 +84,7 @@ namespace PersistensLag
                     Etager = Convert.ToInt32(reader[9]),
                     KøkkenAlder = Convert.ToString(reader[10]),
                     BadeværelsesAlder = Convert.ToString(reader[11]),
-                    SalgsDato = Convert.ToString(reader[12]),
+                    SalgsDato = IntToStringDate(Convert.ToInt32(reader[12])),
                     OprettelsesDato = Convert.ToString(reader[13]),
                     OmbygningsÅr = Convert.ToString(reader[14]),
                     StandSkala = Convert.ToInt32(reader[15]),
@@ -78,7 +100,6 @@ namespace PersistensLag
 
             return returnList;
         }
-
 
 
         public static List<Kunde> ReadAllCoustomer()
@@ -116,8 +137,6 @@ namespace PersistensLag
 
             return returnList;
         }
-
-
 
 
         public static List<Ejendomsmælger> ReadAllMægler()
@@ -211,27 +230,28 @@ namespace PersistensLag
 
             while (reader.Read())
             {
-                    Bolig tempBolig = new Bolig
-                    {
-                        BoligID = Convert.ToInt32(reader[0]),
-                        Adresse = Convert.ToString(reader[1]),
-                        PostNr = Convert.ToInt32(reader[2]),
-                        GrundM2 = Convert.ToInt32(reader[3]),
-                        HusM2 = Convert.ToInt32(reader[4]),
-                        Pris = Convert.ToInt32(reader[5]),
-                        EjendomsType = Convert.ToString(reader[6]),
-                        Have = Convert.ToInt32(reader[7]),
-                        Alder = Convert.ToString(reader[8]),
-                        Etager = Convert.ToInt32(reader[9]),
-                        KøkkenAlder = Convert.ToString(reader[10]),
-                        BadeværelsesAlder = Convert.ToString(reader[11]),
-                        SalgsDato = Convert.ToString(reader[12]),
-                        OprettelsesDato = Convert.ToString(reader[13]),
-                        OmbygningsÅr = Convert.ToString(reader[14]),
-                        StandSkala = Convert.ToInt32(reader[15]),
-                        KundeID = Convert.ToInt32(reader[16]),
-                        MedarbejderID = Convert.ToInt32(reader[17])
-                    };
+
+                Bolig tempBolig = new Bolig
+                {
+                    BoligID = Convert.ToInt32(reader[0]),
+                    Adresse = Convert.ToString(reader[1]),
+                    PostNr = Convert.ToInt32(reader[2]),
+                    GrundM2 = Convert.ToInt32(reader[3]),
+                    HusM2 = Convert.ToInt32(reader[4]),
+                    Pris = Convert.ToInt32(reader[5]),
+                    EjendomsType = Convert.ToString(reader[6]),
+                    Have = Convert.ToInt32(reader[7]),
+                    Alder = Convert.ToString(reader[8]),
+                    Etager = Convert.ToInt32(reader[9]),
+                    KøkkenAlder = Convert.ToString(reader[10]),
+                    BadeværelsesAlder = Convert.ToString(reader[11]),
+                    SalgsDato = IntToStringDate(Convert.ToInt32(reader[12])),
+                    OprettelsesDato = Convert.ToString(reader[13]),
+                    OmbygningsÅr = Convert.ToString(reader[14]),
+                    StandSkala = Convert.ToInt32(reader[15]),
+                    KundeID = Convert.ToInt32(reader[16]),
+                    MedarbejderID = Convert.ToInt32(reader[17])
+                };
 
                 return tempBolig;
             }
@@ -272,7 +292,7 @@ namespace PersistensLag
                     Etager = Convert.ToInt32(reader[9]),
                     KøkkenAlder = Convert.ToString(reader[10]),
                     BadeværelsesAlder = Convert.ToString(reader[11]),
-                    SalgsDato = Convert.ToString(reader[12]),
+                    SalgsDato = IntToStringDate(Convert.ToInt32(reader[12])),
                     OprettelsesDato = Convert.ToString(reader[13]),
                     OmbygningsÅr = Convert.ToString(reader[14]),
                     StandSkala = Convert.ToInt32(reader[15]),
@@ -321,7 +341,7 @@ namespace PersistensLag
                     Etager = Convert.ToInt32(reader[9]),
                     KøkkenAlder = Convert.ToString(reader[10]),
                     BadeværelsesAlder = Convert.ToString(reader[11]),
-                    SalgsDato = Convert.ToString(reader[12]),
+                    SalgsDato = IntToStringDate(Convert.ToInt32(reader[12])),
                     OprettelsesDato = Convert.ToString(reader[13]),
                     OmbygningsÅr = Convert.ToString(reader[14]),
                     StandSkala = Convert.ToInt32(reader[15]),
@@ -438,11 +458,5 @@ namespace PersistensLag
 
             return returnList;
         }
-
-
-
-
-
-
     }
 }
