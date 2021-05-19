@@ -51,14 +51,29 @@ namespace BoBedreVS
         {
             
             Read readOne = Read.Instance();
-            Kunde kundeData = readOne.ReadAllCoustomerWithKundeId(Convert.ToInt32(KundeIdTextBox.Text));
+            try
+            {
+                Kunde kundeData = readOne.ReadAllCoustomerWithKundeId(Convert.ToInt32(KundeIdTextBox.Text));
+                if (kundeData != null)
+                {
+                    KundeNavnTextBox.Text = kundeData.Navn;
+                    KundeTelnrTextBox.Text = Convert.ToString(kundeData.Telnr);
+                    KundeMailTextBox.Text = kundeData.Mail;
+                    KundeAdresseTextBox.Text = kundeData.Adresse;
+                    KøberCB.Checked = Convert.ToBoolean(kundeData.Køber);
+                    SælgerCB.Checked = Convert.ToBoolean(kundeData.Sælger);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid KundeId");
+                }
+                
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
             
-            KundeNavnTextBox.Text = kundeData.Navn;
-            KundeTelnrTextBox.Text = Convert.ToString(kundeData.Telnr);
-            KundeMailTextBox.Text = kundeData.Mail;
-            KundeAdresseTextBox.Text = kundeData.Adresse;
-            KøberCB.Checked = Convert.ToBoolean(kundeData.Køber);
-            SælgerCB.Checked = Convert.ToBoolean(kundeData.Sælger);
         }
 
         private void CRUD_Click(object sender, EventArgs e)

@@ -32,9 +32,7 @@ namespace BoBedreVS
             this.panel1 = new System.Windows.Forms.Panel();
             this.MedarbejderPortal = new System.Windows.Forms.Button();
             this.PrisVudering = new System.Windows.Forms.Button();
-            this.MIStillingtextBox = new System.Windows.Forms.TextBox();
             this.AabentHus = new System.Windows.Forms.Button();
-            this.MINavnBox1 = new System.Windows.Forms.TextBox();
             this.CRUD = new System.Windows.Forms.Button();
             this.Statistik = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -53,9 +51,7 @@ namespace BoBedreVS
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.MedarbejderPortal);
             this.panel1.Controls.Add(this.PrisVudering);
-            this.panel1.Controls.Add(this.MIStillingtextBox);
             this.panel1.Controls.Add(this.AabentHus);
-            this.panel1.Controls.Add(this.MINavnBox1);
             this.panel1.Controls.Add(this.CRUD);
             this.panel1.Controls.Add(this.Statistik);
             this.panel1.Controls.Add(this.panel2);
@@ -95,13 +91,6 @@ namespace BoBedreVS
             this.PrisVudering.UseVisualStyleBackColor = true;
             this.PrisVudering.Click += new System.EventHandler(this.PrisVudering_Click);
             // 
-            // MIStillingtextBox
-            // 
-            this.MIStillingtextBox.Location = new System.Drawing.Point(0, 441);
-            this.MIStillingtextBox.Name = "MIStillingtextBox";
-            this.MIStillingtextBox.Size = new System.Drawing.Size(100, 23);
-            this.MIStillingtextBox.TabIndex = 9;
-            // 
             // AabentHus
             // 
             this.AabentHus.FlatAppearance.BorderSize = 0;
@@ -116,13 +105,6 @@ namespace BoBedreVS
             this.AabentHus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.AabentHus.UseVisualStyleBackColor = true;
             this.AabentHus.Click += new System.EventHandler(this.AabentHus_Click);
-            // 
-            // MINavnBox1
-            // 
-            this.MINavnBox1.Location = new System.Drawing.Point(0, 412);
-            this.MINavnBox1.Name = "MINavnBox1";
-            this.MINavnBox1.Size = new System.Drawing.Size(100, 23);
-            this.MINavnBox1.TabIndex = 8;
             // 
             // CRUD
             // 
@@ -178,6 +160,7 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources._512x512bb;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
@@ -230,7 +213,6 @@ namespace BoBedreVS
             this.Name = "MedarbejderInfo";
             this.Text = "MedarbejderInfo";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -251,8 +233,6 @@ namespace BoBedreVS
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox MINavnBox1;
-        private System.Windows.Forms.TextBox MIStillingtextBox;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label StillingLable;
     }

@@ -32,8 +32,7 @@ namespace BoBedreVS
 
                         this.Invoke(new MethodInvoker(delegate()
                         {
-                            MINavnBox1.Text = Convert.ToString(medarbejder.Navn);
-                            MIStillingtextBox.Text = Convert.ToString(medarbejder.Stilling);
+                           
                             NameLabel.Text = Convert.ToString(medarbejder.Navn);
                             StillingLable.Text = Convert.ToString(medarbejder.Stilling);
                         }));

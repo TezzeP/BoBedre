@@ -52,7 +52,7 @@ namespace BoBedreVS
             boligData.Alder = Convert.ToString(AlderTextBox.Text);
             boligData.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
             boligData.BadeværelsesAlder = Convert.ToString(BadAlderTextBox1.Text);
-            boligData.SalgsDato = Convert.ToInt32(sb.ToString().Replace(" ", "0"));
+            boligData.SalgsDato = Convert.ToString(sb.ToString().Replace(" ", "0"));
             boligData.OprettelsesDato = Convert.ToString(BoligOprettelsesTextBox.Text);
             boligData.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
             boligData.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);
@@ -70,7 +70,11 @@ namespace BoBedreVS
         {
 
             Read readOne = Read.Instance();
-            Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId", Convert.ToInt32(BoligIdTextBox.Text));
+            
+            
+                Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId", Convert.ToInt32(BoligIdTextBox.Text));
+            
+          
 
             BoligIdTextBox.Text = Convert.ToString(boligData.BoligID);
             BoligAdresseTextBox.Text = Convert.ToString(boligData.Adresse);

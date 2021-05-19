@@ -15,7 +15,7 @@ namespace BoBedreVS
 {
     public partial class SeSletKunde : Form
     {
-        
+
         public SeSletKunde()
         {
             InitializeComponent();
@@ -37,14 +37,23 @@ namespace BoBedreVS
         private void ReadAndShowKunde_Click(object sender, EventArgs e)
         {
             ReadAndShow readAndShowBolig = new ReadAndShow();
-
             dataGridView1.DataSource = readAndShowBolig.ReadAndShowKunde();
+
+
         }
 
         private void Delete_Click(object sender, EventArgs e)
         {
             HandleCRUD deleteKunde = new HandleCRUD();
-            deleteKunde.HandleDeleteKunde(Convert.ToInt32(KundeIdTextBox.Text));
+            try
+            {
+                MessageBox.Show(deleteKunde.HandleDeleteKunde(Convert.ToInt32(KundeIdTextBox.Text)));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
         }
 
         private void CRUD_Click(object sender, EventArgs e)
@@ -78,7 +87,7 @@ namespace BoBedreVS
             Close();
         }
 
-      
+
 
         private void AabentHus_Click(object sender, EventArgs e)
         {

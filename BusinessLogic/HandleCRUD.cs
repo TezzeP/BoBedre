@@ -31,24 +31,25 @@ namespace BusinessLogic
         }
 
 
-        public void HandleDeleteMægler(int mægler)
+        public string HandleDeleteMægler(int mægler)
         {
             Delete deleteMægler = new Delete();
-            deleteMægler.DeleteMægler(mægler);
+            return deleteMægler.DeleteMægler(mægler);
         }
 
 
-        public void HandleDeleteBolig(int bolig)
+        public string HandleDeleteBolig(int bolig)
         {
             Delete deleteBolig = new Delete();
-            deleteBolig.DeleteBolig(bolig);
+            return deleteBolig.DeleteBolig(bolig);
+
         }
 
 
-        public void HandleDeleteKunde(int kunde)
+        public string HandleDeleteKunde(int kunde)
         {
             Delete deleteKunde = new Delete();
-            deleteKunde.DeleteKunde(kunde);
+            return deleteKunde.DeleteKunde(kunde);
         }
     }
 }

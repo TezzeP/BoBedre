@@ -83,7 +83,7 @@ namespace BoBedreVS
             sendBolig.Etager = Convert.ToInt32(EtagerTextBox.Text);
             sendBolig.KøkkenAlder = Convert.ToString(KøkkenAlderTextBox.Text);
             sendBolig.BadeværelsesAlder = Convert.ToString(BadeværelsesAlderTextBox.Text);
-            sendBolig.SalgsDato = Convert.ToInt32(SalgsDatoTextBox.Text);
+            sendBolig.SalgsDato = Convert.ToString(SalgsDatoTextBox.Text);
             sendBolig.OprettelsesDato = Convert.ToString(OprettelsesdatoTextBox.Text);
             sendBolig.OmbygningsÅr = Convert.ToString(OmbygningsÅrTextBox.Text);
             sendBolig.StandSkala = Convert.ToInt32(StandSkalaTextBox.Text);

@@ -42,7 +42,15 @@ namespace BoBedreVS
         private void Delete_Click(object sender, EventArgs e)
         {
             HandleCRUD deleteBolig = new HandleCRUD();
-            deleteBolig.HandleDeleteBolig(Convert.ToInt32(BoligIdTextBox.Text));
+            try
+            {
+                MessageBox.Show(deleteBolig.HandleDeleteBolig(Convert.ToInt32(BoligIdTextBox.Text)));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void CRUD_Click(object sender, EventArgs e)

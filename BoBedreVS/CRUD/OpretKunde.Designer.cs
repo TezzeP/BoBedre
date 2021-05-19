@@ -304,7 +304,7 @@ namespace BoBedreVS
             this.KundeNavnTextBox.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.KundeNavnTextBox.Name = "KundeNavnTextBox";
             this.KundeNavnTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeNavnTextBox.TabIndex = 28;
+            this.KundeNavnTextBox.TabIndex = 1;
             // 
             // KundeMailTextBox
             // 
@@ -312,7 +312,7 @@ namespace BoBedreVS
             this.KundeMailTextBox.Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
             this.KundeMailTextBox.Name = "KundeMailTextBox";
             this.KundeMailTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeMailTextBox.TabIndex = 29;
+            this.KundeMailTextBox.TabIndex = 3;
             // 
             // KundeAdresseTextBox
             // 
@@ -320,7 +320,7 @@ namespace BoBedreVS
             this.KundeAdresseTextBox.Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
             this.KundeAdresseTextBox.Name = "KundeAdresseTextBox";
             this.KundeAdresseTextBox.Size = new System.Drawing.Size(100, 23);
-            this.KundeAdresseTextBox.TabIndex = 30;
+            this.KundeAdresseTextBox.TabIndex = 4;
             // 
             // OpretKunde
             // 
