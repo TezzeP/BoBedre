@@ -40,9 +40,10 @@ namespace BusinessLogic
                 sb.Append(s.Substring(0, 4));
 
                 sw.WriteLine($" ---- Bolig {b.BoligID} ---- ");
+                sw.WriteLine($"  Adresse: {b.Adresse}");
                 sw.WriteLine($"  Salgsdato: {sb}");
                 sw.WriteLine($"  Salgspris: {b.Pris}");
-                sw.WriteLine($"  Mægler: {b.MedarbejderID}");
+                sw.WriteLine($"  MæglerID: {b.MedarbejderID}");
                 sw.WriteLine(" ------------------ ");
                 sw.WriteLine();
                 sw.WriteLine();
