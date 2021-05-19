@@ -150,7 +150,7 @@ namespace BoBedreVS
             this.CreateBolig.Location = new System.Drawing.Point(267, 403);
             this.CreateBolig.Name = "CreateBolig";
             this.CreateBolig.Size = new System.Drawing.Size(75, 23);
-            this.CreateBolig.TabIndex = 10;
+            this.CreateBolig.TabIndex = 18;
             this.CreateBolig.Text = "Opret bolig";
             this.CreateBolig.UseVisualStyleBackColor = true;
             this.CreateBolig.Click += new System.EventHandler(this.CreateBolig_Click);
@@ -377,6 +377,7 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources._512x512bb;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
@@ -539,7 +540,7 @@ namespace BoBedreVS
             this.MedarbejderIdTextBox.Mask = "0000";
             this.MedarbejderIdTextBox.Name = "MedarbejderIdTextBox";
             this.MedarbejderIdTextBox.Size = new System.Drawing.Size(100, 23);
-            this.MedarbejderIdTextBox.TabIndex = 43;
+            this.MedarbejderIdTextBox.TabIndex = 17;
             // 
             // OpretBolig
             // 

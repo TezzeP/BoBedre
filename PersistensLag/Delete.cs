@@ -17,7 +17,7 @@ namespace PersistensLag
             SqlCommand ReadOneMæglercmd = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ($"DELETE FROM Ejendomsmælger WHERE MedarbejderId = @MedarbejderId")
+                CommandText = ($"DELETE FROM Ejendomsmægler WHERE MedarbejderId = @MedarbejderId")
             };
 
             ReadOneMæglercmd.Parameters.AddWithValue("@MedarbejderId", Convert.ToInt32(MedarbejderId));

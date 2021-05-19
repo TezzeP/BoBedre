@@ -85,7 +85,7 @@ namespace BoBedreVS
             // Delete
             // 
             this.Delete.ForeColor = System.Drawing.Color.Black;
-            this.Delete.Location = new System.Drawing.Point(644, 18);
+            this.Delete.Location = new System.Drawing.Point(644, 17);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(75, 23);
             this.Delete.TabIndex = 3;

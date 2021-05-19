@@ -36,7 +36,16 @@ namespace BoBedreVS
         private void DeleteMægler_Click(object sender, EventArgs e)
         {
             HandleCRUD deleteMægler = new HandleCRUD();
-            deleteMægler.HandleDeleteMægler(Convert.ToInt32(MedarbejderIdTextBox.Text));
+            try
+            {
+                MessageBox.Show(deleteMægler.HandleDeleteMægler(Convert.ToInt32(MedarbejderIdTextBox.Text)));
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+
+            }
+            
         }
 
         private void CRUD_Click(object sender, EventArgs e)
