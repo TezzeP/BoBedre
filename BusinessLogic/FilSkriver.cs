@@ -30,18 +30,9 @@ namespace BusinessLogic
 
             foreach (Bolig b in boligList)
             {
-                StringBuilder sb = new StringBuilder();
-                string s = b.SalgsDato.ToString();
-
-                sb.Append(s.Substring(6));
-                sb.Append("/");
-                sb.Append(s.Substring(4, 2));
-                sb.Append("/");
-                sb.Append(s.Substring(0, 4));
-
                 sw.WriteLine($" ---- Bolig {b.BoligID} ---- ");
                 sw.WriteLine($"  Adresse: {b.Adresse}");
-                sw.WriteLine($"  Salgsdato: {sb}");
+                sw.WriteLine($"  Salgsdato: {b.SalgsDato}");
                 sw.WriteLine($"  Salgspris: {b.Pris}");
                 sw.WriteLine($"  MæglerID: {b.MedarbejderID}");
                 sw.WriteLine(" ------------------ ");
