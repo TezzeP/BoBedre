@@ -37,7 +37,7 @@ namespace BoBedreVS
                             StillingLable.Text = Convert.ToString(medarbejder.Stilling);
                         }));
 
-                        Thread.Sleep(60000);
+                        Thread.Sleep(2000);
                     }
                 }
 
@@ -88,6 +88,9 @@ namespace BoBedreVS
             Close();
         }
 
-        
+        private void NameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

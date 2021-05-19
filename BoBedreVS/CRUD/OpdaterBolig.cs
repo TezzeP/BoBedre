@@ -39,7 +39,7 @@ namespace BoBedreVS
             sb.Append(temp.Substring(3, 2));
             sb.Append(temp.Substring(0, 2));
 
-            MessageBox.Show(sb.ToString().Replace(" ", "0"));
+           
 
             boligData.BoligID = Convert.ToInt32(BoligIdTextBox.Text);
             boligData.Adresse = Convert.ToString(BoligAdresseTextBox.Text);

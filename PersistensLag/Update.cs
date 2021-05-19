@@ -16,18 +16,22 @@ namespace PersistensLag
 
             conn.Open();
 
+            
+
             SqlCommand UpdateKunde = new SqlCommand
             {
                 Connection = conn,
                 CommandText =
-                    (" Update Kunde set " +
+                    ("SET TRANSACTION ISOLATION LEVEL SERIALIZABLE BEGIN TRAN " +
+                     "Update Kunde set  " +
                      " Navn=@navn,      " +
                      " TlfNr=@TlfNr,    " +
                      " Mail=@mail,      " +
                      " Adresse=@adresse," +
                      " Køber=@Køber,    " +
                      " Sælger= @Sælger  " +
-                     " where KundeId= @kundeId"
+                     " where KundeId= @kundeId " +
+                     "COMMIT TRAN"
                      )
             };
 
@@ -63,7 +67,8 @@ namespace PersistensLag
             {
                 Connection = conn,
                 CommandText =
-                    (" Update Bolig set " +
+                    ("SET TRANSACTION ISOLATION LEVEL SERIALIZABLE BEGIN TRAN" +
+                     " Update Bolig set " +
                      "Adresse=@Adresse, " +
                      "PostNr=@PostNr,   " +
                      "GrundM2=@GrundM2, " +
@@ -80,7 +85,8 @@ namespace PersistensLag
                      "StandSkala = @StandSkala, " +
                      "KundeId = @KundeId,"+
                      "MedarbejderId = @MedarbejderId " +
-                     "where BoligId= @BoligId")
+                     "where BoligId= @BoligId " +
+                     "COMMIT TRAN")
             };
 
             UpdateBolig.Parameters.AddWithValue("@Adresse", bolig.Adresse);
@@ -124,12 +130,14 @@ namespace PersistensLag
             {
                 Connection = conn,
                 CommandText =
-                    (" Update Ejendomsmægler set " +
+                    (" SET TRANSACTION ISOLATION LEVEL SERIALIZABLE BEGIN TRAN " +
+                     " Update Ejendomsmægler set " +
                      " Navn=@Navn," +
                      " TlfNr=@TlfNr,  " +
                      " Mail=@Mail," +
                      " Stilling= @Stilling" +
-                     " where MedarbejderId= @MedarbejderId")
+                     " where MedarbejderId= @MedarbejderId " +
+                     "COMMIT TRAN")
 
 
             };

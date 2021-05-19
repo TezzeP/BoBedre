@@ -39,7 +39,9 @@ namespace PersistensLag
             SqlCommand ReadBoligForSale = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ("select * from Bolig")
+                CommandText = (" SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN " +
+                               "select * from Bolig " +
+                               "COMMIT TRAN")
             };
 
             SqlDataReader reader = ReadBoligForSale.ExecuteReader();
@@ -91,7 +93,9 @@ namespace PersistensLag
             SqlCommand ReadBoligForSale = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ("select * from Kunde")
+                CommandText = (" SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN " +
+                               "select * from Kunde " +
+                               "COMMIT TRAN")
             };
 
             SqlDataReader reader = ReadBoligForSale.ExecuteReader();
@@ -130,7 +134,9 @@ namespace PersistensLag
             SqlCommand ReadBoligForSale = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ("select * from Ejendomsmægler")
+                CommandText = (" SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN " +
+                               "select * from Ejendomsmægler " +
+                               "COMMIT TRAN")
             };
 
             SqlDataReader reader = ReadBoligForSale.ExecuteReader();
@@ -166,7 +172,9 @@ namespace PersistensLag
             SqlCommand ReadBoligForSale = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ("select * from Kunde where KundeId = @kundeId")
+                CommandText = ("SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN " +
+                               "select * from Kunde where KundeId = @kundeId " +
+                               "COMMIT TRAN")
             };
 
             ReadBoligForSale.Parameters.AddWithValue("@kundeId", Convert.ToInt32(KundeId));
@@ -202,7 +210,9 @@ namespace PersistensLag
             SqlCommand ReadOneBoligcmd = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ($"select * from Bolig where {boligAttribut} = {boligAttributVærdi}")
+                CommandText = ($"SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN " +
+                               $"select * from Bolig where {boligAttribut} = {boligAttributVærdi} " +
+                               $"COMMIT TRAN")
             };
 
             ReadOneBoligcmd.Parameters.AddWithValue($"{boligAttribut}", Convert.ToInt32(boligAttributVærdi));
@@ -249,7 +259,9 @@ namespace PersistensLag
             SqlCommand ReadBoligForSale = new SqlCommand
             {
                 Connection = conn,
-                CommandText = $"SELECT * FROM dbo.Bolig WHERE {boligAttribut} = '{boligAttributVærdi}'"
+                CommandText = $"SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN" +
+                              $" SELECT * FROM dbo.Bolig WHERE {boligAttribut} = '{boligAttributVærdi}' " +
+                              $"COMMIT TRAN"
             };
 
             SqlDataReader reader = ReadBoligForSale.ExecuteReader();
@@ -347,7 +359,9 @@ namespace PersistensLag
             SqlCommand ReadOneMæglercmd = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ("select * from Ejendomsmægler where MedarbejderId = @MedarbejderId")
+                CommandText = (" SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN" +
+                               "select * from Ejendomsmægler where MedarbejderId = @MedarbejderId " +
+                               "COMMIT TRAN")
             };
 
             ReadOneMæglercmd.Parameters.AddWithValue("@MedarbejderId", Convert.ToInt32(MedarbejderId));
@@ -382,7 +396,9 @@ namespace PersistensLag
             SqlCommand ReadOneMedarbejdercmd = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ("select Navn, Stilling from Ejendomsmægler")
+                CommandText = (" SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN " +
+                               "select Navn, Stilling from Ejendomsmægler " +
+                               "COMMIT TRAN")
             };
 
 
@@ -415,7 +431,9 @@ namespace PersistensLag
             SqlCommand ReadOneMedarbejdercmd = new SqlCommand
             {
                 Connection = conn,
-                CommandText = ("select Navn, Stilling from Ejendomsmægler")
+                CommandText = (" SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN " +
+                               "select Navn, Stilling from Ejendomsmægler " +
+                               "COMMIT TRAN")
             };
 
             //ReadOneMedarbejdercmd.Parameters.AddWithValue("@MedarbejderId", mægler.MedarbejderId);
