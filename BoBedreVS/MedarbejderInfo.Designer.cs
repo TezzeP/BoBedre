@@ -160,7 +160,6 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources._512x512bb;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
@@ -189,6 +188,7 @@ namespace BoBedreVS
             this.NameLabel.Size = new System.Drawing.Size(335, 142);
             this.NameLabel.TabIndex = 12;
             this.NameLabel.Text = "Navn ";
+            this.NameLabel.Click += new System.EventHandler(this.NameLabel_Click);
             // 
             // StillingLable
             // 

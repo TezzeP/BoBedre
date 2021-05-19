@@ -42,7 +42,7 @@ namespace BoBedreVS
                 }
 
             });
-
+            backgroundThread.IsBackground = true;
             backgroundThread.Start();
 
         }
@@ -88,6 +88,9 @@ namespace BoBedreVS
             Close();
         }
 
-        
+        private void NameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
