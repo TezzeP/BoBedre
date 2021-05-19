@@ -42,7 +42,7 @@ namespace BoBedreVS
                 }
 
             });
-
+            backgroundThread.IsBackground = true;
             backgroundThread.Start();
 
         }

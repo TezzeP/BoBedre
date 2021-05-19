@@ -34,15 +34,22 @@ namespace BoBedreVS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ReadAndShow readAndShowBolig = new ReadAndShow();
+            if (PostNrBox.MaskCompleted) {
 
-            dataGridView1.DataSource = readAndShowBolig.ReadAndShowBoligSpecific("PostNr", Convert.ToInt32(PostNrBox.Text));
+                ReadAndShow readAndShowBolig = new ReadAndShow();
 
-            refresh();
+                dataGridView1.DataSource = readAndShowBolig.ReadAndShowBoligSpecific("PostNr", Convert.ToInt32(PostNrBox.Text));
 
-            if (dataGridView1[0, 0].Value == null)
+                refresh();
+
+                if (dataGridView1[0, 0].Value == null)
+                {
+                    MessageBox.Show("Kunne ikke finde en bolig med det givne postnummer");
+                }
+            }
+            else
             {
-                MessageBox.Show("Kunne ikke finde en bolig med det givne postnummer");
+                MessageBox.Show("Indtast 4-cifret postnummer");
             }
 
         }
@@ -58,14 +65,14 @@ namespace BoBedreVS
 
             if (!String.IsNullOrEmpty(StandardPrisBox.Text) && Double.TryParse(StandardPrisBox.Text, out double pris))
             {
-                int stand = Convert.ToInt32(StandBox.Text);
+                Int32.TryParse(StandBox.Text, out int stand);
                 Double.TryParse(GrundBox.Text, out double grund);
                 Double.TryParse(HusBox.Text, out double hus);
-                int postNr = Convert.ToInt32(PostBox.Text);
+                int postNr = PostBox.MaskCompleted ? Convert.ToInt32(PostBox.Text) : 0;
                 string ejendomstype = EjendomstypeBox.Text.ToLower();
                 Int32.TryParse(EtagerBox.Text, out int etager);
-                int køkkenalder = Convert.ToInt32(KøkkenalderBox.Text);
-                int badeværelsesalder = Convert.ToInt32(BadeværelseBox.Text);
+                Int32.TryParse(KøkkenalderBox.Text, out int køkkenalder);
+                Int32.TryParse(BadeværelseBox.Text, out int badeværelsesalder);
                 Boolean have = HaveCheckBox.Checked ? true : false;
 
                 PrisVurderer pv = new PrisVurderer();
