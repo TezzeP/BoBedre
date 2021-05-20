@@ -65,7 +65,7 @@ namespace BoBedreVS
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Back";
+            this.button1.Text = "Tilbage";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -76,7 +76,7 @@ namespace BoBedreVS
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(113, 60);
             this.Update.TabIndex = 9;
-            this.Update.Text = "Update";
+            this.Update.Text = "Opdater";
             this.Update.UseVisualStyleBackColor = true;
             this.Update.Click += new System.EventHandler(this.Update_Click);
             // 
@@ -140,9 +140,9 @@ namespace BoBedreVS
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
             this.label1.Location = new System.Drawing.Point(193, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 15);
+            this.label1.Size = new System.Drawing.Size(154, 15);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Choose KundeId too update ";
+            this.label1.Text = "Vælg KundeId til opdatering";
             // 
             // KundeIdTextBox
             // 
@@ -275,7 +275,6 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources.cool_csgo_profile_pictures_2c3d8442_7fef_446e_9315_e9f8a46ece47;
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
