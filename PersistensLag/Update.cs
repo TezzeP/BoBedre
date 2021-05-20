@@ -16,8 +16,6 @@ namespace PersistensLag
 
             conn.Open();
 
-            
-
             SqlCommand UpdateKunde = new SqlCommand
             {
                 Connection = conn,

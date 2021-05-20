@@ -46,7 +46,7 @@ namespace BoBedreVS
             Read readOneMÆgler = Read.Instance();
             Update update = new Update();
 
-
+            
             mælgerData.MedarbejderId = Convert.ToInt32(MedarbejderIdTextBox1.Text);
             mælgerData.Navn = Convert.ToString(MælgerNavnTextBox.Text);
             mælgerData.Tlf = Convert.ToInt32(MæglerTlfTextBox3.Text);
