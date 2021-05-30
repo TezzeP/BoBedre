@@ -35,16 +35,22 @@ namespace BoBedreVS
         private void button2_Click(object sender, EventArgs e)
         {
             if (PostNrBox.MaskCompleted) {
-
-                ReadAndShow readAndShowBolig = new ReadAndShow();
-
-                dataGridView1.DataSource = readAndShowBolig.ReadAndShowBoligSpecific("PostNr", Convert.ToInt32(PostNrBox.Text));
-
-                refresh();
-
-                if (dataGridView1[0, 0].Value == null)
+                try
                 {
-                    MessageBox.Show("Kunne ikke finde en bolig med det givne postnummer");
+                    ReadAndShow readAndShowBolig = new ReadAndShow();
+
+                    dataGridView1.DataSource = readAndShowBolig.ReadAndShowBoligSpecific("PostNr", Convert.ToInt32(PostNrBox.Text));
+
+                    refresh();
+
+                    if (dataGridView1[0, 0].Value == null)
+                    {
+                        MessageBox.Show("Kunne ikke finde en bolig med det givne postnummer");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
             }
             else
