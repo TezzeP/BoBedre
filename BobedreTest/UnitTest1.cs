@@ -1,5 +1,8 @@
+using System.Globalization;
+using BusinessLogic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using 
+
+
 
 namespace BobedreTest
 {
@@ -9,7 +12,14 @@ namespace BobedreTest
         [TestMethod]
         public void TestMethod1()
         {
+            //areange
+            Sorting sorting = new Sorting();
 
+
+            //act 
+
+
+            //assert 
 
         }
     }

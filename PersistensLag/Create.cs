@@ -51,8 +51,6 @@ namespace PersistensLag
                      "@EjendomsType,@Have,@Alder,@Etager,@KøkkenAlder," +
                      "@BadeværelsesAlder,@SalgsDato, @OprettelsesDato, " +
                      "@OmbygningsÅr, @StandSkala, @KundeId, @MedarbejderId)")
-
-                
             };
             createBolig.Parameters.AddWithValue("@Adresse", bolig.Adresse);
             createBolig.Parameters.AddWithValue("@PostNr", bolig.PostNr);
@@ -127,8 +125,6 @@ namespace PersistensLag
                 conn.Close();
                 return ("Ejendomsmælger er blevet tilføjet til databasen");
             }
-
-
         }
 
     }

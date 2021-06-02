@@ -325,14 +325,12 @@ namespace PersistensLag
             SqlConnection conn = new SqlConnection(Globals.strconn);
 
             conn.Open();
-
             //var readAllProducts = new SqlCommand // dette er det samme 
             SqlCommand ReadBoligForSale = new SqlCommand
             {
                 Connection = conn,
                 CommandText = SqlQuery
             };
-
             SqlDataReader reader = ReadBoligForSale.ExecuteReader();
 
             List<Bolig> returnList = new List<Bolig>();
@@ -360,12 +358,9 @@ namespace PersistensLag
                     KundeID = Convert.ToInt32(reader[16]),
                     MedarbejderID = Convert.ToInt32(reader[17])
                 };
-
                 returnList.Add(tempProduct);
             }
-
             conn.Close();
-
             return returnList;
         }
 

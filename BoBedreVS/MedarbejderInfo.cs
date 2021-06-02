@@ -88,9 +88,6 @@ namespace BoBedreVS
             Close();
         }
 
-        private void NameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
