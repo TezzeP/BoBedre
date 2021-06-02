@@ -14,7 +14,7 @@ namespace PersistensLag
     {
         private static Read instance;
 
-        protected Read()
+        private Read()
         {
 
         }
