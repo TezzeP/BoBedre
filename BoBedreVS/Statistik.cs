@@ -137,5 +137,10 @@ namespace BoBedreVS
         {
 
         }
+
+        private void StatFileBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,7 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Text;
 using BusinessLogic;
 using Models;
 using PersistensLag;
+using System.Collections.Generic;
 
 namespace BobedreTest
 {
@@ -33,6 +36,26 @@ namespace BobedreTest
             Assert.AreEqual(pv.Calculate(value, 0, 0, 0, 0, "", 0, 0, bAlder, false), defaultValue - value * bAlder * pv.BadeværelsePerMånedFaktor);
             bool have = true;
             Assert.AreEqual(pv.Calculate(value, 0, 0, 0, 0, "", 0, 0, 0, true), defaultValue + value * pv.HaveFaktor);
+        }
+
+        [TestMethod]
+        public void TestStatistik()
+        {
+            Read reader = Read.Instance();
+            string s = "SELECT * FROM dbo.Bolig WHERE SalgsDato IS NOT NULL AND Adresse LIKE 'Testvej%'  AND SalgsDato >= '20100101' AND SalgsDato <= '20200101'";
+            List<Bolig> boligListe = reader.ReadAllBoligWithWithQuery(s);
+
+            foreach (Bolig b in boligListe)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append(b.SalgsDato.Substring(6));
+                sb.Append(b.SalgsDato.Substring(3, 2));
+                sb.Append(b.SalgsDato.Substring(0, 2));
+                StringAssert.Contains(b.Adresse, "Testvej");
+                Assert.IsTrue(Convert.ToInt32(sb.ToString()) >= 20100101);
+                Assert.IsTrue(Convert.ToInt32(sb.ToString()) <= 20200101);
+            }
+
         }
     }
 }

@@ -270,6 +270,7 @@ namespace BoBedreVS
             this.StatFileBox.ReadOnly = true;
             this.StatFileBox.Size = new System.Drawing.Size(196, 23);
             this.StatFileBox.TabIndex = 20;
+            this.StatFileBox.TextChanged += new System.EventHandler(this.StatFileBox_TextChanged);
             // 
             // Statistik
             // 
