@@ -374,7 +374,7 @@ namespace PersistensLag
             SqlCommand ReadOneMæglercmd = new SqlCommand
             {
                 Connection = conn,
-                CommandText = (" SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN" +
+                CommandText = (" SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED BEGIN TRAN " +
                                "select * from Ejendomsmægler where MedarbejderId = @MedarbejderId " +
                                "COMMIT TRAN")
             };
