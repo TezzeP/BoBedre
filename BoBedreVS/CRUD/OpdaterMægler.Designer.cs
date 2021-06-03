@@ -44,9 +44,7 @@ namespace BoBedreVS
             this.CRUD = new System.Windows.Forms.Button();
             this.Statistik = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.MedarbejderId = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -220,25 +218,12 @@ namespace BoBedreVS
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label12);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(186, 144);
             this.panel2.TabIndex = 0;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label11.Location = new System.Drawing.Point(33, 119);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(106, 15);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Some usewr text ";
             // 
             // pictureBox1
             // 
@@ -248,17 +233,6 @@ namespace BoBedreVS
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label12.Location = new System.Drawing.Point(63, 88);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 15);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Guffe";
             // 
             // MedarbejderId
             // 
@@ -334,7 +308,6 @@ namespace BoBedreVS
             this.Text = "OpdaterMægler";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -358,9 +331,7 @@ namespace BoBedreVS
         private System.Windows.Forms.Button CRUD;
         private System.Windows.Forms.Button Statistik;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label MedarbejderId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
