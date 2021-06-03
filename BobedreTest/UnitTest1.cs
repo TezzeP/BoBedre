@@ -1,3 +1,5 @@
+using System.Globalization;
+using BusinessLogic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Text;
@@ -5,6 +7,8 @@ using BusinessLogic;
 using Models;
 using PersistensLag;
 using System.Collections.Generic;
+
+
 
 namespace BobedreTest
 {
@@ -14,6 +18,15 @@ namespace BobedreTest
         [TestMethod]
         public void TestPrisVurderer()
         {
+            //areange
+            Sorting sorting = new Sorting();
+
+
+            //act 
+
+
+            //assert 
+
             PrisVurderer pv = new PrisVurderer();
             double value = 100;
             double defaultValue = value * (1 + pv.StandStartFaktor + pv.EtagerStartFaktor + pv.KøkkenalderStartFaktor + pv.BadeværelseStartFaktor);

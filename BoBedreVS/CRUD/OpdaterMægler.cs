@@ -31,13 +31,29 @@ namespace BoBedreVS
         private void LæsMælgerData_Click(object sender, EventArgs e)
         {
             Read readOneMægler = Read.Instance();
-            Ejendomsmælger mælgerData = readOneMægler.ReadAllMælgerWithMedarbejderId(Convert.ToInt32(MedarbejderIdTextBox1.Text));
+            try
+            {
+                Ejendomsmælger mælgerData =
+                    readOneMægler.ReadAllMælgerWithMedarbejderId(Convert.ToInt32(MedarbejderIdTextBox1.Text));
+                if (mælgerData != null)
+                {
+                    MedarbejderIdTextBox1.Text = Convert.ToString(mælgerData.MedarbejderId);
+                    MælgerNavnTextBox.Text = Convert.ToString(mælgerData.Navn);
+                    MæglerTlfTextBox3.Text = Convert.ToString(mælgerData.Tlf);
+                    MæglerMailTextBox4.Text = Convert.ToString(mælgerData.Mail);
+                    MæglerStillingTextBox5.Text = Convert.ToString(mælgerData.Stilling);
 
-            MedarbejderIdTextBox1.Text = Convert.ToString(mælgerData.MedarbejderId);
-            MælgerNavnTextBox.Text = Convert.ToString(mælgerData.Navn);
-            MæglerTlfTextBox3.Text = Convert.ToString(mælgerData.Tlf);
-            MæglerMailTextBox4.Text = Convert.ToString(mælgerData.Mail);
-            MæglerStillingTextBox5.Text = Convert.ToString(mælgerData.Stilling);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid MæglerId");
+                }
+
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
 
         private void UpdateMælger_Click(object sender, EventArgs e)

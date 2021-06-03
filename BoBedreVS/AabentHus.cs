@@ -46,12 +46,18 @@ namespace BoBedreVS
         private void button2_Click_1(object sender, EventArgs e)
         {
             Sorting SearchByLetter = new Sorting();
+            try
+            {
+                dataGridView1.DataSource =
+                    SearchByLetter.SerchByLetterInverval2(
+                        Convert.ToChar(FirstLetterBox.Text),
+                        Convert.ToChar(SecondLetterBox.Text));
 
-            dataGridView1.DataSource = 
-                SearchByLetter.SerchByLetterInverval2(
-                Convert.ToChar(FirstLetterBox.Text),
-                Convert.ToChar(SecondLetterBox.Text));
-
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
 
         private void udSKRIV_Click_1(object sender, EventArgs e)

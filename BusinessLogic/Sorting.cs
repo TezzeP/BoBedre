@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using Models;
@@ -13,7 +14,7 @@ namespace BusinessLogic
         public List<Bolig>  SortByAdresseFirstLetterAndM2Over145()
         {
             return Read.ReadAllBolig()
-                .Where(x => x.GrundM2 >= 145)
+                .Where(x => x.GrundM2 >= 145 && x.SalgsDato != null)
                 .OrderBy(x => x.Adresse)
                 .ThenBy(x => x.Pris)
                 .ToList();
@@ -42,7 +43,18 @@ namespace BusinessLogic
 
         public List<Bolig> SerchByLetterInverval2(char firstLetter, char secondLetter)
         {
-           return Read.ReadAllBolig().Where(x=>Char.ToLower(x.Adresse[0])>=Char.ToLower(firstLetter) && Char.ToLower(x.Adresse[0])<=Char.ToLower(secondLetter)).ToList();
+            return SerchByLetterInverval3(firstLetter, secondLetter, Read.ReadAllBolig());
+
+        }
+
+        public List<Bolig> SerchByLetterInverval3(char firstLetter, char secondLetter, List<Bolig> boligerList)
+        {
+            return boligerList.Where
+            (x => Char.ToLower(x.Adresse[0])
+                  >= Char.ToLower(firstLetter) &&
+                  Char.ToLower(x.Adresse[0]) <=
+                  Char.ToLower(secondLetter)).ToList();
+
         }
      }
 }

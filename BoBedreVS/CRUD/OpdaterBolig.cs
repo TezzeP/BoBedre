@@ -68,30 +68,46 @@ namespace BoBedreVS
 
         private void LæsBoligData_Click(object sender, EventArgs e)
         {
-
             Read readOne = Read.Instance();
-            
-            
+            try
+            {
                 Bolig boligData = readOne.ReadAllBoligWithBoligId("BoligId", Convert.ToInt32(BoligIdTextBox.Text));
-            
-          
+                if (boligData != null)
+                {
+                    BoligIdTextBox.Text = Convert.ToString(boligData.BoligID);
+                    BoligAdresseTextBox.Text = Convert.ToString(boligData.Adresse);
+                    BoligPostNrTextBox.Text = Convert.ToString(boligData.PostNr);
+                    BoligGrundM2TextBox.Text = Convert.ToString(boligData.GrundM2);
+                    BoigHusM2TextBox.Text = Convert.ToString(boligData.HusM2);
+                    BoligPrisTextBox.Text = Convert.ToString(boligData.Pris);
+                    EjendomsTypeTextBox.Text = Convert.ToString(boligData.EjendomsType);
+                    HaveCheckBox.Checked = Convert.ToBoolean(boligData.Have);
+                    AlderTextBox.Text = Convert.ToString(boligData.Alder);
+                    EtagerTextBox.Text = Convert.ToString(boligData.Etager);
+                    KøkkenAlderTextBox.Text = Convert.ToString(boligData.KøkkenAlder);
+                    BadAlderTextBox1.Text = Convert.ToString(boligData.BadeværelsesAlder);
+                    BoligSalgsdatoTextBox.Text = Convert.ToString(boligData.SalgsDato);
+                    BoligOprettelsesTextBox.Text = Convert.ToString(boligData.OprettelsesDato);
+                    OmbygningsÅrTextBox.Text = Convert.ToString(boligData.OmbygningsÅr);
+                    StandSkalaTextBox.Text = Convert.ToString(boligData.StandSkala);
 
-            BoligIdTextBox.Text = Convert.ToString(boligData.BoligID);
-            BoligAdresseTextBox.Text = Convert.ToString(boligData.Adresse);
-            BoligPostNrTextBox.Text = Convert.ToString(boligData.PostNr);
-            BoligGrundM2TextBox.Text = Convert.ToString(boligData.GrundM2);
-            BoigHusM2TextBox.Text = Convert.ToString(boligData.HusM2);
-            BoligPrisTextBox.Text = Convert.ToString(boligData.Pris);
-            EjendomsTypeTextBox.Text = Convert.ToString(boligData.EjendomsType);
-            HaveCheckBox.Checked = Convert.ToBoolean(boligData.Have);
-            AlderTextBox.Text = Convert.ToString(boligData.Alder);
-            EtagerTextBox.Text = Convert.ToString(boligData.Etager);
-            KøkkenAlderTextBox.Text = Convert.ToString(boligData.KøkkenAlder);
-            BadAlderTextBox1.Text = Convert.ToString(boligData.BadeværelsesAlder);
-            BoligSalgsdatoTextBox.Text = Convert.ToString(boligData.SalgsDato);
-            BoligOprettelsesTextBox.Text = Convert.ToString(boligData.OprettelsesDato);
-            OmbygningsÅrTextBox.Text = Convert.ToString(boligData.OmbygningsÅr);
-            StandSkalaTextBox.Text = Convert.ToString(boligData.StandSkala);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid BoligId");
+                }
+
+
+               
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+                
+            }
+            
+            
+                
 
         }
 

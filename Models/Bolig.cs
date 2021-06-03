@@ -26,5 +26,6 @@ namespace Models
         public int StandSkala { get; set; }
         public int KundeID { get; set; }
         public int MedarbejderID { get; set; }
+        
     }
 }

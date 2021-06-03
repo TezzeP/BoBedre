@@ -188,7 +188,7 @@ namespace BoBedreVS
             this.NameLabel.Size = new System.Drawing.Size(335, 142);
             this.NameLabel.TabIndex = 12;
             this.NameLabel.Text = "Navn ";
-            this.NameLabel.Click += new System.EventHandler(this.NameLabel_Click);
+            
             // 
             // StillingLable
             // 
