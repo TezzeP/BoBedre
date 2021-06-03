@@ -29,6 +29,7 @@ namespace BoBedreVS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forside));
             this.panel1 = new System.Windows.Forms.Panel();
             this.MedarbejderPortal = new System.Windows.Forms.Button();
             this.PrisVudering = new System.Windows.Forms.Button();
@@ -160,7 +161,7 @@ namespace BoBedreVS
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BoBedreVS.Properties.Resources.cool_csgo_profile_pictures_2c3d8442_7fef_446e_9315_e9f8a46ece47;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(50, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 63);
@@ -181,11 +182,12 @@ namespace BoBedreVS
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::BoBedreVS.Properties.Resources.cool_csgo_profile_pictures_2c3d8442_7fef_446e_9315_e9f8a46ece47;
-            this.pictureBox2.Location = new System.Drawing.Point(271, 0);
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::BoBedreVS.Properties.Resources.Laer_hvordan_boligprisen_top;
+            this.pictureBox2.Location = new System.Drawing.Point(186, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(552, 552);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.Size = new System.Drawing.Size(764, 489);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
@@ -206,7 +208,6 @@ namespace BoBedreVS
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
